@@ -1,6 +1,6 @@
- <?xml version="1.0" encoding="UTF-8"?>
-  <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
- <page>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<page>
 	<personal-info>
 		<name>Eshaan B. Patel</name>
 		<occupation>Developer</occupation>
