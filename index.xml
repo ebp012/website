@@ -1,5 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
- <website>
+  <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+ <page>
 	<personal-info>
 		<name>Eshaan B. Patel</name>
 		<occupation>Developer</occupation>
@@ -7,12 +8,14 @@
 	</personal-info>
 	<header>
 		<links>
-			<link>Home</link>
-			<link>Projects</link>
-			<link>Aeonic</link>
+			<link text='Home' />
+			<link text='Projects' />
+			<link text='Aeonic' />
+			<link text='About' />
+			<link text='Contact' />
 		</links>
 		<about>
 			
 		</about>
 	</header>
-</website>
+</page>
