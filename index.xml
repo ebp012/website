@@ -1,0 +1,18 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <website>
+	<personal-info>
+		<name>Eshaan B. Patel</name>
+		<occupation>Developer</occupation>
+		<date-of-birth d='18' m='02' y='2010' />
+	</personal-info>
+	<header>
+		<links>
+			<link>Home</link>
+			<link>Projects</link>
+			<link>Aeonic</link>
+		</links>
+		<about>
+			
+		</about>
+	</header>
+</website>
