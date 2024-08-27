@@ -8,11 +8,26 @@
 	</personal-info>
 	<header>
 		<links>
-			<link text='Home' />
-			<link text='Projects' />
-			<link text='Aeonic' />
-			<link text='About' />
-			<link text='Contact' />
+			<link>
+				<text>Home</text>
+				<href/>
+			</link>
+			<link>
+				<text>Aeonic</text>
+				<href/>
+			</link>
+			<link>
+				<text>Projects</text>
+				<href/>
+			</link>
+			<link>
+				<text>About</text>
+				<href/>
+			</link>
+			<link>
+				<text>Contact</text>
+				<href/>
+			</link>
 		</links>
 		<about>
 			
