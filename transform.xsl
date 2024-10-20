@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:template match="/">
+<xsl:template match="/page">
 <html>
 	<head>
-		<title>eshaan's website</title>
+		<title><xsl:value-of select='header/title' /></title>
 		<link href='style.css' rel='stylesheet' type='text/css' />
 	
 	</head>
@@ -13,13 +13,12 @@
 		<hr/>
 		<p>Choose your language: <a href='javascript:setLanguage("en")'>English</a> • <a href='javascript:setLanguage("gu");'>ગુજરાતી</a></p>
 		<hr />
-		<p>Hello and welcome to this neat little corner of the web!</p>
+		<p><xsl:value-of select='body/welcome' /></p>
 		<hr />
-		<p>My name is Eshaan, and I am a high school student and amateur front-end software developer.</p>
-		<p>I created the programming language <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), am working on composing a symphony, and am writing a fantasy novel entitled <i>The River</i>.</p>
-		<p>I have also created many conlangs, including <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> and various others, most for my novel.</p>
-		<p>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</p>
-		<p>This website is still under construction, so expect more soon.</p>
+		<p><xsl:value-of select='body/pi1' /><xsl:value-of select='personal-info/occupation' /><xsl:value-of select='body/pi2' /><xsl:value-of select='personal-info/aspiration' /><xsl:value-of select='body/pi3' />
+		<xsl:for-each select='body/p'>
+			<p><xsl:value-of select='c' /></p>
+		</xsl:for-each>
 	 </center>
 	 <hr />
 	 <footer>
