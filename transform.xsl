@@ -23,13 +23,16 @@
 	 </center>
 	 <hr />
 	 <footer>
-		<center>Copyright (c) 2024 Eshaan B. Patel</center>
-		<center>This page was last updated on 20/10/24.</center>
 		<center>
-			<img src='https://www.w3.org/Icons/valid-xml10-blue.png' alt='xml validated' />
-			<img src='http://jigsaw.w3.org/css-validator/images/vcss-blue' alt='css validated' />
-			<img src='https://hellnet.work/8831/img/buttons/Area51_Cavern_4556_thinkdifferent.gif' alt='made with macintosh' />
-			<img src='https://hellnet.work/8831/img/buttons/Area51_Corridor_3621_anybrow.gif' alt='best viewed with any browser' />
+			<p>Copyright (c) 2024 Eshaan B. Patel</p>
+			<p>This page was last updated on 20/10/24.</p>
+			<p>
+				<img src='https://www.w3.org/Icons/valid-xml10-blue.png' alt='xml validated' />
+				<img src='http://jigsaw.w3.org/css-validator/images/vcss-blue' alt='css validated' />
+				<img src='https://hellnet.work/8831/img/buttons/Area51_Cavern_4556_thinkdifferent.gif' alt='made with macintosh' />
+				<img src='https://hellnet.work/8831/img/buttons/Area51_Corridor_3621_anybrow.gif' alt='best viewed with any browser' />
+			</p>
+		</center>
 	 </footer>
 		<script>
 			function setLanguage (code) {
