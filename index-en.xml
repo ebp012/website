@@ -3,34 +3,24 @@
 <page>
 	<personal-info>
 		<name>Eshaan B. Patel</name>
-		<occupation>Developer</occupation>
+		<occupation>high school student</occupation>
+		<aspiration>front-end software developer</aspiration>
 		<date-of-birth d='18' m='02' y='2010' />
 	</personal-info>
 	<header>
-		<links>
-			<link>
-				<text>Home</text>
-				<href/>
-			</link>
-			<link>
-				<text>Aeonic</text>
-				<href/>
-			</link>
-			<link>
-				<text>Projects</text>
-				<href/>
-			</link>
-			<link>
-				<text>About</text>
-				<href/>
-			</link>
-			<link>
-				<text>Contact</text>
-				<href/>
-			</link>
-		</links>
-		<about>
-			
-		</about>
-	</header>
+		<title>eshaan's website</title>
+		<chooselang>Choose your language:&nbsp;</chooselang>
+		</header>
+	<body>
+		<welcome>Hello and welcome to this neat little corner of the web!</welcome>
+		<pi1>My name is Eshaan, and I am a&nbsp;</pi1><pi2>and amateur&nbsp;</pi2><pi3>.</pi3>
+		<p>I created the programming language <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), am working on composing a symphony, and am writing a fantasy novel entitled <i>The River</i>.</p>
+		<p>I have also created many conlangs, including <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> and various others, most for my novel.</p>
+		<p>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</p>
+		<p>This website is still under construction, so expect more soon.</p>
+	</body>
+	<footer>
+		<p>Copyright (c) 2024 Eshaan B. Patel</p>
+		<p>This page was last updated on 20/10/24.</p>
+	</footer>
 </page>
