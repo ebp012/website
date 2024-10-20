@@ -4,6 +4,8 @@
 <html>
 	<head>
 		<title>eshaan's website</title>
+		<link href='style.css' rel='stylesheet' type='text/css' />
+	
 	</head>
 	<body>
 	<center>
