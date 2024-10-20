@@ -16,7 +16,7 @@
 		<p>My name is Eshaan, and I am a high school student and amateur front-end software developer.</p>
 		<p>I created the programming language <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), am working on composing a symphony, and am writing a fantasy novel entitled <i>The River</i>.</p>
 		<p>I have also created many conlangs, including <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> and various others, most for my novel.</p>
-		<p>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>.</p>
+		<p>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</p>
 		<p>This website is still under construction, so expect more soon.</p>
 	 </center>
 	 <hr />
