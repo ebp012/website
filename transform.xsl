@@ -11,7 +11,7 @@
 	<center>
 		<h1>eshaan's website</h1>
 		<hr/>
-		<p>Choose your language: <a href='javascript:setLanguage("en")'>English</a> &bull; <a href='javascript:setLanguage("gu");'>ગુજરાતી</a></p>
+		<p>Choose your language: <a href='javascript:setLanguage("en")'>English</a> • <a href='javascript:setLanguage("gu");'>ગુજરાતી</a></p>
 		<hr />
 		<p>Hello and welcome to this neat little corner of the web!</p>
 		<hr />
