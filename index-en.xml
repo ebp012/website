@@ -10,7 +10,7 @@
 	<header>
 		<title>eshaan's website</title>
 		<chooselang>Choose your language: </chooselang>
-		</header>
+	</header>
 	<body>
 		<welcome>Hello and welcome to this neat little corner of the web!</welcome>
 		<pi1>My name is Eshaan, and I am a </pi1><pi2>and amateur </pi2><pi3>.</pi3>
