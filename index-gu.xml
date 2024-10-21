@@ -4,8 +4,8 @@
 	<personal-info>
 		<name>Eshaan B. Patel</name>
 		<occupation>હાઇ સકૂલની સ્ટુડન્ટ</occupation>
-		<aspiration>front-end software developer</aspiration>
-		<date-of-birth d='18' m='02' y='2010' />
+		<aspiration>આગર-ની-બાજુ-ની સૉફ઼્ટ્વ઼ેર ડેવ્લપર</aspiration>
+		<date-of-birth d='૧૮' m='૦૨' y='૨૦૧૦' />
 	</personal-info>
 	<header>
 		<title>ઇશાન ની વ઼ેબ્સાઇટ</title>
@@ -13,7 +13,7 @@
 	</header>
 	<body>
 		<welcome>કેમ છે, ઇન્ટર્નેતની આ ભાગ માં.</welcome>
-		<pi1>મારિ નામ ઇશાન છે, અને I am a </pi1><pi2>and amateur </pi2><pi3>.</pi3>
+		<pi1>મારિ નામ ઇશાન છે, અને હું </pi1><pi2> છું અને મને </pi2><pi3> બન્વું છે.</pi3>
 		<p><c>I created the programming language <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), am working on composing a symphony, and am writing a fantasy novel entitled <i>The River</i>.</c></p>
 		<p><c>I have also created many conlangs, including <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> and various others, most for my novel.</c></p>
 		<p><c>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</c></p>
