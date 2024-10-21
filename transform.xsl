@@ -15,7 +15,7 @@
 		<hr />
 		<p><xsl:value-of select='body/welcome' /></p>
 		<hr />
-		<p><xsl:value-of select='body/pi1' /><xsl:value-of select='personal-info/occupation' /><xsl:value-of select='body/pi2' /><xsl:value-of select='personal-info/aspiration' /><xsl:value-of select='body/pi3' />
+		<p><xsl:value-of select='body/pi1' /><xsl:value-of select='personal-info/occupation' /><xsl:value-of select='body/pi2' /><xsl:value-of select='personal-info/aspiration' /><xsl:value-of select='body/pi3' /></p>
 		<xsl:for-each select='body/p'>
 			<p><xsl:value-of select='c' /></p>
 		</xsl:for-each>
