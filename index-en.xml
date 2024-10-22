@@ -13,7 +13,7 @@
 	</header>
 	<body>
 		<welcome>Hello and welcome to this neat little corner of the web!</welcome>
-		<pi1>My name is Eshaan, and I am a </pi1><pi2>and amateur </pi2><pi3>.</pi3>
+		<pi1>My name is Eshaan, and I am a </pi1><pi2> and amateur </pi2><pi3>.</pi3>
 		<p><c>I created the programming language <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), am working on composing a symphony, and am writing a fantasy novel entitled <i>The River</i>.</c></p>
 		<p><c>I have also created many conlangs, including <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> and various others, most for my novel.</c></p>
 		<p><c>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</c></p>
