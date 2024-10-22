@@ -2,22 +2,22 @@
 <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
 <page>
 	<personal-info>
-		<name>Eshaan B. Patel</name>
-		<occupation>હાઇ સકૂલની સ્ટુડન્ટ</occupation>
-		<aspiration>આગર-ની-બાજુ-ની સૉફ઼્ટ્વ઼ેર ડેવ્લપર</aspiration>
+		<name>ઇશાન બિ. પટેલ</name>
+		<occupation>હાઇ સ્કૂલનો વિદ્યાર્થી</occupation>
+		<aspiration>દેખ્વાની-બાજુની સૉફ઼્ટ્વ઼ેર ડેવલપમેન્ટ</aspiration>
 		<date-of-birth d='૧૮' m='૦૨' y='૨૦૧૦' />
 	</personal-info>
 	<header>
-		<title>ઇશાન ની વ઼ેબ્સાઇટ</title>
-		<chooselang>તારી ભાષા કે: </chooselang>
+		<title>ઇશાનની વેબસાઇટ</title>
+		<chooselang>તમારી ભાષા કઈ છે: </chooselang>
 	</header>
 	<body>
-		<welcome>કેમ છે, ઇન્ટર્નેતની આ ભાગ માં.</welcome>
-		<pi1>મારિ નામ ઇશાન છે, અને હું </pi1><pi2> છું અને મને </pi2><pi3> બન્વું છે.</pi3>
-		<p><c>મે તો <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), એક કૉમ્પ્યૂટરની ભાષા, બાનાવ્યેલો છું; અને એક સિમ્ફ઼ની લખી રહ્યેલો છું, and am writing a fantasy novel entitled <i>The River</i>.</c></p>
-		<p><c>મે પણ <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> જેવા ભાશાએ બની રહ્યેલો છું, ગણા મારી નૉવ઼ૅલ માટે.</c></p>
-		<p><c>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</c></p>
-		<p><c>This website is still under construction, so expect more soon.</c></p>
+		<welcome>કેમ છો, ઇન્ટરનેટના આ ભાગમાં‽</welcome>
+		<pi1>મારું નામ ઇશાન છે, અને હું </pi1><pi2> છું અને મને </pi2><pi3> બનવું છે.</pi3>
+		<p><c>મે તો <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), એક કૉમ્પ્યૂટરની ભાષા, બનાવેલો છું; અને એક સિમ્ફ઼ની લખી રહ્યેલો છું, and am writing a fantasy novel entitled <i>The River</i>.</c></p>
+		<p><c>મે પણ <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> જેવી ભાષા બની રહ્યેલો છું, ગણા મારી નવલકથા માટે.</c></p>
+		<p><c>હું અજિ લાટિન, હિન્દિ, ફ્રેન્ચ, અને સ્પૅનિશ જાત્તે  શીખી રહ્યેલો છું. (એ એકમાં બહું કેવાય? <i>Pas pour moi</i>).</c></p>
+		<p><c>આ વ઼ેબ્સાઇટ પર વધુ બહુ જલદી આવશે!</c></p>
 	</body>
 	<footer>
 		<p><c>Copyright (c) 2024 Eshaan B. Patel</c></p>
