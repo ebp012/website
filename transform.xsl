@@ -36,7 +36,7 @@
 		<script>
 			function setLanguage (code) {
 				var filename = "index-" + code + ".xml";
-				window.open(filename, "_blank");
+				window.open(filename, "_self");
 			}
 		</script>
 	 </body>
