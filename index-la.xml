@@ -2,21 +2,21 @@
 <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
 <page>
 	<personal-info>
-		<name>Eshaan B. Patel</name>
-		<occupation>high school student</occupation>
-		<aspiration>front-end software developer</aspiration>
+		<name>Itianus Buhargavus Patel</name>
+		<occupation>discipulus in ludo secundario</occupation>
+		<aspiration>creator applicationis computatris</aspiration>
 		<date-of-birth d='18' m='02' y='2010' />
 	</personal-info>
 	<header>
 		<title>eshaan's website</title>
-		<chooselang>Choose your language: </chooselang>
+		<chooselang>Loquitor linguam tuam: </chooselang>
 	</header>
 	<body>
-		<welcome>Hello and welcome to this neat little corner of the web!</welcome>
-		<pi1>My name is Eshaan, and I am a </pi1><pi2> and amateur </pi2><pi3>.</pi3>
-		<p><c>Ego facio lingua de computatri <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>), am working on composing a symphony, and am writing a fantasy novel entitled <i>The River</i>.</c></p>
-		<p><c>I have also created many conlangs, including <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> and various others, most for my novel.</c></p>
-		<p><c>I natively speak English and Gujarati, but am still learning Latin, Hindi, French, and Spanish on my own. (Maybe that's too many at once? <i>Pas pour moi</i>).</c></p>
+		<welcome>Salve huic loco interretis!</welcome>
+		<pi1>Nomen mihi Etianus est, et ego sum </pi1><pi2> et sum </pi2><pi3> imperitus.</pi3>
+		<p><c>Ego facio lingua <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>GitHub</a>) computatrorum, facio simfonia, et scribo librum fantasium <i>The River</i>.</c></p>
+		<p><c><a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> et cetera linguas fio, aliqui libro meo.</c></p>
+		<p><c>In English et Gujarati loquere possum, sed linguas Latinas, Hindi, French, et Hispanice studeo. (Nimis linguas? <i>Pas pour moi</i>).</c></p>
 		<p><c>This website is still under construction, so expect more soon.</c></p>
 	</body>
 	<footer>
