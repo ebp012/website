@@ -9,7 +9,7 @@
 	</head>
 	<body>
 	<center>
-		<h1>eshaan's website</h1>
+		<h1><xsl:value-of select='header/title' /></h1>
 		<hr/>
 		<p> <xsl:value-of select='header/chooselang' /><a href='javascript:setLanguage("en")'>English</a> • <a href='javascript:setLanguage("gu");'>ગુજરાતી</a> • <a href='javascript:setLanguage("la");'>Latina</a></p>
 		<hr />
