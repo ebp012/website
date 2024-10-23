@@ -23,8 +23,9 @@
 	 <hr />
 	 <footer>
 		<center>
-			<p>Copyright (c) 2024 Eshaan B. Patel</p>
-			<p>This page was last updated on 20/10/24.</p>
+			<xsl:for-each select='footer/p'>
+				<p><xsl:value-of select='c' /></p>
+			</xsl:for-each>
 			<p>
 				<img src='https://www.w3.org/Icons/valid-xml10-blue.png' alt='xml validated' />
 				<img src='http://jigsaw.w3.org/css-validator/images/vcss-blue' alt='css validated' />
