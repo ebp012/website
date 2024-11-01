@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<page>
+	<personal-info>
+		<name>su Itiana ki su Paukafa ki su pa Patina</name>
+		<occupation>sa ma-fa ki sai ku-fa~ta</occupation>
+		<aspiration>ma-fa ki nafamafu</aspiration>
+		<date-of-birth d='18' m='02' y='2010' />
+	</personal-info>
+	<header>
+		<title>pa-ma~pai~ma-fa ki su itiana</title>
+		<chooselang>pa-ma ki tu i pa: </chooselang>
+	</header>
+	<body>
+		<welcome>u-ti ta pa-ma~pai~ma-fa ki mi!</welcome>
+		<pi1>mi pa su Itiana, pa ai mi pa a </pi1><pi2> pa a sa </pi2><pi3>.</pi3>
+		<p><c>mi fu su <a href='http://aspen.aeonic.me/'>Aspen</a> (<a href='http://dev.aeonic.me/aspen'>ki su GitHub</a>), fu ku-pa-fa, pa fu fa~ki~ku-fa ki su Inikisa pi su <i>The River</i>.</c></p>
+		<p><c>mi fu pai pa-ma, ki <a href='https://www.youtube.com/watch?v=U76DK3woxJE'>su Pama</a> pa nai-nai, ai nai-nai ki mi fa~ki~ku-fa.</c></p>
+		<p><c>mi pa-ma pa-ma su Inikisa pa su Kusanati, pa mi pai kufa ki su Atina, su Initia-ki, su Fanis-ki, pa su Isipan-ki pai mi. (Ni pa pai? <i>Pas pour moi</i>).</c></p>
+		<p><c>Mi fu pa-ma~pai~ma-fa ki mi pai nai-nai tai.</c></p>
+	</body>
+	<footer>
+		<p><c>su Kupiaita (c) 2024 Eshaan B. Patel</c></p>
+		<p><c>i fu 20/10/24</c></p>
+	</footer>
+</page>
