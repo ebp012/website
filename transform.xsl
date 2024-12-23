@@ -11,7 +11,7 @@
 	<center>
 		<h1><xsl:value-of select='header/title' /></h1>
 		<hr/>
-		<p> <xsl:value-of select='header/chooselang' /><a href='javascript:setLanguage("en")'>English</a> • <a href='javascript:setLanguage("gu");'>ગુજરાતી</a> • <a href='javascript:setLanguage("la");'>Latina</a> • <a href='javascript:setLanguage("sp");'>su Pama</a></p>
+		<p> <xsl:value-of select='header/chooselang' /><a href='javascript:setLanguage("en")'>english</a> • <a href='javascript:setLanguage("gu");'>ગુજરાતી</a> • <a href='javascript:setLanguage("la");'>français</a> • <a href='javascript:setLanguage("la");'>latina</a> • <a href='javascript:setLanguage("sp");'>su Pama</a></p>
 		<hr />
 		<p><xsl:value-of select='body/welcome' /></p>
 		<p style='font-family: spm;'><xsl:value-of select='body/welcomesp' /></p>
