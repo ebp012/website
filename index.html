@@ -9,23 +9,678 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href='noedit.sigma.css' rel='stylesheet' type='text/css' />
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Georgia", serif;
-        min-height: 100vh;
-      }
-
       #bgcontainer {
         background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
-        background-size: cover;
-        width: 100%;
-        z-index: -64;
-        height: 100%;
-        position: fixed;
-        top: 0;
+      }
+      table#appTable tbody tr td img {
+        height: 40px;
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body
+    onload="document.querySelector('#homeTab').click(); pascal.addDimension();"
+  >
+    <div id="bgcontainer"></div>
+    <div class="container">
+      <!-- Bio Section -->
+      <div id="bio" class="content-section active">
+        <h1 class="page-title">about mē</h1>
+        <div class="desk-paper">
+          <strong>Hello hūmans of planet Earth!</strong>
+          <hr />
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects" class="content-section">
+        <h1 class="page-title">Projects</h1>
+        <div class="desk-paper" style="font-size: 14pt">
+          <p style="text-align: center">
+            These are some personal coding projects of mine.
+          </p>
+          <hr />
+          <table id="appTable">
+            <thead>
+              <tr>
+                <td>App</td>
+                <td>Icon</td>
+                <td>Description</td>
+                <td>Function</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://aryabhata.aeonic.me/">Aryabhata</a></td>
+                <td>-</td>
+                <td>a multipurpose study app</td>
+                <td>mostly</td>
+              </tr>
+              <tr>
+                <td><a href="https://aspen.aeonic.me/">Aspen</a></td>
+                <td>-</td>
+                <td>a new programming language</td>
+                <td>partly</td>
+              </tr>
+              <tr>
+                <td><a href="https://labsim.aeonic.me/">LabSim</a></td>
+                <td>
+                  <img
+                    src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png"
+                  />
+                </td>
+                <td>falling-sand laboratory simulator</td>
+                <td>fully</td>
+              </tr>
+              <tr>
+                <td><a href="https://mahler.aeonic.me/">Mahler</a></td>
+                <td>-</td>
+                <td>classical music streaming hub</td>
+                <td>broken</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Linguistics Section -->
+      <div id="linguistics" class="content-section">
+        <h1 class="page-title">Linguistics</h1>
+        <div class="desk-paper">
+          <p style="text-align: center">
+            These are some personal coding projects of mine.
+          </p>
+          <hr />
+          <table id="langTable">
+            <thead>
+              <tr>
+                <td>Language</td>
+                <td>Family</td>
+                <td>Description</td>
+                <td>Sentence/Translation/Gloss</td>
+                <td>Creation Time</td>
+                <td style="width: 18pt">Word Order</td>
+                <td style="width: 32pt">Cases</td>
+                <td style="width: 27pt">Genders</td>
+                <td style="width: 32pt">Declension</td>
+                <td style="width: 32pt">Conjugation</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://www.youtube.com/watch?v=U76DK3woxJE"
+                    >su Pama</a
+                  >
+                </td>
+                <td><i>a priori</i></td>
+                <td>a full grammar in 32 morphemes</td>
+                <td>
+                  <p>mi mai pu a pu ki ti si pu ki ti pa ku.</p>
+                  <p>I can eat your food since it's good.</p>
+                  <p>I can eat ACC food of you because food of you is good</p>
+                </td>
+                <td>May–June 2024</td>
+                <td>SVO</td>
+                <td><i>none</i></td>
+                <td><i>none</i></td>
+                <td><i>none</i></td>
+                <td><i>none</i></td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1daAIM9-h6RK40sLYFNCp2SVQTxQOI5S_rzYwxquZLwA/edit?gid=159357971#gid=159357971"
+                    >Shaus</a
+                  >
+                </td>
+                <td><i>a priori</i></td>
+                <td>scrapped worldbuild</td>
+                <td>
+                  <p>
+                    Mí, pyil̥øif thel̥ jøtt ɟilo, jøtt l̥esvyrøl̥th mí l̥esvyrai.
+                  </p>
+                  <p>
+                    Initially, I saw myself as a victim, but I have since
+                    realised that my initial mentality was wrong.
+                  </p>
+                  <p>
+                    First-ORD, sensed-ACTV-PAST-1S-VISUAL myself-REFL victim, but
+                    think-PASV-PAST-1S-EXPNTL (wrong)
+                  </p>
+                </td>
+                <td>August-December 2024</td>
+                <td>VSO</td>
+                <td>nominative, vocative, genitive, locative, reflexive</td>
+                <td>masculine, feminine, puelline, neuter</td>
+                <td>case, number</td>
+                <td>
+                  <abbr title="indicative, interrogative, subjunctive"
+                    >mood</abbr
+                  >, aspect,
+                  <abbr title="active, passive, antipassive">voice</abbr>,
+                  <abbr title="firsthand, secondhand, thirdhand">hand</abbr>,
+                  evidentiality
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1oE2xh_QqAJ_qFbs8pi7jcmVZV-8FV04fgX5_MIW_6ns/edit?gid=1323055028#gid=1323055028"
+                    >Liyansa</a
+                  >
+                </td>
+                <td><i>a priori</i></td>
+                <td>novelling</td>
+                <td>
+                  <p>Ta lalta, nanaswa'ln falni pantin shu palsi pismaltin.</p>
+                  <p>
+                    First thing, I'd like some pismaltis (fruits) for my
+                    daughter to eat.
+                  </p>
+                  <p>
+                    thing 1-ORD, pick-I'my for daughter-acc eat-her some pismalti.
+                  </p>
+                </td>
+                <td>November 2024–present</td>
+                <td>VSO</td>
+                <td>
+                  ergative, intransitive, accusative, alienable, inalienable
+                </td>
+                <td>masculine, feminine</td>
+                <td>
+                  gender, case,
+                  <abbr title="singular, paucal, plural">number</abbr>
+                </td>
+                <td>
+                  <abbr title="inchoative, progressive, perfective">aspect</abbr
+                  >, <abbr title="indicative, interrogative">mood</abbr>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://docs.google.com/spreadsheets/u/1/d/12MwHeqm06a7eN6gRWHddQCq-Cp_4NCLVuGa6eo21svI/edit?gid=914232265#gid=914232265"
+                    >Leduin</a
+                  >
+                </td>
+                <td>Romance</td>
+                <td>althistory</td>
+                <td></td>
+                <td>April 2025–present</td>
+                <td>SVO/SOV</td>
+                <td>nominative, genitive, locative, reflexive</td>
+                <td>animate, inanimate</td>
+                <td>
+                  case, <abbr title="singular, plural">number</abbr>, gender (P)
+                </td>
+                <td>
+                  <abbr title="past, present, future">tense</abbr>,
+                  <abbr title="indicative, imperative, subjunctive, optative"
+                    >mood</abbr
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Music Section -->
+      <div id="music" class="content-section active">
+        <h1 class="page-title">Compositions</h1>
+        <div class="desk-paper">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Spelling Reform Section -->
+      <div id="reform" class="content-section active">
+        <h1 class="page-title">spelling reform</h1>
+        <div class="desk-paper">
+          <p>
+            This spelling reform doesn't make all of English spelling phonetic.
+            There are actually a bunch of flaws with doing that. Chiefly, it
+            would make it a lot harder to recognise prefixes and suffixes:
+            compare <i>column</i> and <i>columnal</i>: in the second, the 'n' is
+            actually pronounced, and it makes the word much more regular than it
+            sounds. Also, if we were to spell phonetically in entirety, it would
+            end up having to accomodate specific speech patterns. Would other
+            dialects have significantly different spellings? Another obvious
+            problem is how used to people are with the current system, making
+            adjustment difficult, for signage must be changed. Then, children
+            will find it difficult to have to learn two different systems: one
+            used before and the other now.
+          </p>
+          <p>
+            It's as a result of this that I present the all-new Patellian
+            spelling reform for the English language.
+          </p>
+          <p>
+            It's familiar, yet it gives an idea of the phonetic makeup of a
+            word, while retaining obvious polymorphological structures of words.
+          </p>
+          <hr />
+          <p>Here are the changes I shall enact:</p>
+          <ol
+            style="
+              margin-left: 18pt;
+              letter-spacing: 1pt;
+              font-family: courier;
+              font-weight: bold;
+              color: silver;
+              text-shadow: 1px 1px 2px gold;
+            "
+          >
+            <li>Þe new letter þōrn (Þþ) will bē added to replāċĕ 'th'.</li>
+            <li>Long vowels will now havĕ macrons (līnes) ōver þem.</li>
+            <li>
+              Any 'c' or 'g' māking a soft sound will have dots over them
+              (including ch->ċh). ĊċĠġ
+            </li>
+            <li>'Ph' shall now alwāys bē replāċed with 'f'.</li>
+            <li>Put a brēvĕ acċent on sīlent letters.</li>
+            <li>Removĕ acċents on foreiǧn words.</li>
+          </ol>
+          <p>
+            This system maintains optimum readability and maximum simplicity of
+            morpheme recognition while making it easy to use and learn for new
+            users. Or, in oþer words:
+          </p>
+          <p>
+            Þis system māintāins optimum rēadability and maximum simpliċity of
+            mōrfēmĕ recoǧnition.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-item" data-target="#bio" id="homeTab">
+        <i class="fa-solid fa-book-open"></i>
+        Bio
+      </div>
+      <div class="nav-item" data-target="#projects">
+        <i class="fa-solid fa-desktop"></i>
+        Projects
+      </div>
+      <div class="nav-item" data-target="#linguistics">
+        <i class="fa-solid fa-language"></i>
+        Linguistics
+      </div>
+      <div class="nav-item" data-target="#music">
+        <i class="fa-solid fa-music"></i>
+        Music
+      </div>
+      <div class="nav-item" data-target="#reform">
+        <i class="fa-solid fa-file-text"></i>
+        Spelling Reform
+      </div>
+    </nav>
+
+    <script>
+      $(document).ready(function () {
+        $(".nav-item").click(function () {
+          const target = $(this).data("target");
+          $(".content-section").removeClass("active");
+          $(target).addClass("active");
+          $(".nav-item").css({
+            transform: "translateY(0)",
+            background: "transparent",
+          });
+          $(this)
+            .css("background", "rgba(255,255,255,0.3)")
+            .css("transform", "translateY(-5px)");
+        });
+      });
+      // Settings Manager
+      const SettingsManager = {
+        init() {
+          this.loadSettings();
+          this.bindEvents();
+          this.toggleCalculatorIcon(
+            localStorage.getItem("showCalculator") === "true"
+          );
+          this.togglePerformanceMode(
+            localStorage.getItem("performanceMode") === "true"
+          );
+        },
+
+        bindEvents() {
+          $("#cookie-consent").change(function () {
+            localStorage.setItem("cookieConsent", this.checked);
+            if (this.checked)
+              document.cookie = "cookieConsent=true; max-age=2592000";
+          });
+
+          $("#calculator-toggle").change(function () {
+            localStorage.setItem("showCalculator", this.checked);
+            SettingsManager.toggleCalculatorIcon(this.checked);
+          });
+
+          $("#performance-mode").change(function () {
+            localStorage.setItem("performanceMode", this.checked);
+            SettingsManager.togglePerformanceMode(this.checked);
+          });
+        },
+
+        loadSettings() {
+          const consent = document.cookie.includes("cookieConsent=true");
+          $("#cookie-consent").prop("checked", consent);
+
+          $("#calculator-toggle").prop(
+            "checked",
+            localStorage.getItem("showCalculator") === "true"
+          );
+
+          $("#performance-mode").prop(
+            "checked",
+            localStorage.getItem("performanceMode") === "true"
+          );
+        },
+
+        toggleCalculatorIcon(show) {
+          $('[data-target="#calculator"]').toggle(show);
+        },
+
+        togglePerformanceMode(enable) {
+          $("body").toggleClass("flattened", enable);
+          $("#desmos-calculator").css("opacity", enable ? 0.9 : 1);
+        },
+      };
+
+      $(document).ready(function () {
+        SettingsManager.init();
+
+        // Existing navigation code
+        $(".nav-item").click(function () {
+          const target = $(this).data("target");
+          $(".content-section").removeClass("active");
+          $(target).addClass("active");
+          $(".nav-item").css({
+            transform: "translateY(0)",
+            background: "transparent",
+          });
+          $(this)
+            .css("background", "rgba(255,255,255,0.3)")
+            .css("transform", "translateY(-5px)");
+        });
+      });
+
+      // Script for learn tab
+      let questions = [];
+      let currentQuestionIndex = 0;
+      let oldCqi;
+      let olderCqi;
+      let specCqi;
+      let silver = 0;
+      let halvePenalty = false;
+      // Language-specific strings
+      var noFileMessage = "No file selected!!!";
+      var langSilver = "silver";
+      // Total right and total questions
+      let totalQuestions = 0;
+      let totalRight = 0;
+
+      // Parse the .arya file with the new format
+      function parseArya(arya) {
+        const rows = arya.split("\n");
+        questions = []; // Clear existing questions
+        rows.forEach((row) => {
+          const values = row.split(",");
+          if (values.length === 7) {
+            try {
+              const answers = [
+                values[1].trim(), // Incorrect answer 1
+                values[2].trim(), // Incorrect answer 2
+                values[3].trim(), // Incorrect answer 3
+                values[4].trim(), // Correct answer
+              ];
+              questions.push({
+                question: values[0].trim(),
+                correct: values[4].trim(),
+                choices: answers,
+                pointsAwarded: parseInt(values[5]),
+                pointsDeducted: parseInt(values[6]),
+              });
+            } catch (error) {
+              console.error("Error parsing row:", row, error);
+            }
+          }
+        });
+        if (questions.length === 0) {
+          alert(
+            "No valid questions found in the file. Please check the format."
+          );
+        }
+      }
+
+      // Shuffle answers randomly
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      function loadQuestion() {
+        if (currentQuestionIndex >= questions.length) {
+          currentQuestionIndex == 1;
+          /*alert("Game Over! Your total: " + silver + " " + langSilver);
+          $("#game").hide();
+          $(".container").show();
+          currentQuestionIndex = 0;
+          silver = 0;
+          $("#scoreValue").text(silver + " " + langSilver);*/
+          return;
+        }
+
+        const current = questions[currentQuestionIndex];
+        $("#question").text(current.question);
+
+        // Randomize the order of answers
+        const randomizedChoices = [...current.choices];
+        shuffle(randomizedChoices);
+
+        // Create answer buttons
+        const answerButtons = randomizedChoices
+          .map((choice, index) => {
+            return `<button class="button answer">${String.fromCharCode(
+              65 + index
+            )}: ${choice}</button>`;
+          })
+          .join("");
+        $("#answers").html(answerButtons);
+
+        // Handle answer selection
+        $(".answer").on("click", function () {
+          const selectedAnswer = $(this).text().split(":")[1].trim();
+          if (selectedAnswer === current.correct) {
+            // Add the appropriate amount of silver
+            silver += current.pointsAwarded;
+            // Increment the number of questions gotten right
+            totalRight += 1;
+            // Leave a gap of at least 2 between the same exact question
+            olderCqi = oldCqi;
+            oldCqi = currentQuestionIndex;
+            do {
+              specCqi = Math.round(Math.random() * questions.length);
+            } while (specCqi == oldCqi || specCqi == olderCqi);
+            currentQuestionIndex = specCqi;
+          } else {
+            // Show the incorrect dialogue box
+            $("#incorrect").show();
+            $("#game").hide();
+            // Hide the incorrect dialogue box after ~2/3 of a second
+            setTimeout(function () {
+              $("#incorrect").hide();
+              $("#game").show();
+            }, 666.6);
+            // If the halve-penalty powerup is equipped from the shop, half the penalty from the silver amount
+            silver -= halvePenalty
+              ? Math.ceil(current.pointsDeducted / 2)
+              : current.pointsDeducted;
+            // Repeat the question if it was incorrectly answered
+            currentQuestionIndex = currentQuestionIndex;
+          }
+          // Increment the total numbers of questions answered
+          totalQuestions += 1;
+          document.getElementById("totalQuestions").innerHTML = totalQuestions;
+          // Apply changes to number of questions gotten right
+          document.getElementById("totalRight").innerHTML = totalRight;
+          document.getElementById("percentage").innerHTML =
+            Math.round((totalRight / totalQuestions) * 1000) / 10;
+          $("#scoreValue").text(silver + " " + langSilver);
+          //currentQuestionIndex++;
+          // Disable receiving the same question twice in a row or too often
+
+          loadQuestion();
+        });
+
+        // Handle text input submission
+        $("#textInput").on("keypress", function (e) {
+          if (e.which === 13) {
+            // Enter key
+            const userAnswer = $(this).val().trim();
+            if (userAnswer === current.correct) {
+              // Add the appropriate amount of silver
+              silver += current.pointsAwarded;
+              // Increment the number of questions gotten right
+              totalRight += 1;
+              // Leave a gap of at least 2 between the same exact question
+              olderCqi = oldCqi;
+              oldCqi = currentQuestionIndex;
+              do {
+                specCqi = Math.round(Math.random() * questions.length);
+              } while (specCqi == oldCqi || specCqi == olderCqi);
+              currentQuestionIndex = specCqi;
+            } else {
+              // Show the incorrect dialogue box
+              $("#incorrect").show();
+              $("#game").hide();
+              // Hide the incorrect dialogue box after ~2/3 of a second
+              setTimeout(function () {
+                $("#incorrect").hide();
+                $("#game").show();
+              }, 666.6);
+              // If the halve-penalty powerup is equipped from the shop, half the penalty from the silver amount
+              silver -= halvePenalty
+                ? Math.ceil(current.pointsDeducted / 2)
+                : current.pointsDeducted;
+              // Repeat the question if it was incorrectly answered
+              currentQuestionIndex = currentQuestionIndex;
+            }
+            // Increment the total numbers of questions answered
+            totalQuestions += 1;
+            document.getElementById("totalQuestions").innerHTML =
+              totalQuestions;
+            // Apply changes to number of questions gotten right
+            document.getElementById("totalRight").innerHTML = totalRight;
+            document.getElementById("percentage").innerHTML =
+              Math.round((totalRight / totalQuestions) * 1000) / 10;
+            $("#scoreValue").text(silver + " " + langSilver);
+            // Clear the input field
+            $(this).val("");
+            loadQuestion();
+          }
+        });
+      }
+
+      $("#importBtn").on("click", function () {
+        const fileInput = document.getElementById("aryaFile");
+        const file = fileInput.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            parseArya(e.target.result);
+            ///alert("Arya imported successfully!");
+          };
+          reader.readAsText(file);
+        } else {
+          alert(noFileMessage);
+        }
+      });
+
+      $("#playBtn").on("click", function () {
+        $("#questions").show();
+        document.getElementById("importBtn").click();
+        setTimeout(function () {
+          if (questions.length === 0) {
+            //alert("Please import a .arya file first!");
+            return;
+          }
+          $("#game").show();
+          $("#home").hide();
+          $("#textInput").hide();
+          loadQuestion();
+        }, 36);
+      });
+
+      $("#typeBtn").on("click", function () {
+        document.getElementById("importBtn").click();
+        setTimeout(function () {
+          if (questions.length === 0) {
+            //alert("Please import a .arya file first!");
+            return;
+          }
+          $(".container").hide();
+          $("#game").fadeIn();
+          $("#answers").hide();
+          loadQuestion();
+        }, 36);
+      });
+
+      $("#resetBtn").on("click", function () {
+        // Confirm if the user wants to reset
+        var resetConf = confirm("Are you sure you would like to reset?");
+        if (resetConf === true) {
+          // Remove all questions
+          questions = [];
+
+          // Set question index to 0
+          currentQuestionIndex = 0;
+
+          // Deduct all silver
+          silver = 0;
+
+          // Reset number of right and wrong
+          totalRight = 0;
+          totalQuestions = 0;
+
+          // Update score value
+          $("#scoreValue").text(silver + " " + langSilver);
+
+          // Update percentage and right and wrong
+          document.getElementById("totalRight").innerHTML = 0;
+          document.getElementById("totalQuestions").innerHTML = 0;
+          document.getElementById("percentage").innerHTML = 0;
+
+          // Hide the game and return to the home screen
+          $("#game").hide();
+          $("#home").fadeIn();
+        }
+      });
+      $(document).ready(function () {
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+          $("body").addClass("dark");
+        }
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (event) => {
+            if (event.matches) {
+              $("body").addClass("dark");
+            } else {
+              $("body").removeClass("dark");
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
