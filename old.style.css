@@ -5,13 +5,12 @@
 }
 
 body {
-  background-image: url("https://img.freepik.com/free-photo/old-brown-paper-texture-background_1373-431.jpg");
   font-family: "Georgia", serif;
-  background-size: cover;
   min-height: 100vh;
 }
 
 #bgcontainer {
+  background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
   background-size: cover;
   width: 100%;
   z-index: -64;
@@ -119,7 +118,7 @@ body {
 
 .content-section {
   display: none;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(145, 145, 145, 0.84);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -127,22 +126,16 @@ body {
   min-height: 400px;
   line-height: 1.8;
 }
-
-.content-section.active {
-  display: block;
-  animation: fadeIn 0.5s;
-}
-
 h1 {
   letter-spacing: 10px;
 }
-
-h2 {
-  letter-spacing: 8px;
+td img {
+  height: 40px;
+  width: 40px;
 }
-
-h3 {
-  letter-spacing: 6px;
+.content-section.active {
+  display: block;
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
@@ -184,8 +177,8 @@ h3 {
     height: auto;
     flex-direction: column;
     background: linear-gradient(
-        rgba(200, 200, 200, 0.9),
-        rgba(150, 150, 150, 0.9)
+        rgba(200, 200, 200, 0.7),
+        rgba(150, 150, 150, 0.7)
       ),
       url("https://www.toptal.com/designers/subtlepatterns/uploads/mirrored_squares.png");
     padding: 20px 15px;
@@ -217,17 +210,10 @@ h3 {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-      ),
-      url("https://img.freepik.com/free-photo/old-brown-paper-texture-background_1373-431.jpg");
-  }
-
   .content-section {
-    background: rgba(50, 50, 50, 0.9);
-    color: #e0e0e0;
+    background: rgba(50, 50, 50, 0.8);
+    color: #e8e8e8;
+    text-shadow: 4px 4px 4px 4px whitesmoke;
   }
 
   .page-title {
@@ -241,12 +227,17 @@ h3 {
       ),
       url("https://www.toptal.com/designers/subtlepatterns/uploads/old_map.png");
     border-color: #666;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .desk-paper p {
+    width: 100%;
   }
 
   .nav-bar {
     background: linear-gradient(
-        rgba(100, 100, 100, 0.9),
-        rgba(80, 80, 80, 0.9)
+        rgba(100, 100, 100, 0.7),
+        rgba(80, 80, 80, 0.7)
       ),
       url("https://www.toptal.com/designers/subtlepatterns/uploads/mirrored_squares.png");
     border-color: #444;
@@ -280,36 +271,12 @@ h3 {
   }
 }
 
-
-
-/* Settings styles */
-.setting-item {
-  margin: 15px 0;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-}
-
-.setting-item label {
+/* APP STYLES */
+#bio .desk-paper {
+  /* Inherits all the base desk-paper styles */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
-
-#desmos-calculator {
-  transition: opacity 0.3s ease;
-}
-
-.flattened {
-  box-shadow: none !important;
-  background-image: none !important;
-  border: 1px solid #ccc !important;
-}
-
-.flattened .nav-item {
-  box-shadow: none !important;
-  background: #f0f0f0 !important;
 }
 
 .hidden {
