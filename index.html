@@ -32,7 +32,12 @@
           <strong>Hello hūmans of planet Earth!</strong>
           <hr />
           <p>I'm an amateur front-end developer and linguist speaking English (native), Gujarati (native), and French (B1).</p>
+          
+          <h2>YouTube</h2>
           <p>I have a YouTube channel, <a href='https://www.youtube.com/@random.guy2840'>echo fractal</a>, that I sometimes post to.</p>
+          <p><strong>Most recent video:</strong></p>
+          <iframe id="youtube_video" width="450" height="262.5" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          
         </div>
       </div>
 
@@ -455,6 +460,14 @@
             .css("background", "rgba(255,255,255,0.3)")
             .css("transform", "translateY(-5px)");
         });
+
+        var channelID = "UCEvttHNVOsafen6uySQbDkQ";
+        var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+        $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+           var link = data.items[0].link;
+           var id = link.substr(link.indexOf("=")+1);
+        $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+        });
       });
 
       // Script for learn tab
@@ -728,6 +741,9 @@
             }
           });
       });
+
+      
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>
