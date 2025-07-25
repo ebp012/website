@@ -381,15 +381,16 @@
       <!-- Unit Reform Section -->
       <div id="reform" class="content-section active" style='overflow-x: none;'>
         <h1 class="page-title">Shashtya Units</h1>
-        <div class="desk-paper">
+        <p style='text-align: center; width: 80%; overflow-y: auto; overflow-x: none; height: 16pt; font-size: 14pt;'><b>• <a href='#shashtya-description'>description</a> • <a href='#shashtya-prefices'>prefices</a> • <a href='#shashtya-base-units'>base units</a> • <a href='#shashtya-dimensionless-units'>dimensionless units</a> • <a href='#shashtya-derived-units'>derived units</a> • <a href='#shashtya-derivational-units'>derivational units</a> •</b></p>
+        <div class="desk-paper" id='shashtya-description'>
           <p>The Shashtya unit system is a revolutionary new system of units that aims to finally rid ourselves of the burdens and flaws posed in SI.</p>
           <p>Its name comes from Sanskrit षष्ट्या (ṣaṣṭyā́), the instrumental singular declension of षष्टि (ṣaṣṭí), meaning sixty. Therefore, "shashtya" literally translates to "using sixty".</p>
           <p>Speaking of 60, in lieu of the lazy 10 (factors 1, 2, 5, 10) as its base, Patellian uses the amazingly factorable 60, with its factors of 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, and 60.</p>
-          <p>60<sup>2</sup>, 3600, has even more factors: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 30, 36, 40, 45, 48, 50, 60, 72, 75, 80, 90, 100, 120, 144, 150, 180, 200, 225, 240, 300, 360, 400, 450, 600, 720, 900, 1200, 1800, 3600.</p>
+          <p>The square of 60, 3600, has even more factors: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 30, 36, 40, 45, 48, 50, 60, 72, 75, 80, 90, 100, 120, 144, 150, 180, 200, 225, 240, 300, 360, 400, 450, 600, 720, 900, 1200, 1800, 3600.</p>
           <p>And it's not <i>just</i> that 60 is more divisible! My system is more directly and evenly tied to measures of fundamental constants of the Universe.</p>
           <p>Prefixes are all also straightforwardly infinitely extendable, unlike the metric convention of just making up prefixes, or God forbid even <i>just ignoring them and using scientific notation</i>.</p>
           <p>Right below is how everything shall work:</p>
-          <br/><br/><hr/>
+          <br/><br/><hr id='shashtya-prefices'/>
           <h1>Prefices</h1>
           <p>Just like in SI, I made a system of prefices to be put on the beginning of the unit name to change their size.</p>
           <p>Unlike SI, however, these are completely regular (except for 1, 2, and 3) and <i>infinitely</i> extendable, them all being based off of Sanskrit numbers.</p>
@@ -401,6 +402,7 @@
                   <td>Prefix</td>
                   <td>Symbol</td>
                   <td>Magnitude</td>
+                  <td rowspan='9' style='width: 10px;'></td>
                   <td>Prefix</td>
                   <td>Symbol</td>
                   <td>Magnitude</td>
@@ -408,27 +410,27 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>bhagi-</td>
-                  <td>bi</td>
+                  <td>lavi-</td>
+                  <td>li</td>
                   <td>60<sup>-1</sup></td>
                   <td>pradha-</td>
                   <td>pa</td>
                   <td>60<sup>1</sup></td>
                 </tr>
                 <tr>
-                  <td>lavi-</td>
-                  <td>li</td>
+                  <td>alpi-</td>
+                  <td>ali</td>
                   <td>60<sup>-2</sup></td>
                   <td>varga-</td>
                   <td>va</td>
                   <td>60<sup>2</sup></td>
                 </tr>
                 <tr>
-                  <td>alpi-</td>
-                  <td>ali</td>
+                  <td>trini-</td>
+                  <td>ti</td>
                   <td>60<sup>-3</sup></td>
-                  <td>ghana-</td>
-                  <td>ga</td>
+                  <td>trina-</td>
+                  <td>ta</td>
                   <td>60<sup>3</sup></td>
                 </tr>
                 <tr>
@@ -482,7 +484,7 @@
               </tbody>
             </table>
           </div>
-          <br/><br/><hr/>
+          <br/><br/><hr id='shashtya-base-units'/>
           <h1>Base Units</h1>
           <p>The system has compound units for literally <i>everything</i>, but like metric, Patellian units have their basis in for-once-actually-reasonable quantities of base measures.</p>
           <p>The planck length is used as the basis for length. Thus, 2 &times; 60<sup>19</sup> planck lengths shall be one <b>hasta</b> (H), the unit of length.</p>
@@ -539,8 +541,7 @@
             </table>
           </div>
           <p>Unit symbols are always capitalised on their first letter, and prefices are always lowercase.</p>
-          <br/><br/><hr/>
-          <br/><br/><hr/>
+          <br/><br/><hr id='shashtya-dimensionless-units'/>
           <h1>Dimensionless Units</h1>
           <p>Certain units, such as those of angle measure, don't have dimension and must instead be given in numbers.</p>
           <p>Here they are:</p>
@@ -576,7 +577,7 @@
               </tbody>
             </table>
           </div>
-          <br/><br/><hr/>
+          <br/><br/><hr id='shashtya-derived-units'/>
           <h1>Derived Units</h1>
           <p>Many, <i>many</i> more units can be derived from the base four plus the dimensionless ones.</p>
           <div class='table-wrapper'>
@@ -608,7 +609,7 @@
                   <td>dravah</td>
                   <td>D</td>
                   <td>fluid volume</td>
-                  <td colspan='2'>(liH)<sup>3</sup></td>
+                  <td colspan='2'>(aliH)<sup>3</sup></td>
                   <td>tablespoon (tbsp)</td>
                   <td>milliliter (mL)</td>
                 </tr>
@@ -616,7 +617,7 @@
                   <td>banah</td>
                   <td>Bn</td>
                   <td>sharpness</td>
-                  <td colspan='2'>liH<sup>&minus;1</sup> ⋅ A<sup>&minus;1</sup></td>
+                  <td colspan='2'>aliH<sup>&minus;1</sup> ⋅ A<sup>&minus;1</sup></td>
                   <td colspan='2'><i>no equivalent</i></td>
                 </tr>
                 <tr>
@@ -779,7 +780,7 @@
               </tbody>
             </table>
           </div>
-          <br/><br/><hr/>
+          <br/><br/><hr id='shashtya-derivational-units'/>
           <h1>Retained Derived Units</h1>
           <p>These units are retained in their derived form.</p>
           <div class='table-wrapper'>
