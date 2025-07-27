@@ -381,7 +381,7 @@
       <!-- Unit Reform Section -->
       <div id="reform" class="content-section active" style='overflow-x: none;'>
         <h1 class="page-title">Shashtya Units</h1>
-        <p class='page-nav'><b>• <a href='#shashtya-description'>description</a> • <a href='#shashtya-prefices'>prefices</a> • <a href='#shashtya-base-units'>base units</a> • <a href='#shashtya-dimensionless-units'>dimensionless units</a> • <a href='#shashtya-derived-units'>derived units</a> • <a href='#shashtya-derivational-units'>derivational units</a> •</b></p>
+        <p class='page-nav'><b>• <a href='#shashtya-description'>description</a> • <a href='#shashtya-prefices'>prefices</a> • <a href='#shashtya-base-units'>base units</a> • <a href='#shashtya-dimensionless-units'>dimensionless units</a> • <a href='#shashtya-derived-units'>derived units</a> • <a href='#shashtya-derivational-units'>derivational units</a> • <a href='#shashtya-diagram'>diagram</a> •</b></p>
         <div class="desk-paper" id='shashtya-description'>
           <p>The Shashtya unit system is a revolutionary new system of units that aims to finally rid ourselves of the burdens and flaws posed in SI.</p>
           <p>Its name comes from Sanskrit षष्ट्या (ṣaṣṭyā́), the instrumental singular declension of षष्टि (ṣaṣṭí), meaning sixty. Therefore, "shashtya" literally translates to "using sixty".</p>
@@ -866,6 +866,11 @@
                   <td>-</td>
                 </tr>
               </tbody>
+              <br/><br/><hr id='shashtya-diagram'/>
+              <h1>Diagram</h1>
+              <div class='table-wrapper'>
+                <canvas id="lakshmi" width="400" height="400"></canvas>
+              </div>
             </table>
           </div>
           <br/><br/><hr/>
@@ -1274,5 +1279,6 @@
       
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='lakshmi.js'></script>
   </body>
 </html>
