@@ -577,7 +577,7 @@
           <p>Unit symbols are always capitalised on their first letter, and prefices are always lowercase.</p>
           <br/><br/><hr id='shashtya-dimensionless-units'/>
           <h1>Dimensionless Units</h1>
-          <p>The ansha and the garami are the two dimensionless units, for angle and substance respectively.</p>
+          <p>The ansha (A), the garami (Gr), and the vishal (Vsh) are the three dimensionless units, for angle and substance respectively.</p>
           <p>Here they are:</p>
           <div class='table-wrapper'>
             <table>
@@ -605,9 +605,22 @@
                   <td>Gr</td>
                   <td>substance</td>
                   <td>1 instance</td>
-                  <td><sup>1</sup>&frasl;<sub>12</sub> dozen</td>
-                  <td><sup>mol</sup>&frasl;<sub>mol⁻¹</sub></td>
+                  <td colspan='2'>1 <sup>mol</sup>&frasl;<sub>mol⁻¹</sub></td>
                 </tr>
+                <tr>
+                  <td>vishal</td>
+                  <td>Vsh</td>
+                  <td>coherence</td>
+                  <td>log<sub><i>n</i>₀</sub>(<sup>Δ<i>n</i></sup>&frasl;<sub>H</sub>)</td>
+                  <td colspan='2'>degree of coherence (γ)</td>
+                </tr>
+                <tr>
+                  <td>matra</td>
+                  <td>M</td>
+                  <td>scale in grand scheme of things</td>
+                  <td><abbr title='iterated logarithm' onclick='alert("iterated logarithm");'>slog</abbr>(<i>n</i>)</td>
+                  <td colspan='2'><i>no direct equivalent</i></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -675,21 +688,21 @@
                   <td>Sh</td>
                   <td>energy</td>
                   <td colspan='2'>P ⋅ (liH/T)<sup>2</sup></td>
-                  <td rowspan='3'>pounds of force (lbf)</td>
-                  <td>kilocalorie (kcal)</td>
+                  <td rowspan='2'>foot-pound (ft‑lbf)</td>
+                  <td rowspan='2'>calorie (cal)<br/>Joule (J)</td>
                 </tr>
                 <tr>
                   <td>Kalam</td>
                   <td>K</td>
                   <td>work</td>
                   <td colspan='2'>P ⋅ <sup>H</sup>&frasl;<sub>T</sub></td>
-                  <td>Joule (J)</td>
                 </tr>
                 <tr>
                   <td>Bose</td>
                   <td>B</td>
                   <td>force</td>
                   <td colspan='2'>P ⋅ G</td>
+                  <td>pound of force (lbf)</td>
                   <td>Newton (N)</td>
                 </tr>
                 <tr>
@@ -697,7 +710,7 @@
                   <td>Sph</td>
                   <td>entropy</td>
                   <td colspan='2'><abbr title='Boltzmann constant' onclick='alert("Boltzmann constant");'>k</abbr> ⋅ ln<abbr title='number of microstates' onclick='alert("number of microstates");'>Ω</abbr></td>
-                  <td>force-pound feet per rankine (<sup>ft ⋅ lbf</sup>&frasl;<sub>°R</sub>)</td>
+                  <td>pound feet per rankine (<sup>ft ⋅ lbf</sup>&frasl;<sub>°R</sub>)</td>
                   <td>Joules per kelvin (<sup>J</sup>&frasl;<sub>K</sub>)</td>
                 </tr>
                 <tr>
@@ -724,43 +737,36 @@
                   <td>inches per square second (ins<sup>-2</sup>)</td>
                   <td>metres per square second (m s<sup>-2</sup>)</td>
                 </tr>
-                <tr>
-                  <td>vishal</td>
-                  <td>Vsh</td>
-                  <td>spatial coherence</td>
-                  <td colspan='2'>log<sub><i>n</i>₀</sub>(<sup>Δ<i>n</i></sup>&frasl;<sub>H</sub>)</td>
-                  <td><i>no equivalent</i></td>
-                  <td rowspan='2'>degree of coherence (γ)</td>
-                  <td rowspan='6'>Chemistry</td>
-                </tr>
-                <tr>
+                <!--<tr>
                   <td>Ramanujan</td>
                   <td>Rj</td>
                   <td>temporal coherence</td>
                   <td colspan='2'>log<sub><i>n</i>₀</sub>(<sup>Δ<i>n</i></sup>&frasl;<sub>T</sub>)</td>
                   <td>percent change</td>
-                </tr>
+                </tr>-->
                 <tr>
                   <td>samya</td>
                   <td>Sy</td>
-                  <td>uniformity</td>
+                  <td>symmetry</td>
                   <td colspan='2'>log<sub><i>H</i>₀</sub>(<sup>Δ<i>H</i></sup>&frasl;<sub>H</sub>)</td>
                   <td colspan='2'><i>no equivalent</i></td>
+                  <td rowspan='4'>Chemistry</td>
                 </tr>
                 <tr>
                   <td>jaleshu</td>
                   <td>J</td>
                   <td>kinematic viscosity</td>
                   <td colspan='2'><sup>H²</sup>&frasl;<sub>T</sub></td>
-                  <td rowspan='2'>Poise (P)</td>
-                  <td>Pascal second (Pa⋅s)</td>
+                  <td>square feet per second (<sup>ft²</sup>&frasl;<sub>s</sub>)</td>
+                  <td>square metre per second (<sup>m²</sup>&frasl;<sub>s</sub>)</td>
                 </tr>
                 <tr>
                   <td>madhu</td>
-                  <td>M</td>
+                  <td>Mdh</td>
                   <td>dynamic viscosity</td>
                   <td colspan='2'>A/2</td>
-                  <td>Stokes (S)</td>
+                  <td>pound per square inch per second (<sup>psi</sup>&frasl;<sub>s</sub>; <sup>p</sup>&frasl;<sub>in²s</sub>)</td>
+                  <td>Pascal second (Pa⋅s)</td>
                 </tr>
                 <tr>
                   <td>dah</td>
@@ -813,14 +819,6 @@
                   <td>electric potential/voltage</td>
                   <td colspan='2'><sup>K</sup>&frasl;<sub>(S ⋅ T)</sub></td>
                   <td colspan='2'>volt (V)</td>
-                </tr>
-                <tr>
-                  <td>matra</td>
-                  <td>M</td>
-                  <td>scale in grand scheme of things</td>
-                  <td colspan='2'><abbr title='iterated logarithm' onclick='alert("iterated logarithm");'>slog</abbr>(<i>n</i>)</td>
-                  <td colspan='2'><i>no direct equivalent</i></td>
-                  <td rowspan='2'>Significance</td>
                 </tr>
               </tbody>
             </table>
