@@ -932,20 +932,42 @@
     </nav>
 
     <script>
-      $(document).ready(function () {
-        $(".nav-item").click(function () {
-          const target = $(this).data("target");
-          $(".content-section").removeClass("active");
-          $(target).addClass("active");
-          $(".nav-item").css({
-            transform: "translateY(0)",
-            background: "transparent",
+      // Navbar functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select home tab
+        const navItems = document.querySelectorAll('.nav-item');
+        const contentSections = document.querySelectorAll('.content-section');
+        
+        // Function to handle nav item clicks
+        function handleNavClick(event) {
+          const targetId = this.getAttribute('data-target');
+          
+          // Hide all content sections
+          contentSections.forEach(section => {
+            section.classList.remove('active');
           });
-          $(this)
-            .css("background", "rgba(255,255,255,0.3)")
-            .css("transform", "translateY(-5px)");
+          
+          // Show the targeted section
+          document.querySelector(targetId).classList.add('active');
+          
+          // Reset all nav items
+          navItems.forEach(item => {
+            item.style.transform = 'translateY(0)';
+            item.style.background = 'transparent';
+          });
+          
+          // Style the clicked nav item
+          this.style.background = 'rgba(155,130,155,0.3)';
+          this.style.transform = 'translateY(-5px)';
+        }
+        
+        // Add click event to each nav item
+        navItems.forEach(item => {
+          item.addEventListener('click', handleNavClick);
         });
+        document.querySelector('.nav-item').click();
       });
+      
       // Settings Manager
       const SettingsManager = {
         init() {
