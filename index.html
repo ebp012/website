@@ -1325,4 +1325,1338 @@
     <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
     <script src='lakshmi.js'></script>
   </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eshaan's website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href='http://aryabhata.aeonic.me/noedit.sigma.css' rel='stylesheet' type='text/css' />
+    <style>
+      #bgcontainer {
+        background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
+      }
+      table#appTable tbody tr td img {
+        height: 40px;
+        width: 40px;
+      }
+      /*@media (prefers-color-scheme: light) {
+        .content-section .desk-paper {
+          filter: brightness(0.952381);
+        }
+        .nav-item i  {
+          color: #b6a2cb;
+          text-shadow: 19px 1px 2px rgba(#fefefe, 0, 0, 0.5);
+        }
+        .nav-item {
+          color: #c4a6d9;
+        }
+      }*/
+      .desk-paper p {
+        line-height: 36pt;
+      }
+    </style>
+  </head>
+  <body
+    onload="document.querySelector('#homeTab').click(); pascal.addDimension();"
+  >
+    <div id="bgcontainer"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="crystal-distortion">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="9"/>
+        </filter>
+        <filter id="crystal-distortion-hover">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="16"/>
+            <feColorMatrix type="saturate" values="1.025"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-hover-button">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-plus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="72"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+        <filter id="crystal-distortion-minus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+      </defs>
+    </svg>
+
+    <div class="container cs-blue">
+      <!-- Bio Section -->
+      <div id="bio" class="content-section active">
+        <h1 class="page-title">about me</h1>
+        <p class='page-nav'><b>• <a href='#bio'>bio</a> • <a href='#thoughts'>thoughts</a> • <a href='#youtube'>YouTube</a> •</b></p>
+        <div class="desk-paper" style='line-height: 36pt;'>
+          <strong>Hello humans of planet Earth!</strong>
+          <hr id='bio'/>
+          <p>I'm an aspiring front-end developer fluent in HTML+XML, CSS and JS, plus a fair bit of C++, bash, and Java.</p>
+          <p>To add, I'm also pretty much an amateur linguist, and know English (native), Gujarati (native), French (B1), and Spanish (A2), plus some minor experience with Hindi, Sanskrit, German, and Latin.</p>
+          <p>I've created dozens of conlangs, four of which I've showcased here, and am developing five major web applications as well.</p>
+          <p>I wrote my first web site when I was 8 ½ years of age, and I hope to pursue this hobby further in the coming years unto university and beyond.</p>
+          <hr id='thoughts'/>
+          <p>here shall lie my hot takes:</p>
+          <ul>
+            <li><b><a href='https://seximal.net/'>seximal</a></b> (base-6) is the best number base possible.</li>
+            <li><b>Þþ (thorn/þorn)</b> must be resurrected from þe dead to make þe "th" sound ([θ]+[ð]) in English.</li>
+            <li><b>Artificial intelligence</b> (AI) has just gotten too <b>powerful</b>. It shall sadly soon replace us all.</li>
+            <li><b>Apple Magic Mouse</b> is super ergonomic. Most just hold it wrong.</li>
+            <li><b>Mechanical keyboards</b> all suck. The key travel's just too much.</li>
+          </ul>
+          <hr id='youtube'/>
+          <h2>YouTube</h2>
+          <p>I have a YouTube channel, <a href='https://www.youtube.com/@random.guy2840'>echo fractal</a>, that I sometimes post to.</p>
+          <p><strong>Most recent video:</strong></p>
+          <iframe id="youtube_video" width="450" height="262.5" frameborder="0" allowfullscreen="allowfullscreen" class='youtube'></iframe>
+          <br/>
+          <hr/>
+          <p>
+            <img src='https://www.w3.org/Icons/valid-xml10-blue.png' alt='xml validated' />
+            <img src='http://jigsaw.w3.org/css-validator/images/vcss-blue' alt='css validated' />
+            <img src='https://hellnet.work/8831/img/buttons/Area51_Cavern_4556_thinkdifferent.gif' alt='made with macintosh' />
+            <img src='https://hellnet.work/8831/img/buttons/Area51_Corridor_3621_anybrow.gif' alt='best viewed with any browser' />
+          </p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects" class="content-section">
+        <h1 class="page-title">Projects</h1>
+        <div class="desk-paper" style="font-size: 14pt;">
+          <p style="text-align: centre">
+            These are some personal coding projects of mine.
+          </p>
+          <hr/>
+          <div class='table-wrapper'>
+            <table id="appTable">
+              <thead>
+                <tr>
+                  <td>App</td>
+                  <td>Icon</td>
+                  <td>Description</td>
+                  <td>Function</td>
+                  <td>Development</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://aryabhata.aeonic.me/">Aryabhata</a></td>
+                  <td>-</td>
+                  <td>a multipurpose study app</td>
+                  <td>mostly</td>
+                  <td>ongoing</td>
+                </tr>
+                <tr>
+                  <td><a href="http://aspen.aeonic.me/">Aspen</a></td>
+                  <td>-</td>
+                  <td>a new programming language</td>
+                  <td>partly</td>
+                  <td>paused</td>
+                </tr>
+                <tr>
+                  <td><a href="http://labsim.aeonic.me/">LabSim</a></td>
+                  <td>
+                    <img
+                      src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png"
+                    />
+                  </td>
+                  <td>falling-sand laboratory simulator<br/><a href='https://sandboxels.r74n.com/'>Sandboxels fork</a></td>
+                  <td>fully</td>
+                  <td>halted</td>
+                </tr>
+                <tr>
+                  <td><a href="http://mahler.aeonic.me/">Mahler</a></td>
+                  <td>-</td>
+                  <td>classical music streaming hub</td>
+                  <td>broken</td>
+                  <td>paused</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Linguistics Section -->
+      <div id="linguistics" class="content-section">
+        <h1 class="page-title">Linguistics</h1>
+        <div class="desk-paper">
+          <p style="text-align: centre">
+            Below are some conlangs which I've created.
+          </p>
+          <hr />
+          <div class='table-wrapper'>
+            <table id="langTable">
+              <thead>
+                <tr>
+                  <td>Language</td>
+                  <td>Family</td>
+                  <td>Description</td>
+                  <td>Sentence/Translation/Gloss</td>
+                  <td>Creation Time</td>
+                  <td style="width: 18pt">Word Order</td>
+                  <td style="width: 32pt">Cases</td>
+                  <td style="width: 27pt">Genders</td>
+                  <td style="width: 32pt">Declension</td>
+                  <td style="width: 32pt">Conjugation</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://www.youtube.com/watch?v=U76DK3woxJE"
+                      >su Pama</a
+                    >
+                  </td>
+                  <td><i>a priori</i></td>
+                  <td>a full grammar in 32 morphemes</td>
+                  <td>
+                    <p>mi mai pu a pu ki ti si pu ki ti pa ku.</p>
+                    <p>I can eat your food since it's good.</p>
+                    <p>I can eat ACC food of you because food of you is good</p>
+                  </td>
+                  <td>May–June 2024</td>
+                  <td>SVO</td>
+                  <td><i>none</i></td>
+                  <td><i>none</i></td>
+                  <td><i>none</i></td>
+                  <td><i>none</i></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1daAIM9-h6RK40sLYFNCp2SVQTxQOI5S_rzYwxquZLwA/edit?gid=159357971#gid=159357971"
+                      >Shaus</a
+                    >
+                  </td>
+                  <td><i>a priori</i></td>
+                  <td>scrapped worldbuild</td>
+                  <td>
+                    <p>
+                      Mí, pyil̥øif thel̥ jøtt ɟilo, jøtt l̥esvyrøl̥th mí l̥esvyrai.
+                    </p>
+                    <p>
+                      Initially, I saw myself as a victim, but I have since
+                      realised that my initial mentality was wrong.
+                    </p>
+                    <p>
+                      First-ORD, sensed-ACTV-PAST-1S-VISUAL myself-REFL victim, but
+                      think-PASV-PAST-1S-EXPNTL (wrong)
+                    </p>
+                  </td>
+                  <td>August-December 2024</td>
+                  <td>VSO</td>
+                  <td>nominative, vocative, genitive, locative, reflexive</td>
+                  <td>masculine, feminine, puelline, neuter</td>
+                  <td>case, number</td>
+                  <td>
+                    <abbr title="indicative, interrogative, subjunctive"
+                      >mood</abbr
+                    >, aspect,
+                    <abbr title="active, passive, antipassive">voice</abbr>,
+                    <abbr title="firsthand, secondhand, thirdhand">hand</abbr>,
+                    evidentiality
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1oE2xh_QqAJ_qFbs8pi7jcmVZV-8FV04fgX5_MIW_6ns/edit?gid=1323055028#gid=1323055028"
+                      >Liyansa</a
+                    >
+                  </td>
+                  <td><i>a priori</i></td>
+                  <td>novelling</td>
+                  <td>
+                    <p>Ta lalta, nanaswa'ln falni pantin shu palsi pismaltin.</p>
+                    <p>
+                      First thing, I'd like some pismaltis (fruits) for my
+                      daughter to eat.
+                    </p>
+                    <p>
+                      thing 1-ORD, pick-I'my for daughter-acc eat-her some pismalti.
+                    </p>
+                  </td>
+                  <td>November 2024–present</td>
+                  <td>VSO</td>
+                  <td>
+                    ergative, intransitive, accusative, alienable, inalienable
+                  </td>
+                  <td>masculine, feminine</td>
+                  <td>
+                    gender, case,
+                    <abbr title="singular, paucal, plural">number</abbr>
+                  </td>
+                  <td>
+                    <abbr title="inchoative, progressive, perfective">aspect</abbr
+                    >, <abbr title="indicative, interrogative">mood</abbr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1h6DqxRIs8j-qzSLGJ-3K8Od-Y-ubyXuUffpwPp2znN8/edit?pli=1&gid=1323055028#gid=1323055028"
+                      >Lělue</a
+                    >
+                  </td>
+                  <td>Romance</td>
+                  <td>althistory</td>
+                  <td></td>
+                  <td>June 2025–present</td>
+                  <td>SVO</td>
+                  <td>nominative, accusative, genitive, locative/dative, ablative, reflexive</td>
+                  <td>masculine, feminine</td>
+                  <td>
+                    case, <abbr title="singular, plural">number</abbr>, gender
+                  </td>
+                  <td>
+                    <abbr title="past, present, future, general remote">tense</abbr>,
+                    <abbr title="imperfective, perfective (no distinction in present or general remote tenses)">aspect</abbr>,
+                    <abbr title="indicative, imperative, subjunctive, optative"
+                      >mood</abbr
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1Hzy4BwXER7I61nvWyO2x_sC4FukjdZQMTJDHj2ljAQY/edit?gid=1323055028#gid=1323055028"
+                      >Sapca</a
+                    >
+                  </td>
+                  <td><i>a priori</i></td>
+                  <td>international auxilliary</td>
+                  <td>
+                    <p>Mi mateto kai fero di: seko siňi, nu suňi.</p>
+                    <p>I know who did it: it was her, not him.</p>
+                    <p>I know-PERF who did-PAST-IMPERF it: (it) was-PERF her-FEM, NEG him-MASC</p>
+                  </td>
+                  <td>July 2024–present</td>
+                  <td>VSO</td>
+                  <td>
+                    nominative, accusative (optional), genitive
+                  </td>
+                  <td>masculine, feminine (both optional)</td>
+                  <td>gender, number, case</td>
+                  <td>
+                    <abbr title='past, present, future'>tense</abbr>,
+                    <abbr title="imperfective, perfective">aspect</abbr
+                    >, <abbr title="indicative, imperative, subjunctive">mood</abbr>,
+                    <abbr title='active, passive (reflexive=active)'>voice</abbr>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music Section -->
+      <div id="music" class="content-section active">
+        <h1 class="page-title">Compositions</h1>
+        <div class="desk-paper">
+          <div class='table-wrapper'>
+            <table id="musicTable">
+              <thead>
+                <tr>
+                  <td>Composition</td>
+                  <td><abbr title='opus'>Op.</abbr></td>
+                  <td>Published</td>
+                  <td>Description</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=-xtmsFfXAhM'>Baroque Chamber Music in D♭ Major</a></i>
+                  </td>
+                  <td>Op. 0</td>
+                  <td>4 Aug 2024</td>
+                  <td>A short neo-baroque piece for a chamber ensemble.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=2CETV8x6B48'>Twelve Variations on "London Bridge"</a></i>
+                  </td>
+                  <td>Op. 1</td>
+                  <td>20 Aug 2024</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=-g7Kdv9qkV0&t=2s'>Theme and Variations for Orchestra in D♭ major</a></i>
+                  </td>
+                  <td>Op. 2</td>
+                  <td>5 Jan 2025</td>
+                  <td>The months-ago scrapped slow movement from my upcoming Symphony No. 1 back from Sept 2024.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Air No. 1 de la Flûte, un peu sinistre</a></i>
+                  </td>
+                  <td>Op. 3</td>
+                  <td>23 Apr 2025</td>
+                  <td>flute solo piece (pretty bad)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Le Fantôme à l'Aurore, en fa mineur</a></i>
+                  </td>
+                  <td>Op. 4</td>
+                  <td>06 Jul 2025</td>
+                  <td>flute solo piece</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=notpostedyet'>Orchestration of an Aarti</a></i>
+                  </td>
+                  <td>Op. 5</td>
+                  <td><i>upcoming</i></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <i><a href='https://www.youtube.com/watch?v=notpostedyet'>Symphony No. 1 in C♯ minor</a></i>
+                  </td>
+                  <td><i>uncertain</i></td>
+                  <td><i>upcoming</i></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unit Reform Section -->
+      <div id="reform" class="content-section active" style='overflow-x: none;'>
+        <h1 class="page-title">Shashtya Units</h1>
+        <p class='page-nav'><b>• <a href='#shashtya-description'>description</a> • <a href='#shashtya-prefices'>prefices</a> • <a href='#shashtya-base-units'>base units</a> • <a href='#shashtya-dimensionless-units'>dimensionless units</a> • <a href='#shashtya-derived-units'>derived units</a> • <a href='#shashtya-derivational-units'>derivational units</a> • <a href='#shashtya-diagram'>diagram</a> •</b></p>
+        <div class="desk-paper" id='shashtya-description'>
+          <p>The Shashtya unit system is a revolutionary new system of units that aims to finally rid ourselves of the burdens and flaws posed in SI.</p>
+          <p>Its name comes from Sanskrit षष्ट्या (ṣaṣṭyā́), the instrumental singular declension of षष्टि (ṣaṣṭí), meaning sixty. Therefore, "shashtya" literally translates to "using sixty".</p>
+          <p>Speaking of 60, in lieu of the lazy 10 (factors 1, 2, 5, 10) as its base, Patellian uses the amazingly factorable 60, with its factors of 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, and 60.</p>
+          <p>The square of 60, 3600, has even more factors: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 30, 36, 40, 45, 48, 50, 60, 72, 75, 80, 90, 100, 120, 144, 150, 180, 200, 225, 240, 300, 360, 400, 450, 600, 720, 900, 1200, 1800, 3600.</p>
+          <p>And it's not <i>just</i> that 60 is more divisible! My system is more directly and evenly tied to measures of fundamental constants of the Universe.</p>
+          <p>Prefixes are all also straightforwardly infinitely extendable, unlike the metric convention of just making up prefixes, or God forbid even <i>just ignoring them and using scientific notation</i>.</p>
+          <p>Right below is how everything shall work:</p>
+          <br/><br/><hr id='shashtya-prefices'/>
+          <h1>Prefices</h1>
+          <p>Just like in SI, I made a system of prefices to be put on the beginning of the unit name to change their size.</p>
+          <p>Unlike SI, however, these are completely regular (except for 1, 2, and 3) and <i>infinitely</i> extendable, them all being based off of Sanskrit numbers.</p>
+          <p>Here they are from 60<sup>-9</sup> upto 60<sup>9</sup>:</p>
+          <div class='table-wrapper'>
+            <table class='non'>
+              <thead>
+                <tr>
+                  <td>Prefix</td>
+                  <td>Symbol</td>
+                  <td>Magnitude</td>
+                  <td style='width: 10px;'></td>
+                  <td>Prefix</td>
+                  <td>Symbol</td>
+                  <td>Magnitude</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>lavi-</td>
+                  <td>li</td>
+                  <td>60<sup>-1</sup></td>
+                  <td rowspan='9' style='width: 10px;'></td>
+                  <td>pradha-</td>
+                  <td>pa</td>
+                  <td>60<sup>1</sup></td>
+                </tr>
+                <tr>
+                  <td>alpi-</td>
+                  <td>ali</td>
+                  <td>60<sup>-2</sup></td>
+                  <td>varga-</td>
+                  <td>va</td>
+                  <td>60<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>trini-</td>
+                  <td>ti</td>
+                  <td>60<sup>-3</sup></td>
+                  <td>trina-</td>
+                  <td>ta</td>
+                  <td>60<sup>3</sup></td>
+                </tr>
+                <tr>
+                  <td>chati-</td>
+                  <td>chi</td>
+                  <td>60<sup>-4</sup></td>
+                  <td>chata-</td>
+                  <td>cha</td>
+                  <td>60<sup>4</sup></td>
+                </tr>
+                <tr>
+                  <td>panchi-</td>
+                  <td>pi</td>
+                  <td>60<sup>-5</sup></td>
+                  <td>pancha-</td>
+                  <td>pa</td>
+                  <td>60<sup>5</sup></td>
+                </tr>
+                <tr>
+                  <td>shati-</td>
+                  <td>shi</td>
+                  <td>60<sup>-6</sup></td>
+                  <td>shata-</td>
+                  <td>sha</td>
+                  <td>60<sup>6</sup></td>
+                </tr>
+                <tr>
+                  <td>sapti-</td>
+                  <td>si</td>
+                  <td>60<sup>-7</sup></td>
+                  <td>sapta-</td>
+                  <td>sa</td>
+                  <td>60<sup>7</sup></td>
+                </tr>
+                <tr>
+                  <td>ashti-</td>
+                  <td>ai</td>
+                  <td>60<sup>-8</sup></td>
+                  <td>ashta-</td>
+                  <td>aa</td>
+                  <td>60<sup>8</sup></td>
+                </tr>
+                <tr>
+                  <td>navi-</td>
+                  <td>ni</td>
+                  <td>60<sup>-9</sup></td>
+                  <td>nava-</td>
+                  <td>na</td>
+                  <td>60<sup>9</sup></td>
+                </tr>              
+              </tbody>
+            </table>
+          </div>
+          <br/><br/><hr id='shashtya-base-units'/>
+          <h1>Base Units</h1>
+          <p>The system has compound units for literally <i>everything</i>, but like metric, Patellian units have their basis in for-once-actually-reasonable quantities of base measures.</p>
+          <p>The planck length is used as the basis for length. Thus, 2 &times; 60<sup>19</sup> planck lengths shall be one <b>hasta</b> (H), the unit of length.</p>
+          <p>The planck mass is used as the basis for mass. Thus, 2 &times; 60<sup>4</sup> planck masses shall be one <b>pala</b> (P), the unit of mass.</p>
+          <p>153,210,530 periods of <abbr title='Caesium-153' onclick='alert("Caesium-153");'>Cs<sub>153</sub></abbr> hyperfine radiation shall be one <b>truti</b> (T), the unit of time. This does equal <sup>1</sup>/<sub>60</sub><sup>th</sup> of an SI second for convenience.</p>
+          <p>Absolute zero is kept as in SI, along with the triple point of water at 1 ATM of pressure, and for now 309.65 Kelvin is used, about average human body temperature in the modern day. Temperature is colloquially in the <b>hima</b> (<sup>o</sup>H) (same root as <i>himālayā</i>), wherein 0°H is where water freezes and 60°H is about human body temperature. The <b>antarhima</b> (°AH) just moves it so that 0°Ah is absolute zero.</p>
+          <p>Here they are in table form:</p>
+          <div class='table-wrapper'>
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td>Definition</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>hasta</td>
+                  <td>H</td>
+                  <td>length</td>
+                  <td>2ℓ<sub>p</sub> &times; 60<sup>19</sup></td>
+                  <td>19.6976 centimetres</td>
+                  <td>7.7550 inches</td>
+                </tr>
+                <tr>
+                  <td>pala</td>
+                  <td>P</td>
+                  <td>mass</td>
+                  <td>2m<sub>p</sub> &times; 60<sup>4</sup></td>
+                  <td>564.1 grams</td>
+                  <td>1.2436 pounds</td>
+                </tr>
+                <tr>
+                  <td>truti</td>
+                  <td>T</td>
+                  <td>time</td>
+                  <td>153,210,530 pd. <abbr title='Caesium-153' onclick='alert("Caesium-153");'>Cs<sub>153</sub></abbr> hyperfine radiation</td>
+                  <td>16.67 milliseconds</td>
+                  <td>1/60 (0.0167) second</td>
+                </tr>
+                <tr>
+                  <td>hima</td>
+                  <td>°H</td>
+                  <td>temperature</td>
+                  <td><sup>1</sup>/<sub>60</sub> distance from water melting at 1 ATM and 309.65 K (temporarily)</td>
+                  <td>0°H = 32°F<br/>60°H = 97.7°F</td>
+                  <td>0°H = 273.15K<br/>60°H = 309.65K</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Unit symbols are always capitalised on their first letter, and prefices are always lowercase.</p>
+          <br/><br/><hr id='shashtya-dimensionless-units'/>
+          <h1>Dimensionless Units</h1>
+          <p>The ansha (A) of angle, the garami (Gr) of substance, the vishal (Vsh) of coherence, and the matra (M) of scale are the four dimensionless units.</p>
+          <p>Here they are:</p>
+          <div class='table-wrapper'>
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td>Definition</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ansha</td>
+                  <td>A</td>
+                  <td>angles</td>
+                  <td>1/3600 circle subtending</td>
+                  <td>=0.1 degrees</td>
+                  <td><sup>τ</sup>&frasl;<sub>3600</sub> radians</td>
+                </tr>
+                <tr>
+                  <td>garami</td>
+                  <td>Gr</td>
+                  <td>substance</td>
+                  <td>1 instance</td>
+                  <td colspan='2'>1 <sup>mol</sup>&frasl;<sub>mol⁻¹</sub></td>
+                </tr>
+                <tr>
+                  <td>vishal</td>
+                  <td>Vsh</td>
+                  <td>coherence</td>
+                  <td>log<sub><i>n</i>₀</sub>(<sup>Δ<i>n</i></sup>&frasl;<sub>Δ<i><abbr title='scope'>s</abbr></i></sub>)</td>
+                  <td colspan='2'>degree of coherence (γ)</td>
+                </tr>
+                <tr>
+                  <td>matra</td>
+                  <td>M</td>
+                  <td>magnitude</td>
+                  <td><abbr title='iterated logarithm' onclick='alert("iterated logarithm");'>slog</abbr>(<i>n</i><sup><sup><i>n</i></sup>&frasl;<sub>e</sub></sup>)</td>
+                  <td colspan='2'><i>no direct equivalent</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br/><br/><hr id='shashtya-derived-units'/>
+          <h1>Derived Units</h1>
+          <p>Many, <i>many</i> more units can be derived from the base four plus the dimensionless ones.</p>
+          <div class='table-wrapper'>
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td colspan='2'>Definition</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                  <td>Category</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>golansha</td>
+                  <td>Ga</td>
+                  <td>3D angle</td>
+                  <td>1/3600<sup>2</sup> sphere surface subtending</td>
+                  <td>A<sup>2</sup></td>
+                  <td>0.01 deg<sup>2</sup></td>
+                  <td>(<sup>τ</sup>&frasl;<sub>3600</sub>)² steradians</td>
+                  <td rowspan='4'>Geometry</td>
+                </tr>
+                <tr>
+                  <td>dravah</td>
+                  <td>D</td>
+                  <td>fluid volume</td>
+                  <td colspan='2'>(aliH)<sup>3</sup></td>
+                  <td>~1.0002 tablespoons (tbsp)</td>
+                  <td>~14.79 millilitres (mL)</td>
+                </tr>
+                <tr>
+                  <td>banah</td>
+                  <td>Bn</td>
+                  <td>sharpness</td>
+                  <td colspan='2'>aliH<sup>-1</sup> ⋅ A<sup>-1</sup></td>
+                  <td colspan='2'><i>no equivalent</i></td>
+                </tr>
+                <tr>
+                  <td>sukh</td>
+                  <td>Su</td>
+                  <td>economicality</td>
+                  <td colspan='2'><sup>spent</sup>&frasl;<sub>budget</sub> ⋅ (Gr ⋅ seratonin + Gr ⋅ <sup>dopamine</sup>&frasl;<sub>2</sub>)</td>
+                  <td colspan='2'><i>no equivalent</i></td>
+                </tr>
+                <tr>
+                  <td>antarhima</td>
+                  <td>&deg;H<sub>a</sub></td>
+                  <td>scientific temperature</td>
+                  <td>hima, but 0 is abs. zero</td>
+                  <td>&deg;H - ?</td>
+                  <td>rankine (&deg;R)</td>
+                  <td>Kelvin (K)</td>
+                  <td rowspan='8'>Physics</td>
+                </tr>
+                <tr>
+                  <td>shakti</td>
+                  <td>Sh</td>
+                  <td>energy</td>
+                  <td colspan='2'>P ⋅ (liH/T)<sup>2</sup></td>
+                  <td rowspan='2'>foot-pound (ft‑lbf)</td>
+                  <td rowspan='2'>calorie (cal)<br/>Joule (J)</td>
+                </tr>
+                <tr>
+                  <td>Kalam</td>
+                  <td>K</td>
+                  <td>work</td>
+                  <td colspan='2'>P ⋅ <sup>H</sup>&frasl;<sub>T</sub></td>
+                </tr>
+                <tr>
+                  <td>Bose</td>
+                  <td>B</td>
+                  <td>force</td>
+                  <td colspan='2'>P ⋅ G</td>
+                  <td>pound of force (lbf)</td>
+                  <td>Newton (N)</td>
+                </tr>
+                <tr>
+                  <td>sphara</td>
+                  <td>Sph</td>
+                  <td>entropy</td>
+                  <td colspan='2'><abbr title='Boltzmann constant' onclick='alert("Boltzmann constant");'>k</abbr> ⋅ ln<abbr title='number of microstates' onclick='alert("number of microstates");'>Ω</abbr></td>
+                  <td>pound feet per rankine (<sup>ft ⋅ lbf</sup>&frasl;<sub>°R</sub>)</td>
+                  <td>Joules per kelvin (<sup>J</sup>&frasl;<sub>K</sub>)</td>
+                </tr>
+                <tr>
+                  <td>Arya</td>
+                  <td>Ar</td>
+                  <td>pressure</td>
+                  <td colspan='2'>B / H<sup>2</sup></td>
+                  <td>pound per square inch (psi)</td>
+                  <td>Pascal (Pa)</td>
+                </tr>
+                <tr>
+                  <td>Rao</td>
+                  <td>R</td>
+                  <td>power</td>
+                  <td colspan='2'>Sh / T</td>
+                  <td>horsepower (hp)</td>
+                  <td>Watt (W)</td>
+                </tr>
+                <tr>
+                  <td>gati</td>
+                  <td>G</td>
+                  <td>acceleration</td>
+                  <td colspan='2'>H / T<sup>2</sup></td>
+                  <td>inches per square second (ins<sup>-2</sup>)</td>
+                  <td>metres per square second (m s<sup>-2</sup>)</td>
+                </tr>
+                <!--<tr>
+                  <td>Ramanujan</td>
+                  <td>Rj</td>
+                  <td>temporal coherence</td>
+                  <td colspan='2'>log<sub><i>n</i>₀</sub>(<sup>Δ<i>n</i></sup>&frasl;<sub>T</sub>)</td>
+                  <td>percent change</td>
+                </tr>-->
+                <tr>
+                  <td>samya</td>
+                  <td>Sy</td>
+                  <td>symmetry</td>
+                  <td colspan='2'>log<sub><i>H</i>₀</sub>(<sup>Δ<i>H</i></sup>&frasl;<sub>H</sub>)</td>
+                  <td colspan='2'><i>no equivalent</i></td>
+                  <td rowspan='4'>Chemistry</td>
+                </tr>
+                <tr>
+                  <td>jaleshu</td>
+                  <td>J</td>
+                  <td>kinematic viscosity</td>
+                  <td colspan='2'><sup>H²</sup>&frasl;<sub>T</sub></td>
+                  <td>square feet per second (<sup>ft²</sup>&frasl;<sub>s</sub>)</td>
+                  <td>square metre per second (<sup>m²</sup>&frasl;<sub>s</sub>)</td>
+                </tr>
+                <tr>
+                  <td>madhu</td>
+                  <td>Mdh</td>
+                  <td>dynamic viscosity</td>
+                  <td colspan='2'>A/2</td>
+                  <td>pound per square inch per second (<sup>psi</sup>&frasl;<sub>s</sub>; <sup>p</sup>&frasl;<sub>in²s</sub>)</td>
+                  <td>Pascal second (Pa⋅s)</td>
+                </tr>
+                <tr>
+                  <td>dah</td>
+                  <td>Dh</td>
+                  <td>acidity</td>
+                  <td colspan='2'>(Gr⋅H<sup>+</sup>) / (Gr⋅OH<sup>-</sup>)</td>
+                  <td colspan='2'>Potential of Hydrogen (pH)</td>
+                </tr>
+                <tr>
+                  <td>hora</td>
+                  <td>Ho</td>
+                  <td>frequency</td>
+                  <td colspan='2'>T<sup>-1</sup></td>
+                  <td>beats per minute (bpm)</td>
+                  <td>Hertz (Hz)</td>
+                  <td rowspan='6'>Electricity</td>
+                </tr>
+                <tr>
+                  <td>Sarabhai</td>
+                  <td>S</td>
+                  <td>electric current</td>
+                  <td colspan='2'>√(<sup>Sh</sup>&frasl;<sub>H ⋅ T</sub>)</td>
+                  <td>volt (V)</td>
+                  <td>ampere (A)</td>
+                </tr>
+                <tr>
+                  <td>chandra</td>
+                  <td>Ch</td>
+                  <td>luminous flux</td>
+                  <td colspan='2'><sup>Sh</sup>&frasl;<sub>T</sub></td>
+                  <td colspan='2'>candela (cd)</td>
+                </tr>
+                <tr>
+                  <td>jyoti</td>
+                  <td>Jy</td>
+                  <td>luminous intensity</td>
+                  <td colspan='2'><sup>Ch</sup>&frasl;<sub>Ga²</sub></td>
+                  <td colspan='2'>lumen (lm)</td>
+                </tr>
+                <tr>
+                  <td>tamas</td>
+                  <td>Tm</td>
+                  <td>darkness</td>
+                  <td colspan='2'>Jy<sup>-1</sup></td>
+                  <td colspan='2'>inverse lumen (lm<sup>-1</sup>)</td>
+                </tr>
+                <tr>
+                  <td>vidyut</td>
+                  <td>V</td>
+                  <td>electric potential/voltage</td>
+                  <td colspan='2'><sup>K</sup>&frasl;<sub>(S ⋅ T)</sub></td>
+                  <td colspan='2'>volt (V)</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- praman could be new unit; ignore for now -->
+          </div>
+          <br/><br/><hr id='shashtya-derivational-units'/>
+          <h1>Retained Derived Units</h1>
+          <p>These units are retained in their derived form.</p>
+          <div class='table-wrapper'>
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                  <td>Notes</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>square hasta</td>
+                  <td>H<sup>2</sup></td>
+                  <td>area</td>
+                  <td>square foot (ft<sup>2</sup>)<br/>acre (ac)</td>
+                  <td>square metre (m<sup>2</sup>)<br/>hectare (ha)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>cubic hasta</td>
+                  <td>H<sup>3</sup></td>
+                  <td>solid volume</td>
+                  <td>cubic foot (ft<sup>3</sup>)</td>
+                  <td>cubic metre (m<sup>3</sup>)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>hasta per truti</td>
+                  <td>H/T</td>
+                  <td><abbr title='speed' onclick='alert("speed");'>linear momentum</abbr></td>
+                  <td>feet per second (ft/s)</td>
+                  <td>metres per second (m/s)</td>
+                  <td>vargahasta per trin[atruti] (vaH/gaT) is for roads, etc.</td>
+                </tr>
+                <tr>
+                  <td>ansha per truti</td>
+                  <td>A/T</td>
+                  <td><abbr title='torque' onclick='alert("torque");'>angular momentum</abbr></td>
+                  <td>degrees per second (deg/s)</td>
+                  <td>radians per second (rad/s)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>chandra per truti</td>
+                  <td><sup>ChRj</sup>/<sub>T</sub></td>
+                  <td>flicker</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>inverse dah</td>
+                  <td>Dh<sup>-1</sup></td>
+                  <td>alkalinity</td>
+                  <td colspan='2'>Potential of Hydroxide (pOH<sup>-1</sup>)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>inverse banah</td>
+                  <td>Bn<sup>-1</sup></td>
+                  <td>flatness/dullness</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br/><br/><hr/>
+          <h1>Daily Units</h1>
+          <p>The <b>hasta</b> (H) and <b>pala</b> (P) are sure to become mainstays of daily use for length and weight respectively.</p>
+          <p>For time, since a pradhatruti (paT) = 1 second, a vargatruti (vaT) = 1 minute, and a ghanatruti = 1 hour all exactly, these will join the truti in daily use similarly to how we already use centiseconds (check your stopwatch), seconds, minutes, and hours today. 5184000 truti can be considered a <i>din</i>, which could be a colloquial unit equal to a day.</p>
+          <p>The <b>Hima</b> (°H) suceeds since it is as intuitive as Celsius with the precision of Fahrenheit.</p>
+          <p><b>Vargahasta per trinatruti (vaH/taT)</b> (latter colloquially being abbreviated to just <b>trin</b>) can be used for speed on the road.</p>
+          <p>The plain <b>ansha (A)</b> can be used for degrees, and the <b>banah (Bn)</b> for sharpness of things like knives.</p>
+          <br/><br/><hr id='shashtya-diagram'/>
+          <h1>Diagram</h1>
+          <div class='table-wrapper'>
+            <center>
+              <canvas id="lakshmi" width="400" height="400"></canvas>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav-bar desat">
+      <div class="nav-item" data-target="#bio" id="homeTab">
+        <i class="fa-solid fa-book-open"></i>
+        Bio
+      </div>
+      <div class="nav-item" data-target="#projects">
+        <i class="fa-solid fa-desktop"></i>
+        Projects
+      </div>
+      <div class="nav-item" data-target="#linguistics">
+        <i class="fa-solid fa-language"></i>
+        Linguistics
+      </div>
+      <div class="nav-item" data-target="#music">
+        <i class="fa-solid fa-music"></i>
+        Music
+      </div>
+      <div class="nav-item" data-target="#reform">
+        <i class="fa-solid fa-thermometer-three-quarters"></i>
+        Shashtya Units
+      </div>
+      <span class='projlinks'>
+        <a href='http://aryabhata.aeonic.me/'>
+          <img src='https://raw.githubusercontent.com/ebp012/aryabhata/refs/heads/main/assets/Aryabhata-app-icon.png' alt='Aryabhata' />
+        </a>
+      </span>
+    </nav>
+    
+    <script>
+      // Navbar functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select home tab
+        const navItems = document.querySelectorAll('.nav-item');
+        const contentSections = document.querySelectorAll('.content-section');
+        
+        // Function to handle nav item clicks
+        function handleNavClick(event) {
+          const targetId = this.getAttribute('data-target');
+          
+          // Hide all content sections
+          contentSections.forEach(section => {
+            section.classList.remove('active');
+          });
+          
+          // Show the targeted section
+          document.querySelector(targetId).classList.add('active');
+          
+          // Reset all nav items
+          navItems.forEach(item => {
+            item.style.transform = 'translateY(0)';
+            item.style.background = 'transparent';
+          });
+          
+          // Style the clicked nav item
+          this.style.background = 'rgba(155,130,155,0.3)';
+          this.style.transform = 'translateY(-5px)';
+        }
+        
+        // Add click event to each nav item
+        navItems.forEach(item => {
+          item.addEventListener('click', handleNavClick);
+        });
+        document.querySelector('.nav-item').click();
+      });
+      
+      // Settings Manager
+      const SettingsManager = {
+        init() {
+          this.loadSettings();
+          this.bindEvents();
+          this.toggleCalculatorIcon(
+            localStorage.getItem("showCalculator") === "true"
+          );
+          this.togglePerformanceMode(
+            localStorage.getItem("performanceMode") === "true"
+          );
+        },
+
+        bindEvents() {
+          $("#cookie-consent").change(function () {
+            localStorage.setItem("cookieConsent", this.checked);
+            if (this.checked)
+              document.cookie = "cookieConsent=true; max-age=2592000";
+          });
+
+          $("#calculator-toggle").change(function () {
+            localStorage.setItem("showCalculator", this.checked);
+            SettingsManager.toggleCalculatorIcon(this.checked);
+          });
+
+          $("#performance-mode").change(function () {
+            localStorage.setItem("performanceMode", this.checked);
+            SettingsManager.togglePerformanceMode(this.checked);
+          });
+        },
+
+        loadSettings() {
+          const consent = document.cookie.includes("cookieConsent=true");
+          $("#cookie-consent").prop("checked", consent);
+
+          $("#calculator-toggle").prop(
+            "checked",
+            localStorage.getItem("showCalculator") === "true"
+          );
+
+          $("#performance-mode").prop(
+            "checked",
+            localStorage.getItem("performanceMode") === "true"
+          );
+        },
+
+        toggleCalculatorIcon(show) {
+          $('[data-target="#calculator"]').toggle(show);
+        },
+
+        togglePerformanceMode(enable) {
+          $("body").toggleClass("flattened", enable);
+          $("#desmos-calculator").css("opacity", enable ? 0.9 : 1);
+        },
+      };
+
+      $(document).ready(function () {
+        SettingsManager.init();
+
+        var channelID = "UCEvttHNVOsafen6uySQbDkQ";
+        var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+        $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+           var link = data.items[0].link;
+           var id = link.substr(link.indexOf("=")+1);
+        $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+        });
+      });
+
+      // Script for learn tab
+      let questions = [];
+      let currentQuestionIndex = 0;
+      let oldCqi;
+      let olderCqi;
+      let specCqi;
+      let silver = 0;
+      let halvePenalty = false;
+      // Language-specific strings
+      var noFileMessage = "No file selected!!!";
+      var langSilver = "silver";
+      // Total right and total questions
+      let totalQuestions = 0;
+      let totalRight = 0;
+
+      // Parse the .arya file with the new format
+      function parseArya(arya) {
+        const rows = arya.split("\n");
+        questions = []; // Clear existing questions
+        rows.forEach((row) => {
+          const values = row.split(",");
+          if (values.length === 7) {
+            try {
+              const answers = [
+                values[1].trim(), // Incorrect answer 1
+                values[2].trim(), // Incorrect answer 2
+                values[3].trim(), // Incorrect answer 3
+                values[4].trim(), // Correct answer
+              ];
+              questions.push({
+                question: values[0].trim(),
+                correct: values[4].trim(),
+                choices: answers,
+                pointsAwarded: parseInt(values[5]),
+                pointsDeducted: parseInt(values[6]),
+              });
+            } catch (error) {
+              console.error("Error parsing row:", row, error);
+            }
+          }
+        });
+        if (questions.length === 0) {
+          alert(
+            "No valid questions found in the file. Please check the format."
+          );
+        }
+      }
+
+      // Shuffle answers randomly
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      function loadQuestion() {
+        if (currentQuestionIndex >= questions.length) {
+          currentQuestionIndex == 1;
+          /*alert("Game Over! Your total: " + silver + " " + langSilver);
+          $("#game").hide();
+          $(".container").show();
+          currentQuestionIndex = 0;
+          silver = 0;
+          $("#scoreValue").text(silver + " " + langSilver);*/
+          return;
+        }
+
+        const current = questions[currentQuestionIndex];
+        $("#question").text(current.question);
+
+        // Randomize the order of answers
+        const randomizedChoices = [...current.choices];
+        shuffle(randomizedChoices);
+
+        // Create answer buttons
+        const answerButtons = randomizedChoices
+          .map((choice, index) => {
+            return `<button class="button answer">${String.fromCharCode(
+              65 + index
+            )}: ${choice}</button>`;
+          })
+          .join("");
+        $("#answers").html(answerButtons);
+
+        // Handle answer selection
+        $(".answer").on("click", function () {
+          const selectedAnswer = $(this).text().split(":")[1].trim();
+          if (selectedAnswer === current.correct) {
+            // Add the appropriate amount of silver
+            silver += current.pointsAwarded;
+            // Increment the number of questions gotten right
+            totalRight += 1;
+            // Leave a gap of at least 2 between the same exact question
+            olderCqi = oldCqi;
+            oldCqi = currentQuestionIndex;
+            do {
+              specCqi = Math.round(Math.random() * questions.length);
+            } while (specCqi == oldCqi || specCqi == olderCqi);
+            currentQuestionIndex = specCqi;
+          } else {
+            // Show the incorrect dialogue box
+            $("#incorrect").show();
+            $("#game").hide();
+            // Hide the incorrect dialogue box after ~2/3 of a second
+            setTimeout(function () {
+              $("#incorrect").hide();
+              $("#game").show();
+            }, 666.6);
+            // If the halve-penalty powerup is equipped from the shop, half the penalty from the silver amount
+            silver -= halvePenalty
+              ? Math.ceil(current.pointsDeducted / 2)
+              : current.pointsDeducted;
+            // Repeat the question if it was incorrectly answered
+            currentQuestionIndex = currentQuestionIndex;
+          }
+          // Increment the total numbers of questions answered
+          totalQuestions += 1;
+          document.getElementById("totalQuestions").innerHTML = totalQuestions;
+          // Apply changes to number of questions gotten right
+          document.getElementById("totalRight").innerHTML = totalRight;
+          document.getElementById("percentage").innerHTML =
+            Math.round((totalRight / totalQuestions) * 1000) / 10;
+          $("#scoreValue").text(silver + " " + langSilver);
+          //currentQuestionIndex++;
+          // Disable receiving the same question twice in a row or too often
+
+          loadQuestion();
+        });
+
+        // Handle text input submission
+        $("#textInput").on("keypress", function (e) {
+          if (e.which === 13) {
+            // Enter key
+            const userAnswer = $(this).val().trim();
+            if (userAnswer === current.correct) {
+              // Add the appropriate amount of silver
+              silver += current.pointsAwarded;
+              // Increment the number of questions gotten right
+              totalRight += 1;
+              // Leave a gap of at least 2 between the same exact question
+              olderCqi = oldCqi;
+              oldCqi = currentQuestionIndex;
+              do {
+                specCqi = Math.round(Math.random() * questions.length);
+              } while (specCqi == oldCqi || specCqi == olderCqi);
+              currentQuestionIndex = specCqi;
+            } else {
+              // Show the incorrect dialogue box
+              $("#incorrect").show();
+              $("#game").hide();
+              // Hide the incorrect dialogue box after ~2/3 of a second
+              setTimeout(function () {
+                $("#incorrect").hide();
+                $("#game").show();
+              }, 666.6);
+              // If the halve-penalty powerup is equipped from the shop, half the penalty from the silver amount
+              silver -= halvePenalty
+                ? Math.ceil(current.pointsDeducted / 2)
+                : current.pointsDeducted;
+              // Repeat the question if it was incorrectly answered
+              currentQuestionIndex = currentQuestionIndex;
+            }
+            // Increment the total numbers of questions answered
+            totalQuestions += 1;
+            document.getElementById("totalQuestions").innerHTML =
+              totalQuestions;
+            // Apply changes to number of questions gotten right
+            document.getElementById("totalRight").innerHTML = totalRight;
+            document.getElementById("percentage").innerHTML =
+              Math.round((totalRight / totalQuestions) * 1000) / 10;
+            $("#scoreValue").text(silver + " " + langSilver);
+            // Clear the input field
+            $(this).val("");
+            loadQuestion();
+          }
+        });
+      }
+
+      $("#importBtn").on("click", function () {
+        const fileInput = document.getElementById("aryaFile");
+        const file = fileInput.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            parseArya(e.target.result);
+            ///alert("Arya imported successfully!");
+          };
+          reader.readAsText(file);
+        } else {
+          alert(noFileMessage);
+        }
+      });
+
+      $("#playBtn").on("click", function () {
+        $("#questions").show();
+        document.getElementById("importBtn").click();
+        setTimeout(function () {
+          if (questions.length === 0) {
+            //alert("Please import a .arya file first!");
+            return;
+          }
+          $("#game").show();
+          $("#home").hide();
+          $("#textInput").hide();
+          loadQuestion();
+        }, 36);
+      });
+
+      $("#typeBtn").on("click", function () {
+        document.getElementById("importBtn").click();
+        setTimeout(function () {
+          if (questions.length === 0) {
+            //alert("Please import a .arya file first!");
+            return;
+          }
+          $(".container").hide();
+          $("#game").fadeIn();
+          $("#answers").hide();
+          loadQuestion();
+        }, 36);
+      });
+
+      $("#resetBtn").on("click", function () {
+        // Confirm if the user wants to reset
+        var resetConf = confirm("Are you sure you would like to reset?");
+        if (resetConf === true) {
+          // Remove all questions
+          questions = [];
+
+          // Set question index to 0
+          currentQuestionIndex = 0;
+
+          // Deduct all silver
+          silver = 0;
+
+          // Reset number of right and wrong
+          totalRight = 0;
+          totalQuestions = 0;
+
+          // Update score value
+          $("#scoreValue").text(silver + " " + langSilver);
+
+          // Update percentage and right and wrong
+          document.getElementById("totalRight").innerHTML = 0;
+          document.getElementById("totalQuestions").innerHTML = 0;
+          document.getElementById("percentage").innerHTML = 0;
+
+          // Hide the game and return to the home screen
+          $("#game").hide();
+          $("#home").fadeIn();
+        }
+      });
+      $(document).ready(function () {
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+          $("body").addClass("dark");
+        }
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (event) => {
+            if (event.matches) {
+              $("body").addClass("dark");
+            } else {
+              $("body").removeClass("dark");
+            }
+          });
+      });
+
+      
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
+    <script src='lakshmi.js'></script>
+  </body>
 </html>
