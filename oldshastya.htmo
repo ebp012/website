@@ -1,0 +1,881 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://cdn.aeonic.me/latex.js"></script>
+<script>
+$(function () {
+    $(".latex, var").latex();
+});
+</script>
+<style>.latex img {border: none; outline: none;}</style>
+        
+<p class="page-nav"><b>• <a href="#shashtya-description">description</a> • <a href="#shashtya-prefices">prefixes</a> • <a href="#alternate-bases">bases</a> • <a href="#shashtya-base-units">base units</a> • <a href="#shashtya-derived-units">derived units</a> • <a href="#shashtya-derivational-units">derivational units</a> • <a href="#shashtya-conversion">conversions</a> • <a href="#shashtya-diagram">diagram</a> •</b></p>
+		<div class='desk-paper post-summary'>
+          <p>The SI unit system, the predominant variant of the metric system in use today, is flawed, inconsistent, and <i>heavily</i> arbitrary.</p>
+          <p>Rather than the unwieldy 10 as a base, why not switch that out with the convenient 60?</p>
+          <p>Rather than an systemless and inextensible system of prefixes, why not ones based directly in Sanskrit numerals?</p>
+          <p>Such is my superior and completely regular system for you to read about.</p>
+		</div>
+        <div class="desk-paper" id="shashtya-description">
+          <p>The Shashtya unit system is a revolutionary new system of units that aims to finally rid ourselves of the burdens and flaws posed in SI.</p>
+          <p>Its name comes from Sanskrit षष्ट्या (ṣaṣṭyā́), the instrumental singular declension of षष्टि (ṣaṣṭí), meaning sixty. Therefore, "shashtya" literally translates to "using sixty".</p>
+          <p>Speaking of 60, in lieu of the lazy 10 (factors 1, 2, 5, 10) as its base, Patellian uses the amazingly factorable 60, with its factors of 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, and 60.</p>
+          <p>The square of 60, 3600, has even more factors: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 30, 36, 40, 45, 48, 50, 60, 72, 75, 80, 90, 100, 120, 144, 150, 180, 200, 225, 240, 300, 360, 400, 450, 600, 720, 900, 1200, 1800, 3600.</p>
+          <p>And it's not <i>just</i> that 60 is more divisible! My system is more directly and evenly tied to measures of fundamental constants of the Universe.</p>
+          <p>Prefixes are all also straightforwardly infinitely extendable, unlike the metric convention of just making up prefixes, or God forbid even <i>just ignoring them and using scientific notation</i>.</p>
+          <p>Right below is how everything shall work:</p>
+          <br /><br /><hr id="shashtya-prefices" />
+          <h1>Prefixes</h1>
+          <p>Just like in SI, I made a system of prefixes to be put on the beginning of the unit name to change their size.</p>
+          <p>Unlike SI, however, these are completely regular (except for 1 and 2 so they aren't mistaken for multiples) and <i>infinitely</i> extendable, them all being based off of Sanskrit numbers.</p>
+          <p>Here they are from 60<sup>-9</sup> upto 60<sup>9</sup>:</p>
+          <div class="table-wrapper">
+            <table class="non">
+              <thead>
+                <tr>
+                  <td>Prefix</td>
+                  <td>Symbol</td>
+                  <td>Magnitude</td>
+                  <td style="width: 10px;"></td>
+                  <td>Prefix</td>
+                  <td>Symbol</td>
+                  <td>Magnitude</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>pradhi-</td>
+                  <td>pri</td>
+                  <td>60<sup>-1</sup></td>
+                  <td rowspan="9" style="width: 10px;"></td>
+                  <td>pradha-</td>
+                  <td>pra</td>
+                  <td>60<sup>1</sup></td>
+                </tr>
+                <tr>
+                  <td>vargi-</td>
+                  <td>vi</td>
+                  <td>60<sup>-2</sup></td>
+                  <td>varga-</td>
+                  <td>va</td>
+                  <td>60<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>trini-</td>
+                  <td>ti</td>
+                  <td>60<sup>-3</sup></td>
+                  <td>trina-</td>
+                  <td>ta</td>
+                  <td>60<sup>3</sup></td>
+                </tr>
+                <tr>
+                  <td>chati-</td>
+                  <td>chi</td>
+                  <td>60<sup>-4</sup></td>
+                  <td>chata-</td>
+                  <td>cha</td>
+                  <td>60<sup>4</sup></td>
+                </tr>
+                <tr>
+                  <td>panchi-</td>
+                  <td>pi</td>
+                  <td>60<sup>-5</sup></td>
+                  <td>pancha-</td>
+                  <td>pa</td>
+                  <td>60<sup>5</sup></td>
+                </tr>
+                <tr>
+                  <td>shati-</td>
+                  <td>shi</td>
+                  <td>60<sup>-6</sup></td>
+                  <td>shata-</td>
+                  <td>sha</td>
+                  <td>60<sup>6</sup></td>
+                </tr>
+                <tr>
+                  <td>sapti-</td>
+                  <td>si</td>
+                  <td>60<sup>-7</sup></td>
+                  <td>sapta-</td>
+                  <td>sa</td>
+                  <td>60<sup>7</sup></td>
+                </tr>
+                <tr>
+                  <td>ashti-</td>
+                  <td>ai</td>
+                  <td>60<sup>-8</sup></td>
+                  <td>ashta-</td>
+                  <td>aa</td>
+                  <td>60<sup>8</sup></td>
+                </tr>
+                <tr>
+                  <td>navi-</td>
+                  <td>ni</td>
+                  <td>60<sup>-9</sup></td>
+                  <td>nava-</td>
+                  <td>na</td>
+                  <td>60<sup>9</sup></td>
+                </tr>              
+              </tbody>
+            </table>
+          </div>
+          <hr id='alternate-bases'/>
+          <h1>Alternate bases</h1>
+          <p>For applications such as computing, an alternate base may be more desirable or intuitive to use.</p>
+          <p>To derive these, between the numerical root and the -a- or -i-, place an -o- followed by a second number root (this one in Latin) signifying the base.</p>
+          <p>Certain commonly used bases will be shortened. For example, "hexadeca" for hexadecimal becomes just "x". This only applies to 60, 16, and 64, shown in the table below.</p>
+          <p>All one-digit latin numbers EXCEPT 3 (tr), 5 (quin), and 7 (sept) are made into single-characters.</p>
+          <p>No matter the base conversion, all units shall still equal the same value.</p>
+          <p><strong>Please note I am not advocating for the common use of <i>any</i> other base for the measurements <i>except</i> sexagesimal, which lacks any root.</strong></p>
+          <div class='table-wrapper'>
+            <table class='non'>
+              <thead>
+                <tr>
+                  <td colspan='9'>
+                    Commonly used bases
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Base</strong></td>
+                  <td>60</td>
+                  <td>2</td>
+                  <td>8</td>
+                  <td>16</td>
+                  <td>64</td>
+                  <td>10</td>
+                  <td>12</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td><strong>Name</strong></td>
+                  <td>sexagesimal</td>
+                  <td>binary</td>
+                  <td>octal</td>
+                  <td>hexadecimal</td>
+                  <td>sexagintaquattuoral</td>
+                  <td>decimal</td>
+                  <td>dozenal</td>
+                  <td>seximal</td>
+                </tr>
+                <tr>
+                  <td><strong>Root (after -o-)</strong></td>
+                  <td>- (irr.)<br/>-sexages-</td>
+                  <td>-d-</td>
+                  <td>-ct-</td>
+                  <td>-x- (irr.)<br/>-hexadec-</td>
+                  <td>-sq-(irr.)<br/>-sexagintaquatt-</td>
+                  <td>-dec-</td>
+                  <td>-duodec-</td>
+                  <td>-s-</td>
+                </tr>
+                <tr>
+                  <td><strong>Application</strong></td>
+                  <td>Common use</td>
+                  <td colspan='4'>Computing</td>
+                  <td colspan='3'>Alternatives</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br /><br /><hr id="shashtya-base-units" />
+          <h1>Base Units</h1>
+          <p>The system has compound units for literally <i>everything</i>, but like metric, Patellian units have their basis in for-once-actually-reasonable quantities of base measures.</p>
+          <p>The planck length is used as the basis for length. Thus, 60<sup>19</sup> planck lengths shall be one <b>hasta</b> (H), the unit of length.</p>
+          <p>The planck mass is used as the basis for mass. Thus, 60<sup>4</sup> planck masses shall be one <b>pala</b> (P), the unit of mass.</p>
+          <p>153,210,530 periods of <abbr onclick="alert(&quot;Caesium-153&quot;);" title="Caesium-153">Cs<sub>153</sub></abbr> hyperfine radiation shall be one <b>truti</b> (T), the unit of time. This does equal <sup>1</sup>/<sub>60</sub><sup>th</sup> of an SI second for convenience.</p>
+          <p>Here they are in table form:</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td>Definition</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>hasta</td>
+                  <td>H</td>
+                  <td>length</td>
+                  <td><i>ℓ<sub>p</sub></i> × 60<sup>19</sup></td>
+                  <td>3.8775 inches</td>
+                  <td>9.849 centimetres</td>
+                </tr>
+                <tr>
+                  <td>pala</td>
+                  <td>P</td>
+                  <td>mass</td>
+                  <td><i>m<sub>p</sub></i> × 60<sup>4</sup></td>
+                  <td>0.62186 pounds</td>
+                  <td>0.28207 kilograms</td>
+                </tr>
+                <tr>
+                  <td>truti</td>
+                  <td>T</td>
+                  <td>time</td>
+                  <td>153,210,530 pd. <abbr onclick="alert(&quot;Caesium-153&quot;);" title="Caesium-153">Cs<sub>153</sub></abbr> hyperfine radiation</td>
+                  <td>1/60 (0.0167) second</td>
+                  <td>16.<span style='text-decoration: overline;'>6</span> milliseconds</td>
+                </tr>
+                <tr>
+                  <td>antarhima</td>
+                  <td>°Ѧ</td>
+                  <td>temperature</td>
+                  <td class='latex' title='1 antarhima = EXACTLY 1/60 the thermal energy of the triple point of neon'>\frac{1}{60}*T_{tp}\,\text{Ne}_2\,\,\approx\,\,3.3638\times\text{10}^{-23} * \text{Sh}</td>
+                  <td>0.7367° Rankine (°R)</td>
+                  <td>0.4093 Kelvin (K)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--<hr id="shashtya-dimensionless-units" />
+          <h1>Dimensionless Units</h1>
+          <p>These units below are truly dimensionless, but can still take prefixes and be used in formulae for ease of reading. For instance, the <b>udāma (U)</b> is literally just equal to one, and applying prefixes raises or lowers it to powers of 60.</p>
+          <div class='table-wrapper'>  
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td>Definition</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <!--<tr>
+                  <td>vishal</td>
+                  <td>Vsh</td>
+                  <td>coherence</td>
+                  <td class='latex'>\log_{n_0}\frac{\Delta n}{\Delta \text{scope}}</td> <!--log_{n_0}(\frac{\Delta n}{\Delta \text{scope}})--
+                  <td colspan="2">degree of coherence (γ)</td>
+                </tr>-->
+                <!--<tr>
+                  <td>matra</td>
+                  <td>M</td>
+                  <td>magnitude</td>
+                  <td><abbr onclick="alert(&quot;iterated logarithm&quot;);" title="iterated logarithm" style='text-decoration: italic;'>slog</abbr>(<i>n</i><sup><sup><i>n</i></sup>⁄<sub>e</sub></sup>)</td><td colspan="2"><i>no direct equivalent</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>-->
+          <br /><br /><hr id="shashtya-derived-units" />
+          <h1>Derived Units</h1>
+          <p>Many, <i>many</i> more units can be derived from the base four plus the dimensionless ones.</p>
+          <div class="table-wrapper">
+            	<!--<tr>
+                  <td>Ramanujan</td>
+                  <td>Rj</td>
+                  <td>temporal coherence</td>
+                  <td colspan='2'>log<sub><i>n</i>₀</sub>(<sup>Δ<i>n</i></sup>&frasl;<sub>T</sub>)</td>
+                  <td>percent change</td>
+                </tr>-->
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td colspan="2">Definition</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                  <td>Category</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ansha</td>
+                  <td>A</td>
+                  <td>angles</td>
+                  <td class='latex' colspan='2'>\frac{\pi\text{H}}{3600\text{H}}=\frac{\pi}{3600}</td>
+                  <td>0.1 degrees</td>
+                  <td class='latex'>\frac{\pi}{3600}\,\text{radians}</td>
+                  <td rowspan='4'>Geometry</td>
+                </tr>
+                <tr>
+                  <td>golansha</td>
+                  <td>Ga</td><td>3D angle</td>
+                  <td class='latex'>\text{A}^{2}</td>
+                  <td>1/3600<sup>2</sup> sphere surface subtending</td>
+                  <td>0.01 degrees squared (deg<sup>2</sup>)</td>
+                  <td class='latex'>\frac{\pi^2}{3,240,000}\,\text{steradians}\,\text{(sr)}</td>
+                </tr>
+                <tr>
+                  <td>dravah</td>
+                  <td>D</td>
+                  <td>fluid volume</td>
+                  <td colspan="2" class='latex'>\text{H}^{3}</td> <!-- formerly viH -->
+                  <td>tablespoons (tbsp)</td>
+                  <td>millilitres (mL)</td>
+                </tr>
+                <tr>
+                  <td>banah</td>
+                  <td>Bn</td>
+                  <td>sharpness</td>
+                  <td colspan="2" class='latex'>(\text{H}*\text{A})^{-1}</td> <!-- formerly viH -->
+                  <td>inverse inches per degree (in<sup>-1</sup>/deg)</td>
+                  <td>inverse metres per radian (m<sup>-1</sup>/rad)</td>
+                </tr>
+                <!--<tr>
+                  <td>samya</td>
+                  <td>Sy</td>
+                  <td>erosion rate</td>
+                  <td colspan="2" class='latex'>\text{Vsh};\,n=\frac{\text{H}^2 \div \text{H}^2}{\text{T}}</td><!-- m^2 / m^2 / s --
+                  <td colspan="2"><i>no equivalent</i></td>
+                </tr>-->
+                <tr>
+                  <td>hora</td>
+                  <td>Ho</td>
+                  <td>frequency</td>
+                  <td colspan="2" class='latex'>\text{T}^{-1}</td>
+                  <td><sup>1</sup>/<sub>3600</sub> beats per minute (bpm)</td>
+                  <td>60 Hertz (Hz)</td>
+                  <td rowspan='8'>Physics</td>
+                </tr>
+                <tr>
+                  <td>hima</td>
+                  <td>°Ħ</td>
+                  <td>colloquial temperature</td>
+                  <td colspan="2">268.6045 + °Ħ<sub>a</sub></td>
+                  <td title='(°Ħ * (60/54.361) + 273.15) * (9/5) + 32'>-37.93° Fahrenheit (°F)</td>
+                  <td title='°Ħ * (60/54.361) + 273.15'>-38.85° Celsius (°C)</td>
+                </tr>
+                <tr>
+                  <td>gati</td>
+                  <td>G</td>
+                  <td>acceleration</td>
+                  <td colspan="2" class='latex'>\frac{\text{H}}{\text{T}^{2}}</td>
+                  <td>13,959 inches per square second (ins<sup>-2</sup>)</td>
+                  <td>354.56 metres per square second (m s<sup>-2</sup>)</td>
+                </tr>
+                <tr>
+                  <td>Bose</td>
+                  <td>B</td>
+                  <td>force</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}}{\text{T}^2}</td>
+                  <td class='latex'>\text{P}*\text{G}</td>
+                  <td>22.483 pounds of force (lbf)</td>
+                  <td><abbr title='or in CGS, about 10,001,000 dynes'>100.01 Newtons (N)</abbr></td>
+                </tr>
+                <tr>
+                  <td>Arya</td>
+                  <td>Ar</td>
+                  <td>pressure</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}}{\text{T}^{2}\text{H}^2} = \frac{\text{P}}{\text{T}^{2}\text{H}}</td>
+                  <td class='latex'>\frac{\text{B}}{\text{H}^2}</td>
+                  <td>1.4954 pounds per square inch (psi)</td>
+                  <td>10,310 Pascals (Pa)</td>
+                </tr>
+                <tr>
+                  <td>Kalam</td>
+                  <td>K</td>
+                  <td>momentum/impulse</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}*\text{T}}{\text{T}^2}=\frac{\text{P}*\text{H}}{\text{T}}</td>
+                  <td class='latex'>\text{B}*\text{T}</td><!--K = ΔT⋅B/ΔP-->
+                  <td>0.3747 pound-force-second (lbf⋅S)</td>
+                  <td>1.667 Newton-second (N⋅S)</td>
+                </tr>
+                <tr>
+                  <td>shakti</td>
+                  <td>Sh</td>
+                  <td>energy</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}^2}{\text{T}^2}</td>
+                  <td class='latex'>\text{B}*\text{H}</td>
+                  <td>87.18 pound-force-inches (in⋅lbf)</td>
+                  <td>9.85 Joules (J)</td>
+                </tr>
+                <!--
+                <tr>
+                  <td>sphara</td>
+                  <td>Sph</td>
+                  <td>entropy</td>
+                  <td colspan="2" class='latex'>\frac{\text{Sh}}{^\circ\text{H}}</td>
+                  <td>pound feet per rankine (<sup>ft⋅lbf</sup>⁄<sub>°R</sub>)</td>
+                  <td>Joules per kelvin (<sup>J</sup>⁄<sub>K</sub>)</td>
+                </tr>-->
+                <tr>
+                  <td>Rao</td>
+                  <td>R</td>
+                  <td>power</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}^2}{\text{T}^3}</td>
+                  <td class='latex'>\frac{\text{Sh}}{\text{T}}</td>
+                  <td>0.7925 horsepower (hp)</td>
+                  <td>591 Watt (W)</td>
+                </tr>
+                <tr>
+                  <td>jyoti</td>
+                  <td>Jy</td>
+                  <td>luminous flux</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}^3}{\text{T}^3}</td>
+                  <td class='latex'>\text{R}*\text{H}_\lambda</td>
+                  <td colspan='2'><abbr title='Conversion formula is non-linear, i.e., divide Jy by wavelength lambda, then multiply that by 683, then take V of lambda. The example here assumes 555nm green light, but it can be extended to the rest of the electromagnetic spectrum depending on what ought to be converted.'>683 lumens (lm)</abbr></td>
+                  <td rowspan='4'>Light</td>
+                </tr>
+                <tr>
+                  <td>chandra</td>
+                  <td>Ch</td>
+                  <td>luminous intensity</td>
+                  <td class='latex'>\frac{\frac{\text{P}*\text{H}^3}{\text{T}^3}}{\frac{\text{H}}{\text{T}^2}}=\frac{\text{P}*\text{H}^3*\text{T}^2}{\text{H}*\text{T}^3}=\frac{\text{P}*\text{H}^2}{\text{T}}</td>
+                  <td class='latex'>\frac{\text{Jy}}{\text{Ga}}</td>
+                  <td colspan="2">candela (cd)</td>
+                </tr>
+                <!--<tr>
+                  <td>tamas</td>
+                  <td>Tm</td>
+                  <td>darkness</td>
+                  <td class='latex'>\frac{\text{T}^3}{\text{P}*\text{H}^3}</td>
+                  <td class='latex'>\text{Jy}^{-1}</td>
+                  <td colspan="2">683 inverse lumens (lm<sup>-1</sup>)</td>
+                </tr>-->
+                <tr>
+                  <td>ashman</td>
+                  <td>Ash</td>
+                  <td>illuminance</td>
+                  <td class='latex'>\frac{\text{P}*\text{H}^3}{\text{T}^3*\text{H}^2}=\frac{\text{P}*\text{H}}{\text{T}^3}</td>
+                  <td class='latex'>\frac{\text{Jy}}{\text{H}^{2}}</td>
+                  <td colspan='2'>lux (lx)</td>
+                </tr>
+                <tr>
+                  <td>Sarabhai</td>
+                  <td>S</td>
+                  <td>electric current</td>
+                  <td colspan="2" class='latex'>\frac{\text{Cht}}{\text{T}}</td>
+                  <td colspan='2'>ampere (A)</td>
+                  <td rowspan='5'>Electricity</td>
+                </tr>
+                <tr>
+                  <td>vidyut</td>
+                  <td>V</td>
+                  <td>electric potential difference</td>
+                  <td colspan="2" class='latex'>\frac{\text{P}*\text{H}^2}{\text{T}^{2}*\text{Cht}}</td>
+                  <td colspan="2">volt (V)</td>
+                </tr>
+                <tr>
+                  <td>nāsti</td>
+                  <td>N</td>
+                  <td>capacitance</td>
+                  <td colspan='2' class='latex'>\frac{\text{Cht}}{V}</td>
+                  <td colspan='2'>farad (F)</td>
+                </tr>
+                <tr>
+                  <td>vahih</td>
+                  <td>Vh</td>
+                  <td>electrical resistance</td>
+                  <td colspan='2' class='latex'>\frac{\text{V}}{\text{S}}</td>
+                  <td colspan='2'>ohm (Ω)</td>
+                </tr>
+                <tr>
+                  <td>antah</td>
+                  <td>At</td>
+                  <td>electrical conductance</td>
+                  <td colspan='2' class='latex'>\text{Vh}^{-1}</td>
+                  <td colspan='2'>siemens (S)</td>
+                </tr>
+                <tr>
+                  <td>ayaskānta</td>
+                  <td>As</td>
+                  <td>magnetic flux</td>
+                  <td colspan='2' class='latex'>\frac{\text{P}*\text{H}^2}{\text{T}^2*\text{S}}</td>
+                  <td colspan='2'>weber (Wb)</td>
+                  <td rowspan='2'>Magnetism</td>
+                </tr>
+                <tr>
+                  <td><abbr title='ayaskānteṇa (using the magnet; instrumental declension of ayaskānta)'>askāṇa</abbr></td>
+                  <td>Asn</td>
+                  <td>magnetic flux</td>
+                  <td colspan='2' class='latex'>\frac{\text{P}*\text{H}^2}{\text{T}^2*\text{S}*\text{H}^2} = \frac{\text{P}}{\text{T}^2*\text{S}}</td>
+                  <td colspan='2'>tesla (T)</td>
+                </tr>
+                <!-- magnetic flux, weber, kg⋅m2⋅s−2⋅A−1, done (ayaskanta) -->
+                <!-- magnetic flux density, tesla, Wb/m^2, done (ayaskānteṇa/askāṇa) -->
+                <!-- inductance, henry -->
+                <!-- colloquial temperature, celsius -->
+                <!--<tr>
+                  <td>antarhima</td>
+                  <td>°H<sub>a</sub></td>
+                  <td>scientific temperature</td>
+                  <td colspan='2' class='latex'>\text{Sh}^{-22}</td>
+                  <td>rankine (°R)</td>
+                  <td>Kelvin (K)</td>
+                </tr>-->
+                <tr>
+                  <td>jaleshu</td>
+                  <td>J</td>
+                  <td>kinematic viscosity</td>
+                  <td colspan="2" class='latex'>\frac{\text{H}^2}{\text{T}}</td>
+                  <td>1.0023 square inches per second (<sup>in²</sup>⁄<sub>s</sub>)</td>
+                  <td>0.00064<span style='text-decoration: overline;'>6</span> square metre per second (<sup>m²</sup>⁄<sub>s</sub>)</td>
+                  <td rowspan='7'>Chemistry</td>
+                </tr>
+                <tr>
+                  <td>madhu</td>
+                  <td>Mdh</td>
+                  <td>dynamic viscosity</td>
+                  <td colspan="2" class='latex'>\text{Ar}*\text{T}</td>
+                  <td>pound per square inch second (<sup>psi</sup>⁄<sub>s</sub>; <sup>p</sup>⁄<sub>in²s</sub>)</td>
+                  <td>Pascal second (Pa⋅s)</td>
+                </tr>
+                <tr>
+                  <td>dah</td>
+                  <td>Dh</td>
+                  <td>acidity</td>
+                  <td colspan="2" class='latex'>\frac{\text{Gr}*H^{+}}{\text{Gr}*OH^{-}}</td>
+                  <td colspan="2">Potential of Hydrogen (pH)</td>
+                </tr>
+                <tr>
+                  <td>sāndratā</td>
+                  <td>Sda</td>
+                  <td>concentration</td>
+                  <td colspan='2' class='latex'>\frac{\text{Cht}}{\text{D}}</td>
+                  <td>moles per gallon</td>
+                  <td>molar (M)</td>
+                </tr>
+                <tr>
+                  <td>sāndratī</td>
+                  <td>Sdi</td>
+                  <td>substantive mass</td>
+                  <td colspan='2' class='latex'>\frac{\text{Cht}}{\text{P}}</td>
+                  <td>moles per pound</td>
+                  <td>molal (m)</td>
+                </tr>
+                <tr>
+                  <td>chatam</td>
+                  <td>Cht</td>
+                  <td>substance/electric charge</td>
+                  <td>12960000</td>
+                  <td class='latex'>60^4\times\text{U}</td>
+                  <td colspan="2" class='latex'>2.1521*10^{-17}\,\text{moles}\,\text{or}\,2.0766*10^{-14}\,\text{coulombs}</td>
+                </tr>
+                <tr>
+                  <td>bhiti</td>
+                  <td>Bh</td>
+                  <td>kerma/radiation dose</td>
+                  <td colspan='2' class='latex'>\frac{\text{Sh}}{\text{P}}</td>
+                  <td>roentgen equivalent man (rem)</td>
+                  <td>gray (Gy)</td>
+                </tr>
+                <!--<tr>
+                  <td>sukh</td>
+                  <td>Su</td>
+                  <td>economicality</td>
+                  <td colspan="2" class='latex'>(\frac{\text{spent}}{\text{budget}}*U(\text{seratonin}+\text{dopamine})</td>
+                  <td colspan="2"><i>no equivalent</i></td>
+                </tr>-->
+                <tr>
+                  <td><abbr title='udāharaṇam mahatvapūrṇam'>udāma</abbr></td>
+                  <td>U</td>
+                  <td>data/instances</td>
+                  <td colspan="2">1 instance</td>
+                  <td>1 bit</td>
+                  <td>1 inverse mole (mol<sup>-1</sup>)</td>
+                  <td rowspan='2'>Computing</td>
+                </tr>
+                <tr>
+                  <td>byte/octet</td>
+                  <td>B / O</td>
+                  <td>computer data</td>
+                  <td>8</td>
+                  <td class='latex'>8\times\text{U}</td>
+                  <td colspan="2">the existing byte (en)/octet (fr)</td>
+                </tr>
+              </tbody>
+            </table>
+            <!--praman could be new unit; ignore for now-->
+          </div>
+          <br /><br /><hr id="shashtya-derivational-units" />
+          <h1>Retained Derived Units</h1>
+          <p>These units are retained in their derived form.</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <td>Unit</td>
+                  <td>Symbol</td>
+                  <td>Use</td>
+                  <td>Imperial analogue</td>
+                  <td>SI analogue</td>
+                  <td>Notes</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>square hasta</td>
+                  <td class='latex'>\text{H}^2</td>
+                  <td>area</td>
+                  <td>square foot (ft<sup>2</sup>)<br />acre (ac)</td>
+                  <td>square metre (m<sup>2</sup>)<br />hectare (ha)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>cubic hasta</td>
+                  <td class='latex'>\text{H}^3</td>
+                  <td>solid volume</td>
+                  <td>cubic foot (ft<sup>3</sup>)</td>
+                  <td>cubic metre (m<sup>3</sup>)</td>
+                  <td>used for solids, as opposed to the fluid-used dravah</td>
+                </tr>
+                <tr>
+                  <td>hasta per truti</td>
+                  <td class='latex'>\frac{\text{H}}{\text{T}}</td>
+                  <td><abbr onclick="alert(&quot;speed&quot;);" title="speed">linear momentum</abbr></td>
+                  <td>feet per second (ft/s)</td>
+                  <td>metres per second (m/s)</td>
+                  <td>vargahasta per trin[atruti] (vaH/gaT) is for roads, etc.</td>
+                </tr>
+                <tr>
+                  <td>ansha per truti</td>
+                  <td class='latex'>\frac{\text{A}}{\text{T}}</td>
+                  <td><abbr onclick="alert(&quot;torque&quot;);" title="torque">angular momentum</abbr></td>
+                  <td>degrees per second (deg/s)</td>
+                  <td>radians per second (rad/s)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>chandra per truti</td>
+                  <td class='latex'>\frac{\Delta\text{Ch}}{\text{Ch}_0*\text{T}}</td>
+                  <td>flicker</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>inverse dah</td>
+                  <td class='latex'>\text{Dh}^{-1}</td>
+                  <td>alkalinity</td>
+                  <td colspan="2">Potential of Hydroxide (pOH<sup>-1</sup>)</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>inverse banah</td>
+                  <td class='latex'>\text{Bn}^{-1}</td>
+                  <td>flatness/dullness</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br /><br /><hr />
+          <h1>Daily Units</h1>
+			<p>If this obviously superior system were to be adopted, the hasta (H), pala (P), hima (°H) are going to become mainstays.</p>
+			<p>For time, the pradha- (paT), varga- (vaT), and trina- (taT) truti will be frequently used in addition to the base truti (T). For this, it is allowed to drop the prefix on these units.</p>
+          <p>The <b>hasta</b> (H) and <b>pala</b> (P) are sure to become mainstays of daily use for length and weight respectively.</p>
+          <p>For time, since a pradhatruti (paT) = 1 second, a vargatruti (vaT) = 1 minute, and a ghanatruti = 1 hour all exactly, these will join the truti in daily use similarly to how we already use centiseconds (check your stopwatch), seconds, minutes, and hours today. 5184000 truti can be considered a <i>din</i>, which could be a colloquial unit equal to a day.</p>
+		<p>Angles will come in ansha (A), and the <b>banah (Bn)</b> will be good for knives and the sharpness of such things, along with the <b>jyoti (jy)</b> for lightbulbs and the <b>vargahasta per trinatruti (<sup>vaH</sup>&frac;<sub>tiT</sub></b> for speed on places like the road.</p>
+          <p>The <b>Hima</b> (°H) suceeds since it is as intuitive as Celsius with the precision of Fahrenheit.</p>
+			<br /><br /><hr id="shashtya-conversions" />
+          <h1>Conversions</h1>
+          <div class='table-wrapper'>
+            <table class='non'>
+              <thead>
+                <tr>
+                  <td colspan='4'>Length</td>
+                </tr>
+                <tr>
+                  <td>Description</td>
+                  <td><b>Shashtya</b><br/>Hasta (H)</td>
+                  <td>Customary<br/>Foot (ft)</td>
+                  <td>SI/Metric<br/>Metre (m)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Planck length</td>
+                  <td>1 navidashihasta (ndiH)</td>
+                  <td>4.580928&times;10<sup>-32</sup> points (pt)<br/>6.3624&times;10<sup>-34</sup> inches (in)</td>
+                  <td>1.616255&times;10<sup>-5</sup> quectometres (qm)</td>
+                </tr>
+                <tr>
+                  <td>Human hair width</td>
+                  <td>2.8952 pradhihasta (piH)</td>
+                  <td>1.25 points (pt)</td>
+                  <td>49 micrometres (μm)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class='table-wrapper'>
+            <table class='non'>
+              <thead>
+                <tr>
+                  <td colspan='7'>Temperature</td>
+                </tr>
+                <tr>
+                  <td>Description</td>
+                  <td>Shashtya<br/><b>Hima (°Ħ)</b></td>
+                  <td>Customary<br/>Fahrenheit (°F)</td>
+                  <td>SI/Metric<br/>Celsius (°C)</td>
+                  <td>Shashtya<br/><b>Antarhima (°Ħ<sub>a</sub>)</b></td>
+                  <td>Customary<br/>Rankine (°R)</td>
+                  <td>SI/Metric<br/>Kelvin (K)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Absolute zero</td>
+                  <td>-572.4921°Ħ</td>
+                  <td>-459.67°F</td>
+                  <td>-273.15°C</td>
+                  <td>0°Ħ<sub>a</sub></td>
+                  <td>0°R</td>
+                  <td>0K</td>
+                </tr>
+                <tr>
+                  <td>Helium boiling point</td>
+                  <td>-562.1769°Ħ</td>
+                  <td>-452.0704°F</td>
+                  <td>-268.928°C</td>
+                  <td>10.3152°Ħ<sub>a</sub></td>
+                  <td>7.5996°R</td>
+                  <td>4.222K</td>
+                </tr>
+                <tr>
+                  <td>Nitrogen melting point</td>
+                  <td>-418.0088°Ħ</td>
+                  <td>-346.856°F</td>
+                  <td>-209.92°C</td>
+                  <td>154.4833°Ħ<sub>a</sub></td>
+                  <td>113.814°R</td>
+                  <td>63.23K</td>
+                </tr>
+                <tr>
+                  <td>Nitrogen boiling point</td>
+                  <td>-383.4987°Ħ</td>
+                  <td>-321.431°F</td>
+                  <td>-195.795°C</td>
+                  <td>188.9934°Ħ</td>
+                  <td>139.239°R</td>
+                  <td>77.355K</td>
+                </tr>
+                <tr>
+                  <td>Mercury melting point</td>
+                  <td>0°Ħ</td>
+                  <td>-37.8922°F</td>
+                  <td>-38.829°C</td>
+                  <td>572.4921°Ħ</td>
+                  <td>-36.8922°R</td>
+                  <td>234.321K</td>
+                </tr>
+                <tr>
+                  <td>Bromine melting point</td>
+                  <td>°Ħ</td>
+                  <td>°F</td>
+                  <td>°C</td>
+                  <td>°Ħ</td>
+                  <td>°R</td>
+                  <td>K</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class='table-wrapper'>
+            <table class='non'>
+              <thead>
+                <tr>
+                  <td colspan='4'>Mass</td>
+                </tr>
+                <tr>
+                  <td>Description</td>
+                  <td>Shashtya<br/><b>Pala (P)</b></td>
+                  <td>Customary<br/>Pound (lb)</td>
+                  <td>SI/Metric<br/>Kilogram (kg)</td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <br /><br /><hr id="shashtya-diagram" />
+          <h1>Diagram</h1>
+          <div class="table-wrapper">
+            <center>
+              <canvas height="400" id="lakshmi" width="400"></canvas>
+            </center>
+          </div>
+          <p><center><a href='https://blog.aeonic.me/2025/09/unites-de-shastya.html'>Lire en français</a></center></p>
+        </div>
+
+
+<script>
+  
+const canvas = document.getElementById("lakshmi");
+const ctx = canvas.getContext("2d");
+const cx = canvas.width / 2;
+const cy = canvas.height / 2;
+const r = 160;
+const letters = "H.Gr.P.A.T.M.°H.Vsh".split(".");
+// Letters 1, 3, 5, 7 = red = base = hasta, pala, truti, hima
+// Letters 2, 4, 6, 8 = odd = dimensionless = garami, ansha, matra, vishal
+
+const points = [];
+
+// Compute 8 points of the octagram
+for (let i = 0; i < 8; i++) {
+  const angle = (Math.PI * 2 * i) / 8 - Math.PI / 2;
+  const x = cx + r * Math.cos(angle);
+  const y = cy + r * Math.sin(angle);
+  points.push({ x, y });
+}
+
+// Draw radial lines to center (under main star)
+ctx.strokeStyle = "#cccccc"; // light grey
+ctx.lineWidth = 1;
+ctx.beginPath();
+for (let i = 0; i < 8; i++) {
+  const { x, y } = points[i];
+  ctx.moveTo(cx, cy);
+  ctx.lineTo(x, y);
+}
+ctx.stroke();
+
+// Draw the octagram (8/2 star)
+ctx.strokeStyle = "gray";
+ctx.lineWidth = 2;
+ctx.beginfth();
+for (let i = 0; i < 8; i++) {
+  const from = points[i];
+  const to = points[(i + 2) % 8];
+  ctx.moveTo(from.x, from.y);
+  ctx.lineTo(to.x, to.y);
+}
+ctx.stroke();
+
+// Draw the node circles with letters
+const colorA = "#FF6666"; // red-ish
+const colorB = "#66B2FF"; // blue-ish
+const radius = 18; // slightly smaller for tighter spacing
+
+ctx.font = "16px sans-serif";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+
+for (let i = 0; i < 8; i++) {
+  const { x, y } = points[i];
+  const isA = i % 2 === 0;
+  ctx.fillStyle = isA ? colorA : colorB;
+
+  // Circle
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Letter
+  ctx.fillStyle = "white";
+  ctx.fillText(letters[i], x, y);
+}
+
+// Center circle with "60"
+ctx.beginPath();
+ctx.arc(cx, cy, 24, 0, Math.PI * 2);
+ctx.fillStyle = "#734f96";
+ctx.fill();
+
+ctx.fillStyle = "white";
+ctx.font = "18px sans-serif";
+ctx.fillText("60", cx, cy);
+</script>
