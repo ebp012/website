@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eshaan's website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link href='http://aryabhata.aeonic.me/noedit.sigma.css' rel='stylesheet' type='text/css' />
     <style>
@@ -33,13 +33,9 @@
       .desk-paper, p.page-nav, .nav-item, .page-title {
         font-family: geneva, tahoma, 'Segoe UI', segoe, sans-serif;
       }
-      table::not(.nepas)  {
-        font-family: 'Segoe UI', segoe, tahoma, sans-serif;
+      table::not(.nepas), thead td {
+        font-family: 'Segoe UI', segoe, tahoma, sans-serif !important;
       }
-      table::not(.nepas) thead td {
-        font-variant-caps: small-caps;
-      }
-      i.fa, .nav-item i {font-family: monospace !important;}
     </style>
   </head>
   <body
@@ -84,14 +80,16 @@
         <h1 class="page-title">about me</h1>
         <p class='page-nav'><b>• <a href='#bio'>bio</a> • <a href='#research'>research</a> • <a href='#youtube'>YouTube</a> •</b></p>
         <div class="desk-paper" style='line-height: 36pt;'>
-          <strong style='text-align: center;'>Hello humans of planet Earth!</strong>
+          <center><strong>Hello humans of planet Earth!</strong></center>
           <hr id='bio'/>
           <p class='page-nav' style='font-family: inherit;'>• <a href='https://github.com/ebp012/'><i class='fa fa-github-square'></i></a> • <a href='https://www.instagram.com/echo.fractal/'><i class='fa fa-instagram'></i></a> • <a href='https://youtube.com/@random.guy2840/'><i class='fa fa-youtube'></i></a> •</p>
-          <p>I'm an aspiring front-end developer fluent in HTML+XML, CSS and JS, plus a fair bit of C++ and Bash. Currently I'm learning Ruby and Java. (I was 8½ when I wrote my first website.)</p>
-          <p>I speak English and Gujarati natively, and can speak French to a B1 level and Spanish to an A2 level. I have minor experience with Hindi, Sanskrit, and Latin.</p>
-          <p>I'm also a conlanger (created of over a dozen and four I particularly like) and would consider myself an amateur linguist.</p>
-          <p>I've created dozens of conlangs, four of which I've showcased here, and am developing five major web applications as well.</p>
-          <p>Besides conlanging and coding, I also enjoy writing in my free time, and a novel is in the works at the moment.</p>
+          <center>
+            <p>I'm an aspiring front-end developer fluent in HTML+XML, CSS and JS, plus a fair bit of C++ and Bash. Currently I'm learning Ruby and Java. (I was 8½ when I wrote my first website.)</p>
+            <p>I speak English and Gujarati natively, and can speak French to a B1 level and Spanish to an A2 level. I have minor experience with Hindi, Sanskrit, and Latin.</p>
+            <p>I'm also a conlanger (created of over a dozen and four I particularly like) and would consider myself an amateur linguist.</p>
+            <p>I've created dozens of conlangs, four of which I've showcased here, and am developing five major web applications as well.</p>
+            <p>Besides conlanging and coding, I also enjoy writing in my free time, and a novel is in the works at the moment.</p>
+          </center>
           <hr id='research'/>
           <h2>Research Experience</h2>
           <p>During my 2023–2024 school year, my team of 3 other people alongside myself was given an <a href='https://www.exploravision.org/exploravision-2024-honorable-mentions/'>honourable mention</a> from NSTA Exploravision for the conceptualisation of NanoGrain, a nanobot-containing pill to enable patients of cœliac disease to consume gluten safely.</p>
@@ -294,24 +292,23 @@
                 <tr>
                   <td>
                     <a
-                      href="https://docs.google.com/spreadsheets/d/1h6DqxRIs8j-qzSLGJ-3K8Od-Y-ubyXuUffpwPp2znN8/edit?pli=1&gid=1323055028#gid=1323055028"
-                      >Lělue</a
+                      href="https://docs.google.com/spreadsheets/d/1Rn4XzDj57gLtyYzcNYrllIyke-uXNIKrwJfkq_qFXFM/edit?gid=1209797403#gid=1209797403"
+                      >Èlna/Elnese</a
                     >
                   </td>
-                  <td>Romance</td>
+                  <td>Romance<br/>(<i>a posteriori</i>)</td>
                   <td>althistory</td>
-                  <td></td>
-                  <td>June 2025–present</td>
+                  <td>from Dogger Bank; Celtic+Nordic+Germanic influence</td>
+                  <td>August 2025–present</td>
                   <td>SVO</td>
-                  <td>nominative, accusative, genitive, locative/dative, ablative, reflexive</td>
+                  <td>nominative, accusative (prn), genitive, dative, ablative, reflexive (prn)</td>
                   <td>masculine, feminine</td>
                   <td>
                     case, <abbr title="singular, plural">number</abbr>, gender
                   </td>
                   <td>
-                    <abbr title="past, present, future, general remote">tense</abbr>,
-                    <abbr title="imperfective, perfective (no distinction in present or general remote tenses)">aspect</abbr>,
-                    <abbr title="indicative, imperative, subjunctive, optative"
+                    <abbr title="Morphological: past perfective, past imperfective; past prospective, present, present prospective, future\n\nCompound: venitive past; present imperfective, venitive present; motive future, future imperfectivem future prospective">tense+aspect</abbr>,
+                    <abbr title="indicative, imperative, subjunctive (except in future tense), presumptive"
                       >mood</abbr
                     >
                   </td>
