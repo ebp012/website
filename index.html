@@ -30,8 +30,11 @@
       .desk-paper p {
         line-height: 36pt;
       }
-      .desk-paper {
+      .desk-paper, .nav-item {
         font-family: geneva, tahoma, 'Segoe UI', sans-serif;
+      }
+      .desk-paper table:not(.non):not(.nepas) {
+        font-family: 'Segoe UI';
       }
     </style>
   </head>
@@ -153,6 +156,7 @@
                   <td>falling-sand laboratory simulator<br/><a href='https://sandboxels.r74n.com/'>Sandboxels fork</a></td>
                   <td>fully</td>
                   <td>halted</td>
+                  <td><a href='https://github.com/ebp012/labsim'><i class='fa fa-github-square'></i></a></td>
                 </tr>
                 <tr>
                   <td><a href="http://mahler.aeonic.me/">Mahler</a></td>
@@ -423,7 +427,7 @@
     </div>
     <nav class="nav-bar desat">
       <div class="nav-item" data-target="#bio" id="homeTab">
-        <i class="fa-solid fa-book-open"></i>
+        <i class="fa-solid fa-book"></i>
         Bio
       </div>
       <div class="nav-item" data-target="#projects">
