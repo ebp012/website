@@ -69,6 +69,16 @@
             <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="72"/>
             <feColorMatrix type="saturate" values="1.05"/>
         </filter>
+        <filter id="crystal-distortion-plus-two">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="96"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-plus-three">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="144"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
         <filter id="crystal-distortion-minus">
             <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
             <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
@@ -76,7 +86,6 @@
         </filter>
       </defs>
     </svg>
-
     <div class="container cs-blue">
       <!-- Bio Section -->
       <div id="bio" class="content-section active">
