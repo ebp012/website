@@ -6,7 +6,7 @@
     <title>eshaan's website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link href='http://aryabhata.aeonic.me/noedit.sigma.css' rel='stylesheet' type='text/css' />
+    <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
     <style>
       #bgcontainer {
         background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
@@ -38,6 +38,12 @@
       }
       table::not(.nepas), thead td {
         font-family: 'Segoe UI', segoe, tahoma, sans-serif !important;
+      }
+      .grontent-section {
+        display: none;
+      }
+      .grontent-section.active {
+        display: block;
       }
     </style>
   </head>
@@ -115,301 +121,310 @@
       <!-- Projects Section -->
       <div id="projects" class="content-section">
         <h1 class="page-title">Projects</h1>
-        <p class='page-nav'><b>• <a href='#conlangs'>conlangs</a> • <a href='#programming'>programming</a> • <a href='#music'>music</a> •</b></p>
         <div class="desk-paper" style="font-size: 14pt;" id='conlangs'>
-          <h2>Conlangs</h2>
-          <p style="text-align: centre">
-            Below are some conlangs which I've created.
-          </p>
-          <div class='table-wrapper'>
-            <table id="langTable">
-              <thead>
-                <tr>
-                  <td>Language</td>
-                  <td>Family</td>
-                  <td>Description</td>
-                  <td>Sentence/Translation/Gloss</td>
-                  <td>Creation Time</td>
-                  <td style="width: 18pt">Word Order</td>
-                  <td style="width: 18pt"><abbr title='Morphosyntactic' onclick='alert("Morphosyntactic");'>Msyn.</abbr> Alignmnet</td>
-                  <td style="width: 32pt">Cases</td>
-                  <td style="width: 27pt">Genders</td>
-                  <td style="width: 32pt">Declension</td>
-                  <td style="width: 32pt">Conjugation</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="https://www.youtube.com/watch?v=U76DK3woxJE"
-                      >su Pama</a
-                    >
-                  </td>
-                  <td><i>a priori</i></td>
-                  <td>a full grammar in 32 morphemes</td>
-                  <td>
-                    <p>mi mai pu a pu ki ti si pu ki ti pa ku.</p>
-                    <p>I can eat your food since it's good.</p>
-                    <p>I can eat ACC food of you because food of you is good</p>
-                  </td>
-                  <td>May–June 2024</td>
-                  <td>SVO</td>
-                  <td>nominative-accusative</td>
-                  <td><i>none</i></td>
-                  <td><i>none</i></td>
-                  <td><i>none</i></td>
-                  <td><i>none</i></td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://docs.google.com/spreadsheets/d/1daAIM9-h6RK40sLYFNCp2SVQTxQOI5S_rzYwxquZLwA/edit?gid=159357971#gid=159357971"
-                      >Shaus</a
-                    >
-                  </td>
-                  <td><i>a priori</i></td>
-                  <td>scrapped worldbuild</td>
-                  <td>
-                    <p>
-                      Mí, pyil̥øif thel̥ jøtt ɟilo, jøtt l̥esvyrøl̥th mí l̥esvyrai.
-                    </p>
-                    <p>
-                      Initially, I saw myself as a victim, but I have since
-                      realised that my initial mentality was wrong.
-                    </p>
-                    <p>
-                      First-ORD, sensed-ACTV-PAST-1S-VISUAL myself-REFL victim, but
-                      think-PASV-PAST-1S-EXPNTL (wrong)
-                    </p>
-                  </td>
-                  <td>August-December 2024</td>
-                  <td>VSO</td>
-                  <td>nominative-accusative</td>
-                  <td>nominative, vocative, genitive, locative, reflexive</td>
-                  <td>masculine, feminine, puelline, neuter</td>
-                  <td>case, number</td>
-                  <td>
-                    <abbr title="indicative, interrogative, subjunctive"
-                      >mood</abbr
-                    >, aspect,
-                    <abbr title="active, passive, antipassive">voice</abbr>,
-                    <abbr title="firsthand, secondhand, thirdhand">hand</abbr>,
-                    evidentiality
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://docs.google.com/spreadsheets/d/1oE2xh_QqAJ_qFbs8pi7jcmVZV-8FV04fgX5_MIW_6ns/edit?gid=1323055028#gid=1323055028"
-                      >Liyansa</a
-                    >
-                  </td>
-                  <td><i>a priori</i></td>
-                  <td>novelling</td>
-                  <td>
-                    <p>Ta lalta, nanaswa'ln falni pantin shu palsi pismaltin.</p>
-                    <p>
-                      First thing, I'd like some pismaltis (fruits) for my
-                      daughter to eat.
-                    </p>
-                    <p>
-                      thing 1-ORD, pick-I'my for daughter-acc eat-her some pismalti.
-                    </p>
-                  </td>
-                  <td>November 2024–present</td>
-                  <td>VSO</td>
-                  <td>ergative-absolutive</td>
-                  <td>
-                    ergative, absolutive, dative, alienable, inalienable
-                  </td>
-                  <td>masculine, feminine</td>
-                  <td>
-                    gender, case,
-                    <abbr title="singular, paucal, plural">number</abbr>
-                  </td>
-                  <td>
-                    <abbr title="inchoative, progressive, perfective">aspect</abbr
-                    >, <abbr title="indicative, interrogative">mood</abbr>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://docs.google.com/spreadsheets/d/1Rn4XzDj57gLtyYzcNYrllIyke-uXNIKrwJfkq_qFXFM/edit?gid=1209797403#gid=1209797403"
-                      >Èlna/Elnese</a
-                    >
-                  </td>
-                  <td>Romance<br/>(<i>a posteriori</i>)</td>
-                  <td>althistory</td>
-                  <td>from Dogger Bank; Celtic+Nordic+Germanic influence</td>
-                  <td>August 2025–present</td>
-                  <td>SVO</td>
-                  <td>nominative-accusative</td>
-                  <td>nominative, accusative (prn), genitive, dative, ablative, reflexive (prn)</td>
-                  <td>masculine, feminine</td>
-                  <td>
-                    case, <abbr title="singular, plural">number</abbr>, gender
-                  </td>
-                  <td>
-                    <abbr title="Morphological: past perfective, past imperfective; past prospective, present, present prospective, future\n\nCompound: venitive past; present imperfective, venitive present; motive future, future imperfectivem future prospective">tense+aspect</abbr>,
-                    <abbr title="indicative, imperative, subjunctive (except in future tense), presumptive"
-                      >mood</abbr
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://docs.google.com/spreadsheets/d/1Hzy4BwXER7I61nvWyO2x_sC4FukjdZQMTJDHj2ljAQY/edit?gid=1323055028#gid=1323055028"
-                      >Muntara</a
-                    >
-                  </td>
-                  <td><i>a priori</i></td>
-                  <td>international auxilliary</td>
-                  <td>
-                    <p>Mi mateto kai fero di: seko siňi, nu suňi.</p>
-                    <p>I know who did it: it was her, not him.</p>
-                    <p>I know-SIMP who did-PAST-SIMP it: (it) was-SIMP her-FEM, NEG him-MASC</p>
-                  </td>
-                  <td>July 2024–present</td>
-                  <td>VSO</td>
-                  <td>direct</td>
-                  <td>
-                    nominative, accusative (optional), genitive
-                  </td>
-                  <td>masculine, feminine (both optional)</td>
-                  <td>gender, number, case</td>
-                  <td>
-                    <abbr title='past, present, future'>tense</abbr>,
-                    <abbr title="simple, prospective">aspect</abbr
-                    >, <abbr title="indicative, imperative, subjunctive">mood</abbr>,
-                    <abbr title='active, passive, impersonal'>voice</abbr>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="card-wrap">
+            <div class="titan-card grav-item" data-target='conlangs-tab'><i class='fa fa-book'></i><br/>conlangs</div>
+            <div class="titan-card grav-item" data-target='codings-tab'><i class='fa fa-laptop'></i><br/>coding</div>
+            <div class="titan-card grav-item" data-target='musics-tab'><i class='fa fa-music'></i><br/>music</div>
           </div>
-          <hr id='programming'/>
-          <h2>Programming</h2>
-          <p style="text-align: centre">
-            These are some personal coding projects of mine.
-          </p>
-          <div class='table-wrapper'>
-            <table id="appTable">
-              <thead>
-                <tr>
-                  <td>App</td>
-                  <td>Icon</td>
-                  <td>Description</td>
-                  <td>Function</td>
-                  <td>Development</td>
-                  <td>Repository</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="http://aryabhata.aeonic.me/">Aryabhata</a></td>
-                  <td>-</td>
-                  <td>a multipurpose study app</td>
-                  <td>mostly</td>
-                  <td>ongoing</td>
-                  <td><a href='https://github.com/ebp012/aryabhata'><i class='fa fa-github-square'></i></a></td>
-                </tr>
-                <tr>
-                  <td><a href="http://aspen.aeonic.me/">Aspen</a></td>
-                  <td>-</td>
-                  <td>a new programming language</td>
-                  <td>partly</td>
-                  <td>paused</td>
-                  <td><a href='https://github.com/ebp012/aspen'><i class='fa fa-github-square'></i></a></td>
-                </tr>
-                <tr>
-                  <td><a href="http://labsim.aeonic.me/">LabSim</a></td>
-                  <td>
-                    <img
-                      src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png"
-                    />
-                  </td>
-                  <td>falling-sand laboratory simulator<br/><a href='https://sandboxels.r74n.com/'>Sandboxels fork</a></td>
-                  <td>fully</td>
-                  <td>halted</td>
-                  <td><a href='https://github.com/ebp012/labsim'><i class='fa fa-github-square'></i></a></td>
-                </tr>
-                <tr>
-                  <td><a href="http://mahler.aeonic.me/">Mahler</a></td>
-                  <td>-</td>
-                  <td>classical music streaming hub</td>
-                  <td>broken</td>
-                  <td>paused</td>
-                  <td><a href='https://github.com/ebp012/mahler'><i class='fa fa-github-square'></i></a></td>
-                </tr>
-              </tbody>
-            </table>
+          <hr/>
+          <div class='grontent-section' id='conlangs-tab'>
+            <h2>Conlangs</h2>
+            <p style="text-align: centre">
+              Below are some conlangs which I've created.
+            </p>
+            <div class='table-wrapper'>
+              <table id="langTable">
+                <thead>
+                  <tr>
+                    <td>Language</td>
+                    <td>Family</td>
+                    <td>Description</td>
+                    <td>Sentence/Translation/Gloss</td>
+                    <td>Creation Time</td>
+                    <td style="width: 18pt">Word Order</td>
+                    <td style="width: 18pt"><abbr title='Morphosyntactic' onclick='alert("Morphosyntactic");'>Msyn.</abbr> Alignmnet</td>
+                    <td style="width: 32pt">Cases</td>
+                    <td style="width: 27pt">Genders</td>
+                    <td style="width: 32pt">Declension</td>
+                    <td style="width: 32pt">Conjugation</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="https://www.youtube.com/watch?v=U76DK3woxJE"
+                        >su Pama</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>a full grammar in 32 morphemes</td>
+                    <td>
+                      <p>mi mai pu a pu ki ti si pu ki ti pa ku.</p>
+                      <p>I can eat your food since it's good.</p>
+                      <p>I can eat ACC food of you because food of you is good</p>
+                    </td>
+                    <td>May–June 2024</td>
+                    <td>SVO</td>
+                    <td>nominative-accusative</td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1daAIM9-h6RK40sLYFNCp2SVQTxQOI5S_rzYwxquZLwA/edit?gid=159357971#gid=159357971"
+                        >Shaus</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>scrapped worldbuild</td>
+                    <td>
+                      <p>
+                        Mí, pyil̥øif thel̥ jøtt ɟilo, jøtt l̥esvyrøl̥th mí l̥esvyrai.
+                      </p>
+                      <p>
+                        Initially, I saw myself as a victim, but I have since
+                        realised that my initial mentality was wrong.
+                      </p>
+                      <p>
+                        First-ORD, sensed-ACTV-PAST-1S-VISUAL myself-REFL victim, but
+                        think-PASV-PAST-1S-EXPNTL (wrong)
+                      </p>
+                    </td>
+                    <td>August-December 2024</td>
+                    <td>VSO</td>
+                    <td>nominative-accusative</td>
+                    <td>nominative, vocative, genitive, locative, reflexive</td>
+                    <td>masculine, feminine, puelline, neuter</td>
+                    <td>case, number</td>
+                    <td>
+                      <abbr title="indicative, interrogative, subjunctive"
+                        >mood</abbr
+                      >, aspect,
+                      <abbr title="active, passive, antipassive">voice</abbr>,
+                      <abbr title="firsthand, secondhand, thirdhand">hand</abbr>,
+                      evidentiality
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1oE2xh_QqAJ_qFbs8pi7jcmVZV-8FV04fgX5_MIW_6ns/edit?gid=1323055028#gid=1323055028"
+                        >Liyansa</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>novelling</td>
+                    <td>
+                      <p>Ta lalta, nanaswa'ln falni pantin shu palsi pismaltin.</p>
+                      <p>
+                        First thing, I'd like some pismaltis (fruits) for my
+                        daughter to eat.
+                      </p>
+                      <p>
+                        thing 1-ORD, pick-I'my for daughter-acc eat-her some pismalti.
+                      </p>
+                    </td>
+                    <td>November 2024–present</td>
+                    <td>VSO</td>
+                    <td>ergative-absolutive</td>
+                    <td>
+                      ergative, absolutive, dative, alienable, inalienable
+                    </td>
+                    <td>masculine, feminine</td>
+                    <td>
+                      gender, case,
+                      <abbr title="singular, paucal, plural">number</abbr>
+                    </td>
+                    <td>
+                      <abbr title="inchoative, progressive, perfective">aspect</abbr
+                      >, <abbr title="indicative, interrogative">mood</abbr>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1Rn4XzDj57gLtyYzcNYrllIyke-uXNIKrwJfkq_qFXFM/edit?gid=1209797403#gid=1209797403"
+                        >Èlna/Elnese</a
+                      >
+                    </td>
+                    <td>Romance<br/>(<i>a posteriori</i>)</td>
+                    <td>althistory</td>
+                    <td>from Dogger Bank; Celtic+Nordic+Germanic influence</td>
+                    <td>August 2025–present</td>
+                    <td>SVO</td>
+                    <td>nominative-accusative</td>
+                    <td>nominative, accusative (prn), genitive, dative, ablative, reflexive (prn)</td>
+                    <td>masculine, feminine</td>
+                    <td>
+                      case, <abbr title="singular, plural">number</abbr>, gender
+                    </td>
+                    <td>
+                      <abbr title="Morphological: past perfective, past imperfective; past prospective, present, present prospective, future\n\nCompound: venitive past; present imperfective, venitive present; motive future, future imperfectivem future prospective">tense+aspect</abbr>,
+                      <abbr title="indicative, imperative, subjunctive (except in future tense), presumptive"
+                        >mood</abbr
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1Hzy4BwXER7I61nvWyO2x_sC4FukjdZQMTJDHj2ljAQY/edit?gid=1323055028#gid=1323055028"
+                        >Muntara</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>international auxilliary</td>
+                    <td>
+                      <p>Mi mateto kai fero di: seko siňi, nu suňi.</p>
+                      <p>I know who did it: it was her, not him.</p>
+                      <p>I know-SIMP who did-PAST-SIMP it: (it) was-SIMP her-FEM, NEG him-MASC</p>
+                    </td>
+                    <td>July 2024–present</td>
+                    <td>VSO</td>
+                    <td>direct</td>
+                    <td>
+                      nominative, accusative (optional), genitive
+                    </td>
+                    <td>masculine, feminine (both optional)</td>
+                    <td>gender, number, case</td>
+                    <td>
+                      <abbr title='past, present, future'>tense</abbr>,
+                      <abbr title="simple, prospective">aspect</abbr
+                      >, <abbr title="indicative, imperative, subjunctive">mood</abbr>,
+                      <abbr title='active, passive, impersonal'>voice</abbr>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <hr id='music'/>
-          <h2>Music</h2>
-          <p>These are some musical compositions of mine.</p>
-          <div class='table-wrapper'>
-            <table id="musicTable">
-              <thead>
-                <tr>
-                  <td>Composition</td>
-                  <td><abbr title='opus'>Op.</abbr></td>
-                  <td>Published</td>
-                  <td>Description</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <i><a href='https://www.youtube.com/watch?v=-xtmsFfXAhM'>Baroque Chamber Music in D♭ Major</a></i>
-                  </td>
-                  <td>Op. 0</td>
-                  <td>4 Aug 2024</td>
-                  <td>A short neo-baroque piece for a chamber ensemble.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <i><a href='https://www.youtube.com/watch?v=2CETV8x6B48'>Twelve Variations on "London Bridge"</a></i>
-                  </td>
-                  <td>Op. 1</td>
-                  <td>20 Aug 2024</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>
-                    <i><a href='https://www.youtube.com/watch?v=-g7Kdv9qkV0&t=2s'>Theme and Variations for Orchestra in D♭ major</a></i>
-                  </td>
-                  <td>Op. 2</td>
-                  <td>5 Jan 2025</td>
-                  <td>The months-ago scrapped slow movement from my upcoming Symphony No. 1 back from Sept 2024.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Air No. 1 de la Flûte, un peu sinistre</a></i>
-                  </td>
-                  <td>Op. 3</td>
-                  <td>23 Apr 2025</td>
-                  <td>flute solo piece (pretty bad)</td>
-                </tr>
-                <tr>
-                  <td>
-                    <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Le Fantôme à l'Aurore, en fa mineur</a></i>
-                  </td>
-                  <td>Op. 4</td>
-                  <td>06 Jul 2025</td>
-                  <td>flute solo piece</td>
-                </tr>
-                <tr>
-                  <td>
-                    <i><a href='https://www.youtube.com/watch?v=notpostedyet'>Symphony No. 1 in C♯ minor</a></i>
-                  </td>
-                  <td><i>Op. 5?</i></td>
-                  <td><i>upcoming</i></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+          <div class='grontent-section' id='codings-tab'>
+            <h2>Programming</h2>
+            <p style="text-align: centre">
+              These are some personal coding projects of mine.
+            </p>
+            <div class='table-wrapper'>
+              <table id="appTable">
+                <thead>
+                  <tr>
+                    <td>App</td>
+                    <td>Icon</td>
+                    <td>Description</td>
+                    <td>Function</td>
+                    <td>Development</td>
+                    <td>Repository</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="http://aryabhata.aeonic.me/">Aryabhata</a></td>
+                    <td>-</td>
+                    <td>a multipurpose study app</td>
+                    <td>mostly</td>
+                    <td>ongoing</td>
+                    <td><a href='https://github.com/ebp012/aryabhata'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://aspen.aeonic.me/">Aspen</a></td>
+                    <td>-</td>
+                    <td>a new programming language</td>
+                    <td>partly</td>
+                    <td>paused</td>
+                    <td><a href='https://github.com/ebp012/aspen'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://labsim.aeonic.me/">LabSim</a></td>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png"
+                      />
+                    </td>
+                    <td>falling-sand laboratory simulator<br/><a href='https://sandboxels.r74n.com/'>Sandboxels fork</a></td>
+                    <td>fully</td>
+                    <td>halted</td>
+                    <td><a href='https://github.com/ebp012/labsim'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://mahler.aeonic.me/">Mahler</a></td>
+                    <td>-</td>
+                    <td>classical music streaming hub</td>
+                    <td>broken</td>
+                    <td>paused</td>
+                    <td><a href='https://github.com/ebp012/mahler'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class='grontent-section' id='musics-tab'>
+            <h2>Music</h2>
+            <p>These are some musical compositions of mine.</p>
+            <div class='table-wrapper'>
+              <table id="musicTable">
+                <thead>
+                  <tr>
+                    <td>Composition</td>
+                    <td><abbr title='opus'>Op.</abbr></td>
+                    <td>Published</td>
+                    <td>Description</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=-xtmsFfXAhM'>Baroque Chamber Music in D♭ Major</a></i>
+                    </td>
+                    <td>Op. 0</td>
+                    <td>4 Aug 2024</td>
+                    <td>A short neo-baroque piece for a chamber ensemble.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=2CETV8x6B48'>Twelve Variations on "London Bridge"</a></i>
+                    </td>
+                    <td>Op. 1</td>
+                    <td>20 Aug 2024</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=-g7Kdv9qkV0&t=2s'>Theme and Variations for Orchestra in D♭ major</a></i>
+                    </td>
+                    <td>Op. 2</td>
+                    <td>5 Jan 2025</td>
+                    <td>The months-ago scrapped slow movement from my upcoming Symphony No. 1 back from Sept 2024.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Air No. 1 de la Flûte, un peu sinistre</a></i>
+                    </td>
+                    <td>Op. 3</td>
+                    <td>23 Apr 2025</td>
+                    <td>flute solo piece (pretty bad)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Le Fantôme à l'Aurore, en fa mineur</a></i>
+                    </td>
+                    <td>Op. 4</td>
+                    <td>06 Jul 2025</td>
+                    <td>flute solo piece</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=notpostedyet'>Symphony No. 1 in C♯ minor</a></i>
+                    </td>
+                    <td><i>Op. 5?</i></td>
+                    <td><i>upcoming</i></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -423,21 +438,25 @@
     </div>
     <nav class="nav-bar desat">
       <div class="nav-item" data-target="#bio" id="homeTab">
-        <i class="fa fa-book"></i>
-        Bio
+        <i class="fa fa-address-book"></i>
+        <br class='hidden'/>
+        <span class='nav-text'>Bio</span>
       </div>
       <div class="nav-item" data-target="#projects">
         <i class="fa fa-desktop"></i>
-        Projects
+        <br class='hidden'/>
+        <span class='nav-text'>Projects</span>
       </div>
       <div class="nav-item" data-target="#reform" onclick='window.open("http://blog.aeonic.me/", "_self");'>
         <i class="fa fa-rss-square"></i>
-        Blog
+        <br class='hidden'/>
+        <span class='nav-text'>Blog</span>
       </div>
       
       <div class="nav-item" data-target="#reform" onclick='window.open("http://aryabhata.aeonic.me/", "_self");'>
         <i class="fa fa-calculator"></i>
-        Aryabhata
+        <br class='hidden'/>
+        <span class='nav-text'>Aryabhata</span>
       </div>
       
     </nav>
@@ -477,6 +496,34 @@
           item.addEventListener('click', handleNavClick);
         });
         document.querySelector('.nav-item').click();
+        
+        
+        
+        // Projects
+        // Select home tab
+        const gravItems = document.querySelectorAll('.grav-item');
+        const grontentSections = document.querySelectorAll('.grontent-section');
+
+        function handleGravClick() {
+            const targetId = this.getAttribute('data-target');
+
+            grontentSections.forEach(s => s.classList.remove('active'));
+            const targetSection = document.querySelector(`#${targetId}`);
+            if(targetSection) targetSection.classList.add('active');
+
+            gravItems.forEach(item => {
+                item.style.filter = '';
+            });
+            this.style.filter = 'brightness(1.6)';
+
+            // Update URL hash
+            history.pushState(null, '', `#${targetId}`);
+        }
+
+        gravItems.forEach(item => item.addEventListener('click', handleGravClick));
+
+        // Click first grav-item by default
+        if (gravItems.length) gravItems[0].click();
       });
       
       // Settings Manager
@@ -546,8 +593,6 @@
         $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
         });
       });
-
-      
 
       
     </script>
