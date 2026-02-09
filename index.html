@@ -6,7 +6,7 @@
     <title>eshaan's website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
+    <link href='http://aryabhata.aeonic.me/styles/sigoma.css' rel='stylesheet' type='text/css' />
     <style>
       #bgcontainer {
         background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
@@ -27,9 +27,6 @@
           color: #c4a6d9;
         }
       }*/
-      .desk-paper p {
-        line-height: 36pt;
-      }
       .desk-paper, p.page-nav, .nav-item {
         font-family: geneva, tahoma, 'Segoe UI', segoe, sans-serif;
       }
@@ -96,23 +93,84 @@
       <!-- Bio Section -->
       <div id="bio" class="content-section active">
         <h1 class="page-title">about me</h1>
-        <p class='page-nav' style='font-size: 18pt; position: static; margin-left: 30px; margin-right: 30px;'>• 
-          <a href='https://github.com/ebp012/'><img class='nav-img' src='https://cdn.jim-nielsen.com/macos/512/github-desktop-2021-05-20.png?rf=1024' style='transform: scale(1.2);'/></a> • 
-          <a href='https://youtube.com/@random.guy2840/'><img class='nav-img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/YouTube_play_button_square_%282013-2017%29.svg/120px-YouTube_play_button_square_%282013-2017%29.svg.png?20190606142134'/></a>  • 
-          <a href='https://en.wikipedia.org/wiki/User:Eshaan011'><img class='nav-img' src='https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png'/></a>  •
-        <a href='https://www.instagram.com/echo.fractal/'><img class='nav-img' src='https://static.wikia.nocookie.net/logopedia/images/3/37/Instagram_Icon.png'/></a> 
-          •</p><br/>
-        <div class="desk-paper" style='line-height: 36pt;'>
-          
-          <center><strong><i>eshaan patel</i>'s official website</strong></center>
-          
-          <hr/>
-          
-          <center>
-            <p></p>
-          </center>
-
-          <br/>
+        <div class="desk-paper">
+          <div class='table-wrapper'>
+            <table class='non nepas' id='homepagetable' style='width: 100%; text-align: center;'>
+              <tr>
+                <td style='min-width: 33.333333%; font-family: courier;'>
+                  <p>Hello, I'm Eshaan B. Patel.</p>
+                  <p><small style='font-size:10px;font-weight:bold;line-height:12px !important;'>I make conlangs, program, and want to pursue linguistics.</small></p>
+                </td>
+                <td colspan='2' style='max-width: 66.666666%'>
+                  <div class="social-grid" style="display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;width: 100%;height: 100%;">
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://github.com/ebp012/">
+                        <img class="nav-img" src="https://cdn.jim-nielsen.com/macos/512/github-desktop-2021-05-20.png?rf=1024" style="transform: scale(1.2);"/>
+                      </a>
+                    </div>
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://youtube.com/@random.guy2840/">
+                        <img class="nav-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/YouTube_play_button_square_%282013-2017%29.svg/120px-YouTube_play_button_square_%282013-2017%29.svg.png?20190606142134"/>
+                      </a>
+                    </div>
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://en.wikipedia.org/wiki/User:Eshaan011">
+                        <img class="nav-img" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png"/>
+                      </a>
+                    </div>
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://www.instagram.com/echo.fractal/">
+                        <img class="nav-img" src="https://static.wikia.nocookie.net/logopedia/images/3/37/Instagram_Icon.png"/>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style='width: 50%;'>
+                  <div class='content-section shown'>
+                    <h4>Current Projects</h4>
+                    <div class='desk-paper'>
+                      <ul style='text-align: left; list-style-type: circle;'><!--just using p not li dw-->
+                        <p>&#x2022;&nbsp;Work on <a href='https://docs.google.com/spreadsheets/d/1ANHvBurjcnvXdIPsHd_e7zCcMU-ebVyk-L6Pn_T3ooU/edit?gid=400277741#gid=400277741'>Ampābru</a></p>
+                        <p>&#x2022;&nbsp;Finish writing a linguistics paper</p>
+                        <p>&#x2022;&nbsp;Finish project <a href='https://devpost.com/software/l-etoile'>l'étoile</a></p>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+                <td style='width: 50%;'>
+                  <div class='content-section shown'>
+                  <h4>Blogger</h4>
+                  <div id='latest-post' class='desk-paper'>
+                    Loading post....
+                  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class='content-section shown'>
+                    <h4>Conlang Word of the Day</h4>
+                    <div class='desk-paper'>
+                      <big>nulahyi</big>
+                      <p>
+                        <small>
+                          /ˈnuˌla.çi/
+                          <br/>
+                          [ˈnuˌʰlɐː.ɕɪ]
+                        </small>
+                      </p>
+                      <hr/>
+                      <p>(n) indulgence</p>
+                      <h5>Etymology</h5>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
           <hr/>
           <p style='text-align: center;'>
             <img src='https://www.w3.org/Icons/valid-xml10-blue.png' alt='xml validated' />
@@ -627,7 +685,35 @@
         });
       });
       
-      
+      const blogURL = "https://blog.aeonic.me/feeds/posts/default?alt=json-in-script&orderby=updated&max-results=1&callback=displayPost";
+
+  function displayPost(data) {
+  const entry = data.feed.entry[0];
+  const title = entry.title.$t;
+  const link = entry.link.find(l => l.rel === 'alternate').href;
+  const htmlContent = entry.content ? entry.content.$t : entry.summary.$t;
+
+  // Create a temporary DOM element to parse the HTML
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = htmlContent;
+
+  // Find the first .content-section
+  const firstSection = tempDiv.querySelector('.post-summary');
+
+  // Convert it to plain text (or empty string if not found)
+  const plainText = firstSection ? firstSection.textContent.trim() : '';
+
+  // Put into page
+  document.getElementById('latest-post').innerHTML = `
+    <h3><a href="${link}" target="_blank">${title}</a></h3>
+    <div>${plainText}</div>
+  `;
+}
+
+// Inject the JSONP script
+const script = document.createElement('script');
+script.src = blogURL;
+document.body.appendChild(script);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
