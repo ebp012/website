@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eshaan's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
+    <style>
+      #bgcontainer {
+        background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
+      }
+      table#appTable tbody tr td img {
+        height: 40px;
+        width: 40px;
+      }
+      /*@media (prefers-color-scheme: light) {
+        .content-section .desk-paper {
+          filter: brightness(0.952381);
+        }
+        .nav-item i  {
+          color: #b6a2cb;
+          text-shadow: 19px 1px 2px rgba(#fefefe, 0, 0, 0.5);
+        }
+        .nav-item {
+          color: #c4a6d9;
+        }
+      }*/
+      .desk-paper, p.page-nav, .nav-item {
+        font-family: geneva, tahoma, 'Segoe UI', segoe, sans-serif;
+      }
+      .page-title, h1, h2, h3, h4, h5, h6, h7, h8 {
+        font-family: futura, tahoma, verdana, sans-serif;
+      }
+      table::not(.nepas), thead td {
+        font-family: 'Segoe UI', segoe, tahoma, sans-serif !important;
+      }
+      .grontent-section {
+        display: none;
+      }
+      .grontent-section.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body
+    onload="document.querySelector('#homeTab').click(); pascal.addDimension();"
+  >
+    <div id="bgcontainer"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="crystal-distortion">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="9"/>
+        </filter>
+        <filter id="crystal-distortion-hover">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="16"/>
+            <feColorMatrix type="saturate" values="1.025"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-hover-button">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-plus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="72"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+        <filter id="crystal-distortion-plus-two">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="96"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-plus-three">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="144"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-minus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="container cs-blue">
+      <!-- Bio Section -->
+      <div id="bio" class="content-section active">
+        <h1 class="page-title">about me</h1>
+        <div class="desk-paper">
+          <div class='table-wrapper'>
+            <table class='non nepas' id='homepagetable' style='width: 100%; text-align: center;'>
+              <tr>
+                <td style='min-width: 33.333333%; font-family: courier;'>
+                  <p>Hello, I'm Eshaan B. Patel.</p>
+                  <p><small style='font-size:10px;font-weight:bold;line-height:12px !important;'>I make conlangs, program, and want to pursue linguistics.</small></p>
+                </td>
+                <td colspan='2' style='max-width: 66.666666%'>
+                  <div class="social-grid" style="display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;width: 100%;height: 100%;">
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://github.com/ebp012/">
+                        <img class="nav-img" src="https://cdn.jim-nielsen.com/macos/512/github-desktop-2021-05-20.png?rf=1024" style="transform: scale(1.2);"/>
+                      </a>
+                    </div>
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://youtube.com/@random.guy2840/">
+                        <img class="nav-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/YouTube_play_button_square_%282013-2017%29.svg/120px-YouTube_play_button_square_%282013-2017%29.svg.png?20190606142134"/>
+                      </a>
+                    </div>
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://en.wikipedia.org/wiki/User:Eshaan011">
+                        <img class="nav-img" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png"/>
+                      </a>
+                    </div>
+                    <div class="social-item" style="flex: 1 1 45%; text-align: center;">
+                      <a href="https://www.instagram.com/echo.fractal/">
+                        <img class="nav-img" src="https://static.wikia.nocookie.net/logopedia/images/3/37/Instagram_Icon.png"/>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style='width: 50%;'>
+                  <div class='content-section shown'>
+                    <h4>Current Projects</h4>
+                    <div class='desk-paper'>
+                      <ul style='text-align: left; list-style-type: circle;'><!--just using p not li dw-->
+                        <p>&#x2022;&nbsp;Work on <a href='https://docs.google.com/spreadsheets/d/1ANHvBurjcnvXdIPsHd_e7zCcMU-ebVyk-L6Pn_T3ooU/edit?gid=400277741#gid=400277741'>Ampābru</a></p>
+                        <p>&#x2022;&nbsp;Finish writing a linguistics paper</p>
+                        <p>&#x2022;&nbsp;Finish project <a href='https://devpost.com/software/l-etoile'>l'étoile</a></p>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+                <td style='width: 50%;'>
+                  <div class='content-section shown'>
+                  <h4>Blogger</h4>
+                  <div id='latest-post' class='desk-paper'>
+                    Loading post....
+                  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class='content-section shown'>
+                    <h4>Conlang Word of the Day</h4>
+                    <div class='desk-paper'>
+                      <big>nulahyi</big>
+                      <p>
+                        <small>
+                          /ˈnuˌla.çi/
+                          <br/>
+                          [ˈnuˌʰlɐː.ɕɪ]
+                        </small>
+                      </p>
+                      <hr/>
+                      <p>(n) indulgence</p>
+                      <h5>Etymology</h5>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr/>
+          <p style='text-align: center;'>
+            <img src='https://www.w3.org/Icons/valid-xml10-blue.png' alt='xml validated' />
+            <img src='http://jigsaw.w3.org/css-validator/images/vcss-blue' alt='css validated' />
+            <img src='https://hellnet.work/8831/img/buttons/Area51_Cavern_4556_thinkdifferent.gif' alt='made with macintosh' />
+            <img src='https://hellnet.work/8831/img/buttons/Area51_Corridor_3621_anybrow.gif' alt='best viewed with any browser' />
+          </p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects" class="content-section">
+        <h1 class="page-title">Projects</h1>
+        <div class="desk-paper" style="font-size: 14pt;" id='conlangs'>
+          <div class="card-wrap">
+            <div class="titan-card grav-item" data-target='conlangs-tab'><i class='fa fa-book'></i><br/>conlangs</div>
+            <div class="titan-card grav-item" data-target='codings-tab'><i class='fa fa-laptop'></i><br/>programming</div>
+            <div class="titan-card grav-item" data-target='musics-tab'><i class='fa fa-music'></i><br/>music</div>
+          </div>
+          <hr/>
+          <div class='grontent-section' id='conlangs-tab'>
+            <h2>Conlangs</h2>
+            <p style="text-align: centre">
+              Below are some conlangs which I've created.
+            </p>
+            <div class='table-wrapper'>
+              <table id="langTable">
+                <thead>
+                  <tr>
+                    <td>Language</td>
+                    <td>Family</td>
+                    <td>Description</td>
+                    <td>Sentence/Translation/Gloss</td>
+                    <td>Creation Time</td>
+                    <td style="width: 18pt">Word Order</td>
+                    <td style="width: 18pt"><abbr title='Morphosyntactic' onclick='alert("Morphosyntactic");'>Msyn.</abbr> Alignmnet</td>
+                    <td style="width: 32pt">Cases</td>
+                    <td style="width: 27pt">Genders</td>
+                    <td style="width: 32pt">Declension</td>
+                    <td style="width: 32pt">Conjugation</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="https://www.youtube.com/watch?v=U76DK3woxJE"
+                        >su Pama</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>a full grammar in 32 morphemes</td>
+                    <td>
+                      <p>mi mai pu a pu ki ti si pu ki ti pa ku.</p>
+                      <p>I can eat your food since it's good.</p>
+                      <p>I can eat ACC food of you because food of you is good</p>
+                    </td>
+                    <td>May–June 2024</td>
+                    <td>SVO</td>
+                    <td>nominative-accusative</td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                    <td><i>none</i></td>
+                  </tr>
+                  <!--<tr>
+                    <td>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1daAIM9-h6RK40sLYFNCp2SVQTxQOI5S_rzYwxquZLwA/edit?gid=159357971#gid=159357971"
+                        >Shaus</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>scrapped worldbuild</td>
+                    <td>
+                      <p>
+                        Mí, pyil̥øif thel̥ jøtt ɟilo, jøtt l̥esvyrøl̥th mí l̥esvyrai.
+                      </p>
+                      <p>
+                        Initially, I saw myself as a victim, but I have since
+                        realised that my initial mentality was wrong.
+                      </p>
+                      <p>
+                        First-ORD, sensed-ACTV-PAST-1S-VISUAL myself-REFL victim, but
+                        think-PASV-PAST-1S-EXPNTL (wrong)
+                      </p>
+                    </td>
+                    <td>August-December 2024</td>
+                    <td>VSO</td>
+                    <td>nominative-accusative</td>
+                    <td>nominative, vocative, genitive, locative, reflexive</td>
+                    <td>masculine, feminine, puelline, neuter</td>
+                    <td>case, number</td>
+                    <td>
+                      <abbr title="indicative, interrogative, subjunctive"
+                        >mood</abbr
+                      >, aspect,
+                      <abbr title="active, passive, antipassive">voice</abbr>,
+                      <abbr title="firsthand, secondhand, thirdhand">hand</abbr>,
+                      evidentiality
+                    </td>
+                  </tr>-->
+                  <tr>
+                    <td>
+                      <a
+                        href="conlangs/liyansa.html"
+                        >Liyansa</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>novelling</td>
+                    <td>
+                      <p>Ta lalta, nanaswa'ln falni pantin shu palsi pismaltin.</p>
+                      <p>
+                        First thing, I'd like some pismaltis (fruits) for my
+                        daughter to eat.
+                      </p>
+                      <p>
+                        thing 1-ORD, pick-I'my for daughter-acc eat-her some pismalti.
+                      </p>
+                    </td>
+                    <td>November 2024–present</td>
+                    <td>VSO</td>
+                    <td>ergative-absolutive</td>
+                    <td>
+                      ergative, absolutive, dative, alienable, inalienable
+                    </td>
+                    <td>masculine, feminine</td>
+                    <td>
+                      gender, case,
+                      <abbr title="singular, paucal, plural">number</abbr>
+                    </td>
+                    <td>
+                      <abbr title="inchoative, progressive, perfective">aspect</abbr
+                      >, <abbr title="indicative, interrogative">mood</abbr>
+                    </td>
+                  </tr>
+                  <!--<tr>
+                    <td>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1Rn4XzDj57gLtyYzcNYrllIyke-uXNIKrwJfkq_qFXFM/edit?gid=1209797403#gid=1209797403"
+                        >Èlna/Elnese</a
+                      >
+                    </td>
+                    <td>Romance<br/>(<i>a posteriori</i>)</td>
+                    <td>althistory</td>
+                    <td>from Dogger Bank; Celtic+Nordic+Germanic influence</td>
+                    <td>August 2025–present</td>
+                    <td>SVO</td>
+                    <td>nominative-accusative</td>
+                    <td>nominative, accusative (prn), genitive, dative, ablative, reflexive (prn)</td>
+                    <td>masculine, feminine</td>
+                    <td>
+                      case, <abbr title="singular, plural">number</abbr>, gender
+                    </td>
+                    <td>
+                      <abbr title="Morphological: past perfective, past imperfective; past prospective, present, present prospective, future\n\nCompound: venitive past; present imperfective, venitive present; motive future, future imperfectivem future prospective">tense+aspect</abbr>,
+                      <abbr title="indicative, imperative, subjunctive (except in future tense), presumptive"
+                        >mood</abbr
+                      >
+                    </td>
+                  </tr>-->
+                  <tr>
+                    <td>
+                      <a
+                        href="conlangs/muntara.html"
+                        >Muntara</a
+                      >
+                    </td>
+                    <td><i>a priori</i></td>
+                    <td>international auxilliary</td>
+                    <td>
+                      <p>Mi mateto kai fero di: seko siňi, nu suňi.</p>
+                      <p>I know who did it: it was her, not him.</p>
+                      <p>I know-SIMP who did-PAST-SIMP it: (it) was-SIMP her-FEM, NEG him-MASC</p>
+                    </td>
+                    <td>July 2024–present</td>
+                    <td>VSO</td>
+                    <td>direct</td>
+                    <td>
+                      nominative, accusative (optional), genitive
+                    </td>
+                    <td>masculine, feminine (both optional)</td>
+                    <td>gender, number, case</td>
+                    <td>
+                      <abbr title='past, present, future'>tense</abbr>,
+                      <abbr title="simple, prospective">aspect</abbr
+                      >, <abbr title="indicative, imperative, subjunctive">mood</abbr>,
+                      <abbr title='active, passive, impersonal'>voice</abbr>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="conlangs/ampabru.html"
+                        >Ampābru</a
+                      >
+                    </td>
+                    <td><i>a posteriori</i><wbr/>(from <a href='https://en.wikipedia.org/wiki/African_Romance'>African Romance</a>)</td>
+                    <td>althistory<wbr/>(reverse of Romani)</td>
+                    <td>
+                      <p>
+                        Š'orruìdšā<wbr/> pārrõ<wbr/> lē digtā̃ naìth.<br/>
+/ˈʃɔ.ɽyˌd͡ʒa<wbr/> ˈpa.ɽo<wbr/> le<wbr/> ˈdig.tã<wbr/> nætʰ/<br/>
+[ˈʂɔ.ɽyˌd͡ʒa<wbr/> ˈpɑ.ɽo<wbr/> ˌle<wbr/> ˈd̪iɣ̊.tã<wbr/> ˈn̪æt̪ʰ]
+                      </p>
+                      <p>
+                        She might not hear those men talking.
+                      </p>
+                      <p>
+                        she-ERG.F.SG<wbr/>=hear-PRS.PSUP.1SG.F<wbr/> men-ABS.PL<wbr/> those-M.PL<wbr/> talking-PRPART NEG
+                      </p>
+                    </td>
+                    <td>January 2026–present</td>
+                    <td>SOV</td>
+                    <td>ergative-absolutive<wbr/>(primarily; split ergative)</td>
+                    <td>
+                      ergative, absolutive, dative, genitive, reflexive, vocative, inessive
+                    </td>
+                    <td>masculine, feminine</td>
+                    <td>
+                      gender, <abbr title='singular, plural'>number</abbr>, case (4 declension paradigms)
+                    </td>
+                    <td>
+                      <abbr title='non-past/present, past, remote past'>tense</abbr>, <abbr title='simple, habitual (from Latin imperfective+Hindi influence)'>aspect</abbr>, <abbr title='indicative, imperative, subjunctive, presumptive, counterfactual'>mood</abbr><br/>
+                      <abbr title='5 verb conjugation paradigms, fusional; indicative∋{all}, imperative∋{all-{remote past U past}}, subjunctive,presumptive,counterfactual moods,habitual aspect∋{present,past}'>(all conjugations)</abbr>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class='grontent-section' id='codings-tab'>
+            <h2>Programming</h2>
+            <p style="text-align: centre">
+              These are some personal coding projects of mine.
+            </p>
+            <div class='table-wrapper'>
+              <table id="appTable">
+                <thead>
+                  <tr>
+                    <td>App</td>
+                    <td>Icon</td>
+                    <td>Description</td>
+                    <td>Function</td>
+                    <td>Development</td>
+                    <td>Repository</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="http://aryabhata.aeonic.me/">aryabhata</a></td>
+                    <td>-</td>
+                    <td>a multipurpose study app</td>
+                    <td>mostly</td>
+                    <td>paused</td>
+                    <td><a href='https://github.com/ebp012/aryabhata'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://aspen.aeonic.me/">aspen</a></td>
+                    <td>-</td>
+                    <td>a new programming language</td>
+                    <td>partly</td>
+                    <td>paused</td>
+                    <td><a href='https://github.com/ebp012/aspen'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://labsim.aeonic.me/">LabSim</a></td>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png"
+                      />
+                    </td>
+                    <td>falling-sand laboratory simulator<br/><a href='https://sandboxels.r74n.com/'>Sandboxels fork</a></td>
+                    <td>fully</td>
+                    <td>effectively halted</td>
+                    <td><a href='https://github.com/ebp012/labsim'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://spectrite.aeonic.me/">spectrite</a></td>
+                    <td>-</td>
+                    <td>graphing calculator</td>
+                    <td>partly</td>
+                    <td>paused</td>
+                    <td><a href='https://github.com/ebp012/spectrite'><i class='fa fa-github-square'></i></a></td>
+                  </tr>
+                  <!--<tr>
+                    <td><a href="http://mahler.aeonic.me/">mahler</a></td>
+                    <td>-</td>
+                    <td>classical music streaming hub</td>
+                    <td>broken</td>
+                    <td>paused</td>
+                    <td><a href='https://github.com/ebp012/mahler'><i class='fa fa-github-square'></i></a></td>
+                  </tr>-->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class='grontent-section' id='musics-tab'>
+            <h2>Music</h2>
+            <p>These are some musical compositions of mine.</p>
+            <div class='table-wrapper'>
+              <table id="musicTable">
+                <thead>
+                  <tr>
+                    <td>Composition</td>
+                    <td><abbr title='opus'>Op.</abbr></td>
+                    <td>Published</td>
+                    <td>Description</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=-xtmsFfXAhM'>Baroque Chamber Music in D♭ Major</a></i>
+                    </td>
+                    <td>Op. 0</td>
+                    <td>4 Aug 2024</td>
+                    <td>A short neo-baroque piece for a chamber ensemble.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=2CETV8x6B48'>Twelve Variations on "London Bridge"</a></i>
+                    </td>
+                    <td>Op. 1</td>
+                    <td>20 Aug 2024</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=-g7Kdv9qkV0&t=2s'>Theme and Variations for Orchestra in D♭ major</a></i>
+                    </td>
+                    <td>Op. 2</td>
+                    <td>5 Jan 2025</td>
+                    <td>The months-ago scrapped slow movement from my upcoming Symphony No. 1 back from Sept 2024.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Air No. 1 de la Flûte, un peu sinistre</a></i>
+                    </td>
+                    <td>Op. 3</td>
+                    <td>23 Apr 2025</td>
+                    <td>flute solo piece (pretty bad)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=Q4_W9zga9nY'>Le Fantôme à l'Aurore, en fa mineur</a></i>
+                    </td>
+                    <td>Op. 4</td>
+                    <td>06 Jul 2025</td>
+                    <td>flute solo piece</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i><a href='https://www.youtube.com/watch?v=notpostedyet'>Symphony No. 1 in C♯ minor</a></i>
+                    </td>
+                    <td><i>Op. 5?</i></td>
+                    <td><i>upcoming</i></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <div id="header" class='nav-bar'>
+      <h1 id='blog-title' style='font-family: geneva, genevab, tahoma, verdana, sans-serif;'><blink>eshaan's</blink>&nbsp;<blunk>website</blunk></h1>
+    </div>
+    <nav class="nav-bar desat">
+      <div class="nav-item" data-target="#bio" id="homeTab">
+        <i class="fa fa-address-book"></i>
+        <br class='hidden'/>
+        <span class='nav-text'>Bio</span>
+      </div>
+      <div class="nav-item" data-target="#projects">
+        <i class="fa fa-desktop"></i>
+        <br class='hidden'/>
+        <span class='nav-text'>Projects</span>
+      </div>
+      <div class="nav-item" data-target="#reform" onclick='window.open("http://blog.aeonic.me/", "_self");'>
+        <i class="fa fa-rss-square"></i>
+        <br class='hidden'/>
+        <span class='nav-text'>Blog</span>
+      </div>
+      
+    </nav>
+    
+    <script>
+      // Navbar functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select home tab
+        const navItems = document.querySelectorAll('.nav-item');
+        const contentSections = document.querySelectorAll('.content-section');
+        
+        // Function to handle nav item clicks
+        function handleNavClick(event) {
+          const targetId = this.getAttribute('data-target');
+          
+          // Hide all content sections
+          contentSections.forEach(section => {
+            section.classList.remove('active');
+          });
+          
+          // Show the targeted section
+          document.querySelector(targetId).classList.add('active');
+          
+          // Reset all nav items
+          navItems.forEach(item => {
+            item.style.transform = 'translateY(0)';
+            item.style.background = 'transparent';
+          });
+          
+          // Style the clicked nav item
+          this.style.background = 'rgba(155,130,155,0.3)';
+          //this.style.transform = 'translateY(-5px)';
+        }
+        
+        // Add click event to each nav item
+        navItems.forEach(item => {
+          item.addEventListener('click', handleNavClick);
+        });
+        document.querySelector('.nav-item').click();
+        
+        
+        // Projects
+        // Select home tab
+        const gravItems = document.querySelectorAll('.grav-item');
+        const grontentSections = document.querySelectorAll('.grontent-section');
+
+        function handleGravClick() {
+            const targetId = this.getAttribute('data-target');
+
+            grontentSections.forEach(s => s.classList.remove('active'));
+            const targetSection = document.querySelector(`#${targetId}`);
+            if(targetSection) targetSection.classList.add('active');
+
+            gravItems.forEach(item => {
+                item.style.filter = '';
+            });
+            this.style.filter = 'brightness(1.6)';
+
+            // Update URL hash
+            history.pushState(null, '', `#${targetId}`);
+        }
+
+        gravItems.forEach(item => item.addEventListener('click', handleGravClick));
+
+        // Click first grav-item by default
+        if (gravItems.length) gravItems[0].click();
+      });
+      
+      // Settings Manager
+      const SettingsManager = {
+        init() {
+          this.loadSettings();
+          this.bindEvents();
+          this.toggleCalculatorIcon(
+            localStorage.getItem("showCalculator") === "true"
+          );
+          this.togglePerformanceMode(
+            localStorage.getItem("performanceMode") === "true"
+          );
+        },
+
+        bindEvents() {
+          $("#cookie-consent").change(function () {
+            localStorage.setItem("cookieConsent", this.checked);
+            if (this.checked)
+              document.cookie = "cookieConsent=true; max-age=2592000";
+          });
+
+          $("#calculator-toggle").change(function () {
+            localStorage.setItem("showCalculator", this.checked);
+            SettingsManager.toggleCalculatorIcon(this.checked);
+          });
+
+          $("#performance-mode").change(function () {
+            localStorage.setItem("performanceMode", this.checked);
+            SettingsManager.togglePerformanceMode(this.checked);
+          });
+        },
+
+        loadSettings() {
+          const consent = document.cookie.includes("cookieConsent=true");
+          $("#cookie-consent").prop("checked", consent);
+
+          $("#calculator-toggle").prop(
+            "checked",
+            localStorage.getItem("showCalculator") === "true"
+          );
+
+          $("#performance-mode").prop(
+            "checked",
+            localStorage.getItem("performanceMode") === "true"
+          );
+        },
+
+        toggleCalculatorIcon(show) {
+          $('[data-target="#calculator"]').toggle(show);
+        },
+
+        togglePerformanceMode(enable) {
+          $("body").toggleClass("flattened", enable);
+          $("#desmos-calculator").css("opacity", enable ? 0.9 : 1);
+        },
+      };
+
+      $(document).ready(function () {
+        SettingsManager.init();
+
+        var channelID = "UCEvttHNVOsafen6uySQbDkQ";
+        var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+        $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+           var link = data.items[0].link;
+           var id = link.substr(link.indexOf("=")+1);
+        $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+        });
+      });
+      
+      const blogURL = "https://blog.aeonic.me/feeds/posts/default?alt=json-in-script&orderby=updated&max-results=1&callback=displayPost";
+
+  function displayPost(data) {
+  const entry = data.feed.entry[0];
+  const title = entry.title.$t;
+  const link = entry.link.find(l => l.rel === 'alternate').href;
+  const htmlContent = entry.content ? entry.content.$t : entry.summary.$t;
+
+  // Create a temporary DOM element to parse the HTML
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = htmlContent;
+
+  // Find the first .content-section
+  const firstSection = tempDiv.querySelector('.post-summary');
+
+  // Convert it to plain text (or empty string if not found)
+  const plainText = firstSection ? firstSection.textContent.trim() : '';
+
+  // Put into page
+  document.getElementById('latest-post').innerHTML = `
+    <h3><a href="${link}" target="_blank">${title}</a></h3>
+    <div>${plainText}</div>
+  `;
+}
+
+// Inject the JSONP script
+const script = document.createElement('script');
+script.src = blogURL;
+document.body.appendChild(script);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
+    <script src='https://aryabhata.aeonic.me/styles/sigma.js'></script>
+  </body>
+</html>
