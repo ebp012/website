@@ -7,46 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
+    <link href='indexstyle.css' rel='stylesheet' type='text/css'/>
     <style>
       #bgcontainer {
         background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
       }
-      table#appTable tbody tr td img {
-        height: 40px;
-        width: 40px;
-      }
-      /*@media (prefers-color-scheme: light) {
-        .content-section .desk-paper {
-          filter: brightness(0.952381);
-        }
-        .nav-item i  {
-          color: #b6a2cb;
-          text-shadow: 19px 1px 2px rgba(#fefefe, 0, 0, 0.5);
-        }
-        .nav-item {
-          color: #c4a6d9;
-        }
-      }*/
-      .desk-paper, p.page-nav, .nav-item {
-        font-family: geneva, tahoma, 'Segoe UI', segoe, sans-serif;
-      }
-      .page-title, h1, h2, h3, h4, h5, h6, h7, h8 {
-        font-family: futura, tahoma, verdana, sans-serif;
-      }
-      table::not(.nepas), thead td {
-        font-family: 'Segoe UI', segoe, tahoma, sans-serif !important;
-      }
-      .grontent-section {
-        display: none;
-      }
-      .grontent-section.active {
-        display: block;
-      }
     </style>
   </head>
-  <body
-    onload="document.querySelector('#homeTab').click(); pascal.addDimension();"
-  >
+  <body onload="if (window.location.hash !== '#projects') document.querySelector('#homeTab').click();">
     <div id="bgcontainer"></div>
 
     <svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +111,7 @@
                   <div class='content-section shown'>
                   <h4>Blogger</h4>
                   <div id='latest-post' class='desk-paper'>
-                    Loading post....
+                    Please ensure that your browser have JavaScript enabled, lest this blog post be unviewable.
                   </div>
                   </div>
                 </td>
@@ -561,168 +529,7 @@
       
     </nav>
     
-    <script>
-      // Navbar functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        // Select home tab
-        const navItems = document.querySelectorAll('.nav-item');
-        const contentSections = document.querySelectorAll('.content-section');
-        
-        // Function to handle nav item clicks
-        function handleNavClick(event) {
-          const targetId = this.getAttribute('data-target');
-          
-          // Hide all content sections
-          contentSections.forEach(section => {
-            section.classList.remove('active');
-          });
-          
-          // Show the targeted section
-          document.querySelector(targetId).classList.add('active');
-          
-          // Reset all nav items
-          navItems.forEach(item => {
-            item.style.transform = 'translateY(0)';
-            item.style.background = 'transparent';
-          });
-          
-          // Style the clicked nav item
-          this.style.background = 'rgba(155,130,155,0.3)';
-          //this.style.transform = 'translateY(-5px)';
-        }
-        
-        // Add click event to each nav item
-        navItems.forEach(item => {
-          item.addEventListener('click', handleNavClick);
-        });
-        document.querySelector('.nav-item').click();
-        
-        
-        // Projects
-        // Select home tab
-        const gravItems = document.querySelectorAll('.grav-item');
-        const grontentSections = document.querySelectorAll('.grontent-section');
-
-        function handleGravClick() {
-            const targetId = this.getAttribute('data-target');
-
-            grontentSections.forEach(s => s.classList.remove('active'));
-            const targetSection = document.querySelector(`#${targetId}`);
-            if(targetSection) targetSection.classList.add('active');
-
-            gravItems.forEach(item => {
-                item.style.filter = '';
-            });
-            this.style.filter = 'brightness(1.6)';
-
-            // Update URL hash
-            history.pushState(null, '', `#${targetId}`);
-        }
-
-        gravItems.forEach(item => item.addEventListener('click', handleGravClick));
-
-        // Click first grav-item by default
-        if (gravItems.length) gravItems[0].click();
-      });
-      
-      // Settings Manager
-      const SettingsManager = {
-        init() {
-          this.loadSettings();
-          this.bindEvents();
-          this.toggleCalculatorIcon(
-            localStorage.getItem("showCalculator") === "true"
-          );
-          this.togglePerformanceMode(
-            localStorage.getItem("performanceMode") === "true"
-          );
-        },
-
-        bindEvents() {
-          $("#cookie-consent").change(function () {
-            localStorage.setItem("cookieConsent", this.checked);
-            if (this.checked)
-              document.cookie = "cookieConsent=true; max-age=2592000";
-          });
-
-          $("#calculator-toggle").change(function () {
-            localStorage.setItem("showCalculator", this.checked);
-            SettingsManager.toggleCalculatorIcon(this.checked);
-          });
-
-          $("#performance-mode").change(function () {
-            localStorage.setItem("performanceMode", this.checked);
-            SettingsManager.togglePerformanceMode(this.checked);
-          });
-        },
-
-        loadSettings() {
-          const consent = document.cookie.includes("cookieConsent=true");
-          $("#cookie-consent").prop("checked", consent);
-
-          $("#calculator-toggle").prop(
-            "checked",
-            localStorage.getItem("showCalculator") === "true"
-          );
-
-          $("#performance-mode").prop(
-            "checked",
-            localStorage.getItem("performanceMode") === "true"
-          );
-        },
-
-        toggleCalculatorIcon(show) {
-          $('[data-target="#calculator"]').toggle(show);
-        },
-
-        togglePerformanceMode(enable) {
-          $("body").toggleClass("flattened", enable);
-          $("#desmos-calculator").css("opacity", enable ? 0.9 : 1);
-        },
-      };
-
-      $(document).ready(function () {
-        SettingsManager.init();
-
-        var channelID = "UCEvttHNVOsafen6uySQbDkQ";
-        var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-        $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
-           var link = data.items[0].link;
-           var id = link.substr(link.indexOf("=")+1);
-        $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
-        });
-      });
-      
-      const blogURL = "https://blog.aeonic.me/feeds/posts/default?alt=json-in-script&orderby=updated&max-results=1&callback=displayPost";
-
-  function displayPost(data) {
-  const entry = data.feed.entry[0];
-  const title = entry.title.$t;
-  const link = entry.link.find(l => l.rel === 'alternate').href;
-  const htmlContent = entry.content ? entry.content.$t : entry.summary.$t;
-
-  // Create a temporary DOM element to parse the HTML
-  const tempDiv = document.createElement('div');
-  tempDiv.innerHTML = htmlContent;
-
-  // Find the first .content-section
-  const firstSection = tempDiv.querySelector('.post-summary');
-
-  // Convert it to plain text (or empty string if not found)
-  const plainText = firstSection ? firstSection.textContent.trim() : '';
-
-  // Put into page
-  document.getElementById('latest-post').innerHTML = `
-    <h3><a href="${link}" target="_blank">${title}</a></h3>
-    <div>${plainText}</div>
-  `;
-}
-
-// Inject the JSONP script
-const script = document.createElement('script');
-script.src = blogURL;
-document.body.appendChild(script);
-    </script>
+    <script src='navbar.js></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
     <script src='https://aryabhata.aeonic.me/styles/sigma.js'></script>
