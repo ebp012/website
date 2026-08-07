@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ampābru - eshaan's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
+    <link href='indexstyle.css' rel='stylesheet' type='text/css'/>
+    <style>
+      #bgcontainer {
+        background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
+      }
+      
+    </style>
+  </head>
+  <body onload="if (window.location.hash !== '#projects') document.querySelector('#homeTab').click();">
+    <div id="bgcontainer"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="crystal-distortion">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="9"/>
+        </filter>
+        <filter id="crystal-distortion-hover">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="16"/>
+            <feColorMatrix type="saturate" values="1.025"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-hover-button">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-plus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="72"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+        <filter id="crystal-distortion-plus-two">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="96"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-plus-three">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="144"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-minus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="container cs-blue">
+      <!-- Contents' Section -->
+      <div id="supama" class="content-section active">
+        <h1 class="page-title">Ampābru</h1>
+        <p class="page-nav"><b>•
+            <a href='#phonology'>Phonology</a>•
+            <a href='#orthography'>Orthography</a>
+        •</b></p><style>.desk-paper p {text-indent: 32pt;} .desk-paper p:after{content:'';height:10pt;}</style>
+        <div class="desk-paper" style=''>
+            <p><strong><b>Ampābru</b></strong>, pejoratively known by the exonym <strong><b>Indobarbaric</b></strong>, is a naturalistic constructed Southern Romance language set in an alternate timeline wherein a large group of people emigrated from what once was the Roman province of Africa at some time around the 8<sup>th</sup> century C.E. due to religious persecution by the ruling Umayyads, who conquered the region around 709.</p>
+            <p>After leaving Roman Africa, the emigrating group ventured through Persia and ultimately settled into what is now southern Gujarat and northern Maharastra near the Gulf of Khambat. They were known amongst themselves as the Cannit (from Latin <i>candidus</i>) (modern pronunciation: /kəɳit/; pre-1500: /kanˈnid/) people, although the term "Indobarbarum" was used by many Eastern Romans, the territory of whom was being passed through amid the migration. "Indobarbarum" is the term that ultimately stuck; a corrupted form thereof is whence the modern term "Ampābru" arose. Under colonial British rule, the Latinate term "Indobarbaric" was used to refer to the language and its speakers, and it is not until very recently that the official name has been changed back to Ampābru.</p>
+            <p>Various elements of Ampābru's phonology, lexicon, and grammar show great influence from the Indo-Aryan languages spoken in the area where the Ampābru settled. A great resemblance to Sardinian is borne by Ampābru's Romance substrate, as would be typical of a Southern Romance language. Due to proximity to speakers of it, there is also profound Tamazight influence, as was present in African Romance.</p>
+            <p>Indeed, far more noun declension has been preserved in Ampābru than in any other living Romance tongue, perhaps due to the extensive influence of Indo-Aryan languages' grammars thereupon. Gujarati influence also brang the development of a clusivity distinction in the first-person plural, which applies not only to pronouns but also to first-person plural imperative verb conjugations. For verbs, the infinitive + habere construction oft found in Romance languages did not stick around; there is no morphological future tense, albeit there still is a very rich verb conjugation paradigm inherited from Latin. Verbs also conjugate for grammatical gender.</p>
+            <hr id='phonology'/>
+            <h2>Phonology</h2>
+            <p><strong><b>Sound Changes from African Romance</b></strong> The following sound changes were loosely applied to the African Romance lexicon, although they are by far inexact and do not reflect the full spectrum of narrow consonant and vowel shifts.</p>
+            <p><small>Miniscule v denotes voicing. "Aspiration" (asp) here denotes aspiration for voiceless recipients or murmuring for voiced recipients. Majiscule V denotes a vowel. L denotes a liquid consonant. Tilde denotes inconsistent sound change application by the speakers or inconsistent application towards some category. Capital C denotes any consonant. # denotes a morpheme boundary, whereas σ denotes a syllable boundary. B, D, R, V, and U denote labial, dental, retroflex, velar, and uvular consonants respectively</small></p>
+            <div class='table-wrapper'>
+                <table class='non'>
+                    <thead>
+                        <tr>
+                            <td>Time</td>
+                            <td>Sound Change</td>
+                        </tr>
+                    </thead>
+                    <tbody style='font-family: courier;'>
+                        <tr>
+                            <td>~800s</td>
+                            <td>[+obstruent,+palatalised]→[-palatalised,+asp]/_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>β→∅/!#_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>β→bʱ/!V_V</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+stop,+v]→[-v]/!V_V,!#_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+stop,-v]→[+asp]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+stop,+v]→[+fric]/V_L</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+stop,-v]→[+v]/V_V,_L</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>V→ə~→∅/#_[+stop]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>o[+stop,~+v]→ou/_σC</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>a[+stop,~+v]→ai/_σC</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>V→a/_{w,u}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>o→u/_r</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>rʲ→j</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>uj→y</td>
+                        </tr>
+                        <tr>
+                            <td>~1100s</td>
+                            <td>sː→{ʃ,[+fric][+stop]}/_σ,!_[+dental]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ʃ→s/_[+V,+front]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>n,l,r,{s,ʃ}→ɳ,ɭ,ɽ͡r,ʂ/V_V,_ː,!_#,~#_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+stop,+labialised]→[-labialised,-geminate,+asp]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+labial,+fric]→[-fric,+stop]/_[+V,+front]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>i~→ɛ/unstressed</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>j~→kj/#_</td>
+                        </tr>
+                        <tr>
+                            <td>~1500s</td>
+                            <td>[+dental]→[-dental,+retroflex,-geminate]/V_V,_ː</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>kj→ç/_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ɛ,a,ɔ→ə/unstressed,!_[+liquid]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+stop,+v]→[-v]/_#</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>s,ç→x→h/~#_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ə→∅/_#,![+asp]_,![+retroflex]_,![+liquid]_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>b,bʰ→m,m̥/_#</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+velar]→[-velar,+uvular]/_[+V,+back]</td>
+                        </tr>
+                        <tr>
+                            <td>~1850s</td>
+                            <td>[+nasal]→[+nasal,+fric]→[-nasal]/V_V,V_[+liquid]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ɽ͡r,r→ɽ,ɾ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+V,-nasalised]→[+nasalised]/_[+nasal],!_#</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ai,au→æ,ɒ/_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>o,ɔ,ɒ,a→u,u~o,o,ɒ/[+uvular]_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+dental]→[-dental,+retroflex]/h_[+stop]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>either: h→∅/_[+retroflex], or<br/>h[+retroflex,-v]→[+retroflex,+asp]</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ɭ→𝼈</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>a,ɛ→ə/_{∅,𝼈,l,[+stop]}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+fric]→ʰ/[+uvular]_,!V[+uvular]_</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ʰC→Cʰ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>[+dental]→[+retroflex]/[+uvular]_V</td>
+                        </tr>
+                        <tr>
+                            <td>~2000</td>
+                            <td>∅→ə/[+stop]_[+retroflex]V</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong><b>Modern Phonemic Inventory</b></strong> Ultimately, the following modern phonemic inventory took shape. Therein one may recognise the presence of various distinctively Indo-Aryan-influenced phonemes. Interestingly, rather than adopt the affricates t͡ʃ and d͡ʒ in loanwords, ʈʲ and ɖʲ have assumed their place instead; there is a distinct lack of stop palatalisation unakin to many Romance languages, but very typical of a Southern Romance tongue like Ampābru is. However, the sheer pertingence betwixt the phonemic inventories of many Indo-Aryan languages and Ampābru shows how much Ampābru has divergen from its African Romance roots.</p>
+            <div class='table-wrapper'>
+                <table class='non' id='phtable'><style>#phtable tbody td{font-family:courier;}</style>
+                    <thead>
+                        <tr>
+                            <td colspan='2'>Consonants</td>
+                            <td colspan='2'>Labial</td>
+                            <td colspan='2'>Dental</td>
+                            <td colspan='2'>Retroflex</td>
+                            <td colspan='2'>Palatal</td>
+                            <td colspan='2'>Velar</td>
+                            <td colspan='2'>Uvular</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan='2'>Nasal</th>
+
+                            <td>m̥</td>
+                            <td>m</td>
+
+                            <td>(n̥)</td>
+                            <td>n</td>
+
+                            <td>(ɳ̊)</td>
+                            <td>ɳ</td>
+
+                            <td></td>
+                            <td></td>
+
+                            <td></td>
+                            <td>ŋ</td>
+
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th rowspan='2'>Stop</th>
+                            <th>unaspirated</th>
+
+                            <td>p</td>
+                            <td>b</td>
+
+                            <td>t̪</td>
+                            <td>d̪</td>
+
+                            <td>ʈ</td>
+                            <td>ɖ</td>
+
+                            <td>ʈʲ</td>
+                            <td>ɖʲ</td>
+
+                            <td>k</td>
+                            <td>g</td>
+
+                            <td>q</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>aspirated</th>
+
+                            <td>pʰ</td>
+                            <td>bʱ</td>
+
+                            <td>t̪ʰ</td>
+                            <td>d̪ʱ</td>
+
+                            <td>ʈʰ</td>
+                            <td>ɖʱ</td>
+
+                            <td>(ʈʰʲ~x<sup>ɻ</sup>)</td>
+                            <td>(ɖʱʲ~ɣ<sup>ɻ</sup>)</td>
+
+                            <td>kʰ</td>
+                            <td>gʰ</td>
+
+                            <td>qʰ</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th colspan='2'>Fricative</th>
+
+                            <td>f</td>
+                            <td></td>
+
+                            <td>s</td>
+                            <td>ʃ</td>
+
+                            <td>ʂ</td>
+                            <td></td>
+
+                            <td></td>
+                            <td></td>
+
+                            <td></td>
+                            <td></td>
+
+                            <td></td>
+                            <td>ɦ</td>
+                        </tr>
+                        <tr>
+                            <th colspan='2'>Liquid</th>
+
+                            <td></td>
+                            <td>ʋ</td>
+
+                            <td>l̪</td>
+                            <td>ɾ</td>
+
+                            <td>𝼈</td>
+                            <td>ɽ</td>
+
+                            <td></td>
+                            <td>j</td>
+
+                            <td></td>
+                            <td></td>
+
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class='table-wrapper'>
+                <table class='non'>
+                    <thead>
+                        <tr>
+                            <td>Vowels</td>
+                            <td colspan='2'>Front</td>
+                            <td colspan='2'>Central</td>
+                            <td colspan='2'>Back</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Close</th>
+                            <td>i</td>
+                            <td>y</td>
+                            <td></td>
+                            <td></td>
+                            <td colspan='2'>u</td>
+                        </tr>
+                        <tr>
+                            <th>Close-Mid</th>
+                            <td colspan='2'>e</td>
+                            <td></td>
+                            <td></td>
+                            <td colspan='2'>o</td>
+                        </tr>
+                        <tr>
+                            <th>Open-Mid</th>
+                            <td colspan='2'>ɛ</td>
+                            <td>ə</td>
+                            <td>ɞ</td>
+                            <td colspan='2'>ɔ</td>
+                        </tr>
+                        <tr>
+                            <th>Open</th>
+                            <td colspan='2'>æ</td>
+                            <td colspan='2'>a</td>
+                            <td colspan='2'>ɒ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong><b>Stress</b></strong> Stress is phonemic, typically being on the penultimate syllable in native and Tamazight-deriven vocabulary and the first syllable in Persian and Indo-Aryan loanwords.</p>
+            <p><strong><b>Phonotactics</b></strong> Syllable structure is overwhelmingly (C)(C)V(C), although three-consonant onsets are occasionally found. /ŋ/ and voiceless nasals are not allowed as an nonset, nor are retroflex sonorants and retroflex taps.</p>
+
+            <hr id='orthography'/>
+            <h2>Orthography</h2>
+            <p>Ampābru has four mostly-phonemic orthographies: one with the Latin script, one with the Devanagari script, one with the Gujarati script, and one with the Perso-Arabic script. The Devanagari orthography, the Gujarati orthography, and the Perso-Arabic orthographies are largely identical and merely substitute graphemes. Hence, I shall only cover the Latin script and Devanagari script orthographies herein.</p>
+            <p><strong><b>Devanagari Orthography</b></strong> The following table organises the non-sibilant consonants:</p>
+            <p><small>* Matches Latin-script orthography's &lt;c&gt;.</small>•<small>**Matches Latin-script orthography's &lt;qu&gt;.</small></p>
+            <div class='table-wrapper'>
+                <table class='non'>
+                    <thead>
+                        <tr>
+                            <td>stop</td>
+                            <td>aspirated</td>
+                            <td>voiced</td>
+                            <td>murmured</td>
+                            <td>nasal+v</td>
+                            <td>nasal-v</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>क/च़*</td>
+                            <td>ख/छ़**</td>
+                            <td>ग</td>
+                            <td>घ</td>
+                            <td>ङ</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>      
+    </div>
+
+
+    <div id="header" class='nav-bar'>
+      <h1 id='blog-title' style='font-family: geneva, genevab, tahoma, verdana, sans-serif;'><blink>eshaan's</blink>&nbsp;<blunk>website</blunk></h1>
+    </div>
+  
+    <nav class="nav-bar desat">
+        <div class="nav-item" data-target="#bio">
+            <i class="fa fa-address-book"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Bio</span>
+        </div>
+        <div class="nav-item" data-target="#projects">
+            <i class="fa fa-desktop"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Projects</span>
+        </div>
+        <div class='nav-item hidden' id='homeTab' data-tatget='#'></div>
+        <div class="nav-item" data-target="#reform">
+            <i class="fa fa-rss-square"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Blog</span>
+        </div>
+
+    </nav>
+    
+    <script>
+      // Navbar functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select home tab
+        const navItems = document.querySelectorAll('.nav-item');        
+        // Function to handle nav item clicks
+        function handleNavClick(event) {
+          const targetId = this.getAttribute('data-target');
+          if (targetId == '#bio') window.open('http://www.aeonic.me#bio', '_self');
+          if (targetId == '#projects') window.open('http://www.aeonic.me#projects', '_self');
+          if (targetId == '#blog') window.open('http://blog.aeonic.me/', '_self');
+        }
+        navItems.forEach(item => {
+            item.style.transform = 'translateY(0)';
+            item.style.background = 'transparent';
+        });
+        
+        // Add click event to each nav item
+        navItems.forEach(item => {
+          item.addEventListener('click', handleNavClick);
+        });
+      });  
+    </script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
+    <script src='https://aryabhata.aeonic.me/styles/sigma.js'></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$PAGETITLE - eshaan's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
+    <link href='indexstyle.css' rel='stylesheet' type='text/css'/>
+    <style>
+      #bgcontainer {
+        background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
+      }
+      
+    </style>
+  </head>
+  <body onload="if (window.location.hash !== '#projects') document.querySelector('#homeTab').click();">
+    <div id="bgcontainer"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="crystal-distortion">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="9"/>
+        </filter>
+        <filter id="crystal-distortion-hover">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="16"/>
+            <feColorMatrix type="saturate" values="1.025"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-hover-button">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-plus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="72"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+        <filter id="crystal-distortion-plus-two">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="96"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-plus-three">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="144"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-minus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="container cs-blue">
+      <!-- Contents' Section -->
+      <div id="supama" class="content-section active">
+        <h1 class="page-title">$PAGETITLE</h1>
+        <p class="page-nav"><b>•
+            <a href='#phonology'>Phonology</a>
+        •</b></p>
+        <div class="desk-paper">
+            <p>$CONTENT</p>
+        </div>
+      </div>      
+    </div>
+
+
+    <div id="header" class='nav-bar'>
+      <h1 id='blog-title' style='font-family: geneva, genevab, tahoma, verdana, sans-serif;'><blink>eshaan's</blink>&nbsp;<blunk>website</blunk></h1>
+    </div>
+  
+    <nav class="nav-bar desat">
+        <div class="nav-item" data-target="#bio">
+            <i class="fa fa-address-book"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Bio</span>
+        </div>
+        <div class="nav-item" data-target="#projects">
+            <i class="fa fa-desktop"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Projects</span>
+        </div>
+        <div class='nav-item hidden' id='homeTab' data-tatget='#'></div>
+        <div class="nav-item" data-target="#reform">
+            <i class="fa fa-rss-square"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Blog</span>
+        </div>
+
+    </nav>
+    
+    <script>
+      // Navbar functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select home tab
+        const navItems = document.querySelectorAll('.nav-item');        
+        // Function to handle nav item clicks
+        function handleNavClick(event) {
+          const targetId = this.getAttribute('data-target');
+          if (targetId == '#bio') window.open('http://www.aeonic.me#bio', '_self');
+          if (targetId == '#projects') window.open('http://www.aeonic.me#projects', '_self');
+          if (targetId == '#blog') window.open('http://blog.aeonic.me/', '_self');
+        }
+        navItems.forEach(item => {
+            item.style.transform = 'translateY(0)';
+            item.style.background = 'transparent';
+        });
+        
+        // Add click event to each nav item
+        navItems.forEach(item => {
+          item.addEventListener('click', handleNavClick);
+        });
+      });  
+    </script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
+    <script src='https://aryabhata.aeonic.me/styles/sigma.js'></script>
+  </body>
+</html>

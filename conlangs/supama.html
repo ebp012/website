@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>su Pama - eshaan's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
+    <link href='indexstyle.css' rel='stylesheet' type='text/css'/>
+    <style>
+      #bgcontainer {
+        background: url(https://t3.ftcdn.net/jpg/01/05/54/98/360_F_105549841_qGAF80yXJ0pfwV1RsxMCLXaJ8ae2rlRY.jpg);
+      }
+      
+    </style>
+  </head>
+  <body onload="if (window.location.hash !== '#projects') document.querySelector('#homeTab').click();">
+    <div id="bgcontainer"></div>
+
+    <svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="crystal-distortion">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="9"/>
+        </filter>
+        <filter id="crystal-distortion-hover">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="16"/>
+            <feColorMatrix type="saturate" values="1.025"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-hover-button">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+            <feColorMatrix type="hueRotate" values="12"/>
+        </filter>
+        <filter id="crystal-distortion-plus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="72"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+        <filter id="crystal-distortion-plus-two">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="96"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-plus-three">
+            <feTurbulence baseFrequency="0.016" numOctaves="6" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="144"/>
+            <feColorMatrix type="saturate" values="0.85"/>
+        </filter>
+        <filter id="crystal-distortion-minus">
+            <feTurbulence baseFrequency="0.008" numOctaves="2" result="turbulence"/>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="24"/>
+            <feColorMatrix type="saturate" values="1.05"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="container cs-blue">
+      <!-- Contents' Section -->
+      <div id="supama" class="content-section active">
+        <h1 class="page-title">su Pama</h1>
+        <p class="page-nav"><b>•
+            <a href='#phonology'>Phonology</a>•
+            <a href='#lexicon'>Lexicon</a>•
+            <a href='#grammar'>Grammar</a>•
+            <a href='#syntax'>Morphology & Syntax</a>
+        •</b></p>
+        <div class="desk-paper">
+            <p><b>su Pama</b> (<a href='https://www.youtube.com/watch?v=U76DK3woxJE'><i class='fa fa-youtube'></i></a>) is an oligosynthetic polysynthetic experimental minimalistic constructed language constructed in no more than 32 morphemes that are combinable to express more specific meanings. "Pama" literally translates to "loud thought", although depending on context, it may also mean "brainwards", "indeed now", or "full room". However, despite having so much compounding, there is absolutely no strict inflection nor conjugation paradigms of any kind on any word.</p>
+
+            <hr id='phonology'/>
+            <h2>Phonology</h2>
+            <p>Likewise to the lexicon, su Pama's phonology is extremely minimal.</p>
+            <p>The following consonants (C) and vowels (V) make up the phonemic inventory:</p>
+            <div class='table-wrapper'>
+                <table class='non nepas'>
+                    <tr>
+                        <td>
+                            <table class='non'>
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>Labial</td>
+                                        <td>Dental</td>
+                                        <td>Palatal</td>
+                                        <td>Velar</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Nasal</th>
+                                        <td>m</td>
+                                        <td>n</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stop</th>
+                                        <td>p</td>
+                                        <td>t</td>
+                                        <td></td>
+                                        <td>k</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Fricative</th>
+                                        <td>f</td>
+                                        <td>s</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Liquid (L)</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>j<wbr/>&lt;i&gt;</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table class='non'>
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>Back</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Close</th>
+                                        <td>u</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Open</th>
+                                        <td>a</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>All syllables are in the form (C)V(L). <pm>j</pm> never appears in the onset. The sequence <pm>uj</pm> is transcribed <gm>i</gm>.</p>
+            <p>Hence, there are 8 possible onsets (counting ∅), 2 possible nuclei, and 2 possible codae (counting ∅), evaluating to 8&times;2&times;2=32. Since the language has 32 morphemes and all are monosyllabic, all permitted combinations are a meaningful morpheme.</p>
+            <p>Allophonically, u&rightarrow;i/_j.</p>
+            <p>The following table is written with the aforesaid orthographical conventions applied.</p>
+            <div class='table-wrapper'>
+                <table class='non'>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>p</td>
+                            <td>t</td>
+                            <td>k</td>
+                            <td>f</td>
+                            <td>s</td>
+                            <td>∅</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>a</th>
+                            <td>ma</td>
+                            <td>na</td>
+                            <td>pa</td>
+                            <td>ta</td>
+                            <td>ka</td>
+                            <td>fa</td>
+                            <td>sa</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <th>u</th>
+                            <td>mu</td>
+                            <td>nu</td>
+                            <td>pu</td>
+                            <td>tu</td>
+                            <td>ku</td>
+                            <td>fu</td>
+                            <td>su</td>
+                            <td>u</td>
+                        </tr>
+                        <tr>
+                            <th>ai</th>
+                            <td>mai</td>
+                            <td>nai</td>
+                            <td>pai</td>
+                            <td>tai</td>
+                            <td>kai</td>
+                            <td>fai</td>
+                            <td>sai</td>
+                            <td>ai</td>
+                        </tr>
+                        <tr>
+                            <th>i</th>
+                            <td>mi</td>
+                            <td>ni</td>
+                            <td>pi</td>
+                            <td>ti</td>
+                            <td>ki</td>
+                            <td>fi</td>
+                            <td>si</td>
+                            <td>i</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr id='lexicon'/>
+            <h2>Lexicon</h2>
+            <p>Since classifying individual words as nouns, adjectives, et cetera would be naught but masochisy due to the words' multifunctionalness, it is far more helpful to classify in terms of the four classes, although many words straddle multiple classes:</p>
+            <ul>
+                <li>Class I words refer to concepts, actions, qualities, states, manners of doing, directions, relations, and physical things.</li>
+                <li>Class II words enable personal deixis.</li>
+                <li>Class III words are strictly case and discourse particles.</li>
+                <li>Class IV are miscellaneous particles.</li>
+            </ul>
+            <p>Orthographically, compounds are written without any spacing betwixt the morphemes in order to save space.</p>
+            <p>Deixis is usually expressed with proximal fimi (with+me), medial fiti (with+you), and distal fini (with+them) for both the locative adverb and the demostrative determiner.</p>
+            <p>The below-shown definitions are extremely extensible.</p>
+            <p><i>Key</i>: <span style='background:pink;'>Class I</span>, <span style='background:beige;'>Class II</span>, <span style='background:lightblue;'>Class III</span>, <span style='background:lightgreen;'>Class IV</span>.</p>
+            <div class='table-wrapper' id='lexicon-table'>
+                <style>#lexicon-table td {width: 100px;}</style>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Word</td>
+                            <td>Base Definition</td>
+                            <td></td>
+                            <td>Word</td>
+                            <td>Base Definition</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style='background:pink;'>pa</td>
+                            <td>truth, state, full, superior</td>
+                            <td rowspan='16'></td>
+                            <td style='background:pink;'>na</td>
+                            <td>falsehood, empty, inferior, zero</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>pu</td>
+                            <td>edible, consume, use up</td>
+                            <td style='background:pink;'>mu</td>
+                            <td>quality, concept</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>ta</td>
+                            <td>space, move, place, location</td>
+                            <td style='background:pink;'>ma</td>
+                            <td>thought, interior, in</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>tu</td>
+                            <td>liquid, nutrient</td>
+                            <td style='background:pink;'>ka</td>
+                            <td>gas, breath, environment</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>ku</td>
+                            <td>good, beautiful, help, teach, benefit</td>
+                            <td style='background:pink;'>nu</td>
+                            <td>bad, destroy, fight, malefit, accident</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>fa</td>
+                            <td>life, love, job, do</td>
+                            <td style='background:pink;'>fu</td>
+                            <td>thing, physical, make, one</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>tai</td>
+                            <td>time, pass, now, event</td>
+                            <td style='background:pink;'>kai</td>
+                            <td>new, shall, future, later, after</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>fai</td>
+                            <td>old, past, before, early</td>
+                            <td style='background:pink;'>sa</td>
+                            <td>small, part, section, divide, split, allot, diminutive</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>sai</td>
+                            <td>big, size, mass, many</td>
+                            <td style='background:pink;'>mai</td>
+                            <td>ability, potential, might</td>
+                        </tr>
+                        <tr>
+                            <td style='background:pink;'>pai</td>
+                            <td>space, move, place, location</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightblue);'>ki</td>
+                            <td>possess, have; of (genitive)</td>
+                        </tr>
+                        <tr>
+                            <td style='background:beige;'>mi</td>
+                            <td>1<sup>st</sup> person</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightblue);'>pi</td>
+                            <td>nigh, receive; to (dative)</td>
+                        </tr>
+                        <tr>
+                            <td style='background:beige;'>ti</td>
+                            <td>2<sup>nd</sup> person</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightblue);'>si</td>
+                            <td>tool, wield, reason, why; because, from, by (instrumental)</td>
+                        </tr>
+                        <tr>
+                            <td style='background:beige;'>ni</td>
+                            <td>3<sup>rd</sup> person</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightgreen, lightblue);'>a</td>
+                            <td>befall; question particle; unto (accusative)</td>
+                        </tr>
+                        <tr>
+                            <td style='background:linear-gradient(to bottom, lightgreen, lightblue);'>fi</td>
+                            <td>logical OR; with (comitative)</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightblue);'>ai</td>
+                            <td>command, tell, give; (nominative)</td>
+                        </tr>
+                        <tr>
+                            <td style='background:linear-gradient(to bottom, pink, lightgreen);'>nai</td>
+                            <td>partial truth, white lie; irony/sarcasm particle</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightblue);'>i</td>
+                            <td>do, perform; (active)</td>
+                        </tr>
+                        <tr>
+                            <td style='background:lightgreen;'>su</td>
+                            <td>name particle; (<i>rarely</i>) definite article</td>
+                            <td style='background:linear-gradient(to bottom, pink, lightgreen, lightblue);'>u</td>
+                            <td>call, request, hope; imperative; hello; oh (vocative)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr id='grammar'/>
+            <h2>Grammar</h2>
+            <p>Depending on analysis, su Pama could be said either to have eight cases (nominative, accusative, genitive, dative, instrumental, comitative, vocative, active), or for those eight's respective particles to rather be naught else but prepositions since the case markers modify noun phrases.</p>
+            <p>su Pama is analysed as being effectively verbless, although the function of verbs is largely replicated by the active case, glossed as <b>ACT</b>. Indeed, it is most helpful to classify all Class I morphemes to be nouns in isolation.</p>
+            <hr id='syntax'/>
+            <h2>Morphology and Syntax</h2>
+            <p><strong><b>Word Order</b></strong> Word order is free. Using prepositions to show subject/action/direct/indirect object is compulsory except for Class II morphemes in subject or direct object position. Subject marking with the nominative preposition is entirely optional as well.</p>
+            <p><strong><b>Morphosyntactic Alignment</b></strong> su Pama is a nominative-accusative aligned language.</p>
+            <p><strong><b>Compounding</b></strong> All compounds must be endocentric, although one is able to use <i>fi</i> (as shall be shown hereinafter) to build noun phrases that replicate the meaning of copulative compounds (dvandvāni). The head of a compound must lie at the end of the compound.</p>
+            <p>For example, take the namesake of the language: <i>pama</i>, a compound of <i>pa</i> with <i>ma</i>, whereof the head is <i>ma</i> "thought". <i>pa</i> "full" is merely a modifier unto <i>ma</i>, therefore giving <i>pama</i> the meaning of "full thought" or "loud thought".</p>
+            <p>It would be ungrammatical to use <i>mapa</i> to describe this concept, since therein, <i>pa</i> is the head and <i>ma</i> the modifier, which gives <i>mapa</i> a meaning akin to "indoor fullness" or "indoor truth".</p>
+            <p>Endocentric compounding also replaces and fulfills the role adjectives have in other languages.</p>
+            <p>It ought to be noted that by orthographical convention, first-order compounds are written without spaces lain between morphemes. Second-order compounds are always hyphenated.</p>
+            <p><strong><b>Logical Operators</b></strong> The particle <i>fi</i> is able to be used to convey logical disjunction or OR. Since {V,¬} is a functionally complete set of operations in Boolean algebra, one could theoretically build any logical operator with <i>na</i> and <i>fi</i> alone; however, this would in practice be complicated by the language's lack of explicit referent tracking, thereby requiring repetition of clauses. Therefore, it is allowed to use the construction <i>A κ₁λκ₂ B</i> for clauses A and B. κ₁ and κ₂ are placeholders for the allowed functions applied to clause A and clause B respectively, forthcomingly shown. λ is a placeholder for any one of the binary logical connectives, which in su Pama would be either <i>fi</i> for logical OR, or even <i>si</i> for converse material implication.</p>
+            <p>With the aforesaid construction, we can construct <i>na-nasi</i> (¬(¬A←B)) to convey logical conjunction or AND.</p>
+            <p>However, augmentative <i>sai</i> and diminutive <i>sa</i> can also be applied to these logical constructions, resembling an informal fuzzy logic albeit incompletely. For instance, aversion (BUT) can be constructed as AND+DIM=<i>sa-na-nasi</i>. The augmentative really only gives an emphatic quality.</p>
+            <p>κ₁ and κ₂ are permitted to be: negation <i>na</i>, identity <i>pa</i>, augmentative <i>sai</i>, or diminutive <i>sa</i>.</p>
+            <p>The orthographical conventions for compound nouns also hold for compound logical operators.</p>
+            <p>An example of logical operators being put into action lies herebelow.</p>
+            <div id='table-wrapper'>
+                <table class='non'>
+                    <tr>
+                        <th>su Pama</th>
+                        <td>Ni i fai nu-pu a nu-tu, sa-na-nasi ni i ma a kai fa ki ni i pa a pa.</td>
+                    </tr>
+                    <tr>
+                        <th>Gloss</th>
+                        <td>[<abbr title='nominative case (implied)'>NOM</abbr>]-<abbr title='3rd person pronoun'>3</abbr> <abbr title='active case'>ACT</abbr>-<abbr title='past'>PAS</abbr>-accident=consume <abbr title='accusative case'>ACC</abbr>-bad=liquid, <abbr title='diminutive'>DIM</abbr>=<abbr title='negation'>NEG</abbr>=(<abbr title='negation'>NEG</abbr>=<abbr title='converse material implication'>CONVIMPLY</abbr>) [<abbr title='nominative case (implied)'>NOM</abbr>]-<abbr title='3rd person pronoun'>3</abbr> <abbr title='active case'>ACT</abbr>-thought <abbr title='accusative case'>ACC</abbr>-<abbr title='future'>FUT</abbr>-life <abbr title='genitive case'>GEN</abbr>-<abbr title='3rd person pronoun'>3</abbr> <abbr title='active'>ACT</abbr>-<abbr title='acts as copula'>truth</abbr> <abbr title='accusative'>ACC</abbr>-<abbr title='in the noun sense'>truth</abbr></td>
+                    </tr>
+                    <tr>
+                        <th>Literal Translation</th>
+                        <td>They accidentally consumed [some] bad liquid, but they think [that] future life of theirs be truth.</td>
+                    </tr>
+                    <tr>
+                        <th>Semantic Translation</th>
+                        <td>They accidentally drank poison, but they think they'll live.</td>
+                    </tr>
+                </table>
+            </div>
+            <p><strong><b>Relative Clauses</b></strong> The 3<sup>rd</sup> person pronoun <i>ni</i> placed in an independent clause after the preceding clause usually subsumes other languages' relative clauses' roles.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="header" class='nav-bar'>
+      <h1 id='blog-title' style='font-family: geneva, genevab, tahoma, verdana, sans-serif;'><blink>eshaan's</blink>&nbsp;<blunk>website</blunk></h1>
+    </div>
+  
+    <nav class="nav-bar desat">
+        <div class="nav-item" data-target="#bio">
+            <i class="fa fa-address-book"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Bio</span>
+        </div>
+        <div class="nav-item" data-target="#projects">
+            <i class="fa fa-desktop"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Projects</span>
+        </div>
+        <div class='nav-item hidden' id='homeTab' data-tatget='#'></div>
+        <div class="nav-item" data-target="#reform">
+            <i class="fa fa-rss-square"></i>
+            <br class='hidden'/>
+            <span class='nav-text'>Blog</span>
+        </div>
+    </nav>
+    
+    <script>
+      // Navbar functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select home tab
+        const navItems = document.querySelectorAll('.nav-item');        
+        // Function to handle nav item clicks
+        function handleNavClick(event) {
+          const targetId = this.getAttribute('data-target');
+          if (targetId == '#bio') window.open('http://www.aeonic.me#bio', '_self');
+          if (targetId == '#projects') window.open('http://www.aeonic.me#projects', '_self');
+          if (targetId == '#blog') window.open('http://blog.aeonic.me/', '_self');
+        }
+        navItems.forEach(item => {
+            item.style.transform = 'translateY(0)';
+            item.style.background = 'transparent';
+        });
+        
+        // Add click event to each nav item
+        navItems.forEach(item => {
+          item.addEventListener('click', handleNavClick);
+        });
+      });  
+    </script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/DeclanChidlow/BritCSS/britcss.js"></script>
+    <script src='https://aryabhata.aeonic.me/styles/sigma.js'></script>
+  </body>
+</html>
