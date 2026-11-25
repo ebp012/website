@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eshaan's website</title>
+    <title id='tab-title'>eshaan's website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
@@ -69,11 +69,14 @@
               <tr>
                 <td style='min-width: 33.333333%; font-family: courier;'>
                   <p id='hello-text'>Hello, I'm Eshaan B. Patel.</p>
-                  <p><small style='font-size:10px;font-weight:bold;line-height:12px !important;'>I make conlangs, program, and want to pursue linguistics.</small></p>
+                  <p><small style='font-size:10px;font-weight:bold;line-height:12px !important;' id='description-text'>I make conlangs, program, and want to pursue linguistics.</small></p>
                   <p>
                     <select id='langSelect'>
                       <option value='en'>english</option>
                       <option value='fr'>français</option>
+                      <option value='es'>español</option>
+                      <option value='gu'>ગુજરાતી</option>
+                      <option value='ang'>ænglisċ</option>
                     </select>
                   </p>
                 </td>
@@ -105,7 +108,7 @@
               <tr>
                 <td style='width: 50%;'>
                   <div class='content-section shown'>
-                    <h4>ongoing projects</h4>
+                    <h4 id='ongoing-projects'>ongoing projects</h4>
                     <div class='desk-paper'>
                       <ul style='text-align: left; list-style-type: circle;'><!--just using p not li dw-->
                         <p></p>
@@ -115,7 +118,7 @@
                 </td>
                 <td style='width: 50%;'>
                   <div class='content-section shown'>
-                  <h4>Blogger</h4>
+                  <h4 id='blogger-title'>Blogger</h4>
                   <div id='latest-post' class='desk-paper'>
                     thy browser must have JavaScript enabled, lest this blog post be unseeable to thine eyes.
                   </div>
@@ -157,34 +160,34 @@
 
       <!-- Projects Section -->
       <div id="projects" class="content-section">
-        <h1 class="page-title">Projects</h1>
+        <h1 class="page-title" id='project-section-header'>Projects</h1>
         <div class="desk-paper" style="font-size: 14pt;" id='conlangs'>
           <div class="card-wrap">
-            <div class="titan-card grav-item" data-target='conlangs-tab'><i class='fa fa-book'></i><br/>conlangs</div>
-            <div class="titan-card grav-item" data-target='codings-tab'><i class='fa fa-laptop'></i><br/>programming</div>
-            <div class="titan-card grav-item" data-target='musics-tab'><i class='fa fa-music'></i><br/>music</div>
+            <div class="titan-card grav-item" data-target='conlangs-tab'><i class='fa fa-book'></i><br/><span id='conlang-tab-text'>conlangs</span></div>
+            <div class="titan-card grav-item" data-target='codings-tab'><i class='fa fa-laptop'></i><br/><span id='programming-tab-text'>programming</span></div>
+            <div class="titan-card grav-item" data-target='musics-tab'><i class='fa fa-music'></i><br/><span id='music-tab-text'>music</span></div>
           </div>
           <hr/>
           <div class='grontent-section' id='conlangs-tab'>
-            <h2>Conlangs</h2>
-            <p style="text-align: centre">
-              Below are some conlangs which I've created.
+            <h2 id='conlangs-header-text'>conlangs</h2>
+            <p style="text-align: centre" id='conlangs-blurb'>
+              below are some conlangs which I've created.
             </p>
             <div class='table-wrapper'>
               <table id="langTable">
                 <thead>
                   <tr>
-                    <td>Language</td>
-                    <td>Family</td>
-                    <td>Description</td>
-                    <td>Sentence/Translation/Gloss</td>
-                    <td>Creation Time</td>
-                    <td style="width: 18pt">Word Order</td>
-                    <td style="width: 18pt"><abbr title='Morphosyntactic' onclick='alert("Morphosyntactic");'>Msyn.</abbr> Alignmnet</td>
-                    <td style="width: 32pt">Cases</td>
-                    <td style="width: 27pt">Genders</td>
-                    <td style="width: 32pt">Declension</td>
-                    <td style="width: 32pt">Conjugation</td>
+                    <th id='t-language'>Language</th>
+                    <th id='t-family'>Family</th>
+                    <th id='t-description'>Description</th>
+                    <th id='t-sentence-translation-gloss'>Sentence/Translation/Gloss</th>
+                    <th id='t-creation-time'>Creation Time</th>
+                    <th style="width: 18pt" id='t-word-order'>Word Order</th>
+                    <th style="width: 18pt" id='t-morphosyn'>Morphosyntactic Alignment</th>
+                    <th style="width: 32pt" id='t-cases'>Cases</th>
+                    <th style="width: 27pt" id='t-genders'>Genders</th>
+                    <th style="width: 32pt" id='t-declension'>Declension</th>
+                    <th style="width: 32pt" id='t-conjugation'>Conjugation</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -375,20 +378,20 @@
             </div>
           </div>
           <div class='grontent-section' id='codings-tab'>
-            <h2>Programming</h2>
-            <p style="text-align: centre">
+            <h2 id='programming-header-text'>Programming</h2>
+            <p style="text-align: centre" id='programming-blurb'>
               These are some personal coding projects of mine.
             </p>
             <div class='table-wrapper'>
               <table id="appTable">
                 <thead>
                   <tr>
-                    <td>App</td>
-                    <td>Icon</td>
-                    <td>Description</td>
-                    <td>Function</td>
-                    <td>Development</td>
-                    <td>Repository</td>
+                    <th id='programming-application'>App</th>
+                    <th>Icon</th>
+                    <th id='programming-description'>Description</th>
+                    <th id='programming-function'>Function</th>
+                    <th>Development</th>
+                    <th>Repository</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -412,7 +415,7 @@
                     <td><a href="http://labsim.aeonic.me/">LabSim</a></td>
                     <td>
                       <img
-                        src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png"
+                        src="https://raw.githubusercontent.com/ebp012/labsim/refs/heads/main/images/logo.png" alt='labsim logo'
                       />
                     </td>
                     <td>falling-sand laboratory simulator<br/><a href='https://sandboxels.r74n.com/'>Sandboxels fork</a></td>
@@ -441,16 +444,16 @@
             </div>
           </div>
           <div class='grontent-section' id='musics-tab'>
-            <h2>Music</h2>
-            <p>These are some musical compositions of mine.</p>
+            <h2 id='music-header-text'>Music</h2>
+            <p id='music-blurb'>These are some musical compositions of mine.</p>
             <div class='table-wrapper'>
               <table id="musicTable">
                 <thead>
                   <tr>
-                    <td>Composition</td>
-                    <td><abbr title='opus'>Op.</abbr></td>
-                    <td>Published</td>
-                    <td>Description</td>
+                    <th>Composition</th>
+                    <th><abbr title='opus'>Op.</abbr></th>
+                    <th>Published</th>
+                    <th id='music-description'>Description</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -518,17 +521,17 @@
       <div class="nav-item" data-target="#bio" id="homeTab">
         <i class="fa fa-address-book"></i>
         <br class='hidden'/>
-        <span class='nav-text'>Bio</span>
+        <span class='nav-text' id='bio-nav-item'>bio</span>
       </div>
       <div class="nav-item" data-target="#projects">
         <i class="fa fa-desktop"></i>
         <br class='hidden'/>
-        <span class='nav-text'>Projects</span>
+        <span class='nav-text' id='projects-nav-item'>projects</span>
       </div>
       <div class="nav-item" data-target="#reform" onclick='window.open("http://blog.aeonic.me/", "_self");'>
         <i class="fa fa-rss-square"></i>
         <br class='hidden'/>
-        <span class='nav-text'>Blog</span>
+        <span class='nav-text' id='blog-nav-item'>blog</span>
       </div>
       
     </nav>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$PAGETITLE - eshaan's website</title>
+    <title>$TITLE - eshaan's website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type='text/css'/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link href='http://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css' />
@@ -58,12 +58,13 @@
         </filter>
       </defs>
     </svg>
+    <script src='homepage-translation.js'></script>
     <div class="container cs-blue">
       <!-- Contents' Section -->
-      <div id="supama" class="content-section active">
+      <div id="main" class="content-section active">
         <h1 class="page-title">$PAGETITLE</h1>
         <p class="page-nav"><b>•
-            <a href='#phonology'>Phonology</a>
+            $LINKS
         •</b></p>
         <div class="desk-paper">
             <p>$CONTENT</p>
@@ -75,25 +76,23 @@
     <div id="header" class='nav-bar'>
       <h1 id='blog-title' style='font-family: geneva, genevab, tahoma, verdana, sans-serif;'><blink>eshaan's</blink>&nbsp;<blunk>website</blunk></h1>
     </div>
-  
     <nav class="nav-bar desat">
-        <div class="nav-item" data-target="#bio">
-            <i class="fa fa-address-book"></i>
-            <br class='hidden'/>
-            <span class='nav-text'>Bio</span>
-        </div>
-        <div class="nav-item" data-target="#projects">
-            <i class="fa fa-desktop"></i>
-            <br class='hidden'/>
-            <span class='nav-text'>Projects</span>
-        </div>
-        <div class='nav-item hidden' id='homeTab' data-tatget='#'></div>
-        <div class="nav-item" data-target="#reform">
-            <i class="fa fa-rss-square"></i>
-            <br class='hidden'/>
-            <span class='nav-text'>Blog</span>
-        </div>
-
+      <div class="nav-item" data-target="#bio">
+        <i class="fa fa-address-book"></i>
+        <br class='hidden'/>
+        <span class='nav-text' id='bio-nav-item'>bio</span>
+      </div>
+      <div class="nav-item" data-target="#projects">
+        <i class="fa fa-desktop"></i>
+        <br class='hidden'/>
+        <span class='nav-text' id='projects-nav-item'>projects</span>
+      </div>
+      <div class="nav-item" data-target="#reform" onclick='window.open("http://blog.aeonic.me/", "_self");'>
+        <i class="fa fa-rss-square"></i>
+        <br class='hidden'/>
+        <span class='nav-text' id='blog-nav-item'>blog</span>
+      </div>
+      
     </nav>
     
     <script>
