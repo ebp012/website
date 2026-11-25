@@ -1,0 +1,5 @@
+eshaanpatel@eshaan-mbp:/srv/web/html/conlangs/ampabru$ bash ./../../backend/build.sh stuff.xml content.htm
+WebAssembly compilation successful.
+Metadata: stuff.xml
+Content: content.htm
+eshaanpatel@eshaan-mbp:/srv/web/html/conlangs/ampabru$ 

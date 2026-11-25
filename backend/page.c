@@ -123,7 +123,7 @@ char *generate_page(const char *metadata, const char *content) {
 
     /* 5. Construct the table of contents links. */
     char *q = malloc(2);
-    strcpy(q, "•");
+    strcpy(q, "·");
 
     xmlNode *toc = root->children;
 
@@ -141,11 +141,12 @@ char *generate_page(const char *metadata, const char *content) {
                     size_t old_len = strlen(q);
                     size_t link_len = xmlBufferLength(buffer);
 
-                    q = realloc(q, old_len + link_len + 2);
+                    q = realloc(q, old_len + link_len + 3);
 
                     memcpy(q + old_len, xmlBufferContent(buffer), link_len);
-                    q[old_len + link_len] = '•';
-                    q[old_len + link_len + 1] = '\0';
+                    q[old_len + link_len] = '\xC2';
+                    q[old_len + link_len + 1] = '\xB7';
+                    q[old_len + link_len + 2] = '\0';
 
                     xmlBufferFree(buffer);
                 }

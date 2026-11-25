@@ -1,0 +1,101 @@
+<script type="module">
+import createPageModule from "./page.js";
+
+const wasm = await createPageModule();
+
+async function generatePage(metadata, content) {
+
+    const FS = wasm.FS;
+
+    // Set up the virtual filesystem.
+    FS.mkdirTree("/work/pages");
+    FS.mkdirTree("/work/templates");
+
+    FS.chdir("/work/pages");
+
+    // Read a file from a URL and put it into WASM's filesystem.
+    async function loadFile(url, virtualPath) {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error(`Could not load ${url}`);
+        }
+
+        const data = new Uint8Array(await response.arrayBuffer());
+
+        const directory = virtualPath.substring(
+            0, virtualPath.lastIndexOf("/")
+        );
+
+        if (directory) FS.mkdirTree(directory);
+
+        FS.writeFile(virtualPath, data);
+    }
+
+    // Load the template.
+    await loadFile(
+        "/templates/independentpage.htm",
+        "/work/templates/independentpage.htm"
+    );
+
+    // Load metadata and content.
+    const metadataPath = metadata.startsWith("/")
+        ? metadata
+        : `/work/pages/${metadata}`;
+
+    const contentPath = content.startsWith("/")
+        ? content
+        : `/work/pages/${content}`;
+
+    await loadFile(metadata, metadataPath);
+    await loadFile(content, contentPath);
+
+    // Call the C function.
+    const resultPointer = wasm.ccall(
+        "generate_page",
+        "number",
+        ["string", "string"],
+        [metadata, content]
+    );
+
+    if (!resultPointer) {
+        throw new Error("generate_page failed.");
+    }
+
+    // Convert the returned C string into a JavaScript string.
+    const result = wasm.UTF8ToString(resultPointer);
+
+    // Free the memory allocated by C.
+    wasm._free(resultPointer);
+
+    return result;
+}
+try {
+    console.log("Generating page...");
+
+    const html = await generatePage(
+        "stuff.xml",
+        "content.htm"
+    );
+
+    console.log("Generated HTML:");
+    console.log(html);
+
+    console.log("HTML length:", html.length);
+
+    if (!html || html.length === 0) {
+        throw new Error("Generated HTML is empty.");
+    }
+    if (html.length < 0) {
+        throw new Error("What in the actual hell are you trying to do here...");
+    }
+
+    document.open();
+    document.write(html);
+    document.close();
+
+} catch (error) {
+    console.error("Page generation failed:", error);
+    document.body.innerText = error.toString();
+}
+</script>

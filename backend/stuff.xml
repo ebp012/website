@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+    <title>My Website</title>
+
+    <pagetitle>About Me</pagetitle>
+
+    <toc>
+        <a href="#introduction">Introduction</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+    </toc>
+</page>

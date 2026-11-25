@@ -70,12 +70,29 @@ async function generatePage(metadata, content) {
 
     return result;
 }
-const html = await generatePage(
-    "metadata.xml",
-    "content.html"
-);
+try {
+    console.log("Generating page...");
 
-document.open();
-document.write(html);
-document.close();
+    const html = await generatePage(
+        "stuff.xml",
+        "content.htm"
+    );
+
+    console.log("Generated HTML:");
+    console.log(html);
+
+    console.log("HTML length:", html.length);
+
+    if (!html || html.length === 0) {
+        throw new Error("Generated HTML is empty.");
+    }
+
+    document.open();
+    document.write(html);
+    document.close();
+
+} catch (error) {
+    console.error("Page generation failed:", error);
+    document.body.innerText = error.toString();
+}
 </script>
